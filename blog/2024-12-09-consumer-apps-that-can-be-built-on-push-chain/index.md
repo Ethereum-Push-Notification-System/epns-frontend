@@ -71,7 +71,7 @@ Here’s a brief glimpse of the future of web3 and the countless innovations tha
 
 ### →Universal AI Apps:
 
-Build on-chain Ai agents and platforms that are not bound to any single-chain and operate across chains autonomously using Push Chain’s shared state and Universal Smart Contract capabilies.
+Build on-chain Ai agents and platforms that are not bound to any single-chain and operate across chains autonomously using Push Chain’s shared state and Universal Smart Contract capabilities.
 
 Examples include:
 

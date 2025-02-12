@@ -64,7 +64,7 @@ Milestones
 
 ![Image of EPNS AMA with 🎙 AMA LOVERS CLUB](./image-1.webp)
 
-Achivements
+Achievements
 
 # **Part 2: Twitter Questions**
 

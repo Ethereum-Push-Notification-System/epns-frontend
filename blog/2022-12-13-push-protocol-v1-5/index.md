@@ -8,7 +8,7 @@ tags:
   [
     Web3,
     Blockchain Technology,
-    Blockhain Development,
+    Blockchain Development,
     Push Notification,
     Communication Tools,
   ]
