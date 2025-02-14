@@ -49,33 +49,54 @@ function AnalyticsStats() {
     totalNotifsSent: '',
     totalSubscribersCount: '',
   });
-  const [isLoading, setIsLoading] = useState(false);
 
-  const loadData = async () => {
+  const [isLoadingSubscriberData, setSubscriberDataLoading] = useState(false);
+
+  const [isLoadingNotificationData, setNotificationDataLoading] =
+    useState(false);
+
+  const loadSubscriberData = async () => {
     try {
-      setIsLoading(true);
+      setSubscriberDataLoading(true);
       let result = await getSubscribersCount();
-      let notifsResult = await getNotificationsCount();
 
       setKpiStats((current) => {
         return {
           ...current,
-          totalNotifsSent: nFormatter(notifsResult),
-          totalSubscribersCount: nFormatter(result),
+          totalSubscribersCount: result ? nFormatter(result) : '300k',
         };
       });
     } catch (e) {
       console.error('Analytics API data fetch error: ', e);
     } finally {
-      setIsLoading(false);
+      setSubscriberDataLoading(false);
+    }
+  };
+
+  const loadNotificationData = async () => {
+    try {
+      setNotificationDataLoading(true);
+      let notifsResult = await getNotificationsCount();
+
+      setKpiStats((current) => {
+        return {
+          ...current,
+          totalNotifsSent: notifsResult ? nFormatter(notifsResult) : '139M ',
+        };
+      });
+    } catch (e) {
+      console.error('Analytics API data fetch error: ', e);
+    } finally {
+      setNotificationDataLoading(false);
     }
   };
 
   useEffect(() => {
-    loadData();
+    loadSubscriberData();
+    loadNotificationData();
   }, []);
 
-  if (!kpiStats && isLoading)
+  if (!kpiStats && (isLoadingNotificationData || isLoadingSubscriberData))
     return (
       <Oval
         height={80}

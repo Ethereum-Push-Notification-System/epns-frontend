@@ -1,15 +1,17 @@
 ---
 slug: quickswap-joins-frens-of-push
-title: " QuickSwap: Leading Asset Exchange on Polygon Joins Frens Of Push "
+title: ' QuickSwap: Leading Asset Exchange on Polygon Joins Frens Of Push '
 authors: [push]
-image: "./cover-image.webp"
-description: "QuickSwap: Leading Asset Exchange on Polygon Joins Frens Of Push "
+image: './cover-image.webp'
+description: 'QuickSwap: Leading Asset Exchange on Polygon Joins Frens Of Push '
 text: "We're back with Frens of Push, offering a deep dive into the top protocols and Push ecosystem partners. This week, our fren is QuickSwap, the leading DEX & AMM on Polygon."
 tags: [Push Protocol, Web3, Blockchain Technology, QuickSwap, frensofpush]
 ---
+
 ![Cover Image of QuickSwap: Leading Asset Exchange on Polygon Joins Frens Of Push  ](./cover-image.webp)
 
 <!--truncate-->
+
 We're back with Frens of Push, offering a deep dive into the top protocols and Push ecosystem partners. This week, our fren is QuickSwap, the leading DEX & AMM on Polygon.
 
 QuickSwap is the leading DEX on Polygon PoS, Polygon zkEVM, and Dogechain that’s fully decentralized and community-driven, building a comprehensive suite of DeFi products called the DragonFi ecosystem. It’s renowned for its high-performance, cost-efficient DeFi platforms, and pioneering role in onboarding new users and capital to the broader Polygon ecosystem.
@@ -36,9 +38,9 @@ With QuickSwap, whether you’re looking to swap, stake, and farm on a lightning
 
 ### How do developers use QuickSwap?
 
-<b>Roc:</b> Developers are free and welcome to explore QuickSwap’s documentation and to connect with the team to send in suggestions, new ideas, and business development proposals. QuickSwap has been integrating new technologies on a monthly basis for years now – not to mention integrating QuickSwap’s platforms on new and rising Polygon CDK chains. For the technical folks out there, go right ahead and check out [QuickSwap’s GitHub](https://github.com/QuickSwap/quickswap-docs). 
+<b>Roc:</b> Developers are free and welcome to explore QuickSwap’s documentation and to connect with the team to send in suggestions, new ideas, and business development proposals. QuickSwap has been integrating new technologies on a monthly basis for years now – not to mention integrating QuickSwap’s platforms on new and rising Polygon CDK chains. For the technical folks out there, go right ahead and check out [QuickSwap’s GitHub](https://github.com/QuickSwap/quickswap-docs).
 
-### What’s the 2024 plan for QuickSwap and its ecosystem? 
+### What’s the 2024 plan for QuickSwap and its ecosystem?
 
 <b>Roc:</b> I’m glad you asked! QuickSwap released its plans for DragonFi 2.0 in December 2023, and I have to say: that the project has been delivering right on schedule. QuickSwap’s DragonFi 2.0 initiative focuses on deploying the QuickSwap DeFi suite – a QuickSwap Citadel, as it’s called – to as many newly arriving Polygon CDK (Chain Development Kit) chains as possible. The mission is simple: to become the dominant DeFi force on Polygon 2.0, and eventually, to conquer the entire Web3 DeFi scene as the go-to homebase for ultra-high-performance, ultra-low-cost, ultra-liquid….well, you get it.
 
@@ -66,7 +68,6 @@ For QuickSwap, that means improving user experience for traders is easier than e
 
 In the Layer 2 race, QuickSwap is proud to be utilizing the next generation of rising Polygon technologies, yet again. The project invites new users, developer teams, and other enthusiasts from around the space to check out Web3’s most epic scalability stack yet for themselves!
 
-
 <hr />
 
 Thanks, Roc for the awesome conversation. Looking forward to revolutionizing web3 communication together with QuickSwap!
@@ -77,4 +78,4 @@ QuickSwap is the leading DEX on Polygon PoS, Polygon zkEVM, and Dogechain that�
 
 Find more about QuickSwap: [Website](https://quickswap.exchange/#/), [Docs](https://docs.quickswap.exchange/), [Twitter](https://twitter.com/QuickswapDEX), [Telegram](https://t.me/QuickSwapDEX), [Discord](https://discord.com/invite/dSMd7AFH36), [YouTube](https://www.youtube.com/@quickswapofficial), and [Blog](https://blog.quickswap.exchange/).
 
-“Push frens” is our weekly content series to spotlight outstanding projects building with Push. If you want to be featured, reach out to us on [X](https://twitter.com/pushprotocol/), and you could be our next Fren in the series.
+“Push frens” is our weekly content series to spotlight outstanding projects building with Push. If you want to be featured, reach out to us on [X](https://x.com/PushChain/), and you could be our next Fren in the series.

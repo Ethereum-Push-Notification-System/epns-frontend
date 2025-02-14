@@ -40,7 +40,7 @@ Participants can choose from a wide variety of tasks and earn rewards based on t
 To participate in the Push Missions program, follow these simple steps:
 
 1. Browse the list of available missions at <a href="https://www.notion.so/Push-Missions-693291d804cf4b2180a992dd40fc5a0e"><b>Push Missions</b></a> and select the one that interests you.
-2. Make a post on Twitter using the hashtag <b>#PushMissions</b>. In the post, be sure to tag <b>@pushprotocol</b> and <b>@Push_DAO</b>.
+2. Make a post on Twitter using the hashtag <b>#PushMissions</b>. In the post, be sure to tag <b>@PushChain</b> and <b>@Push_DAO</b>.
 3. Please fill out the application form [here](https://zv9atndluia.typeform.com/to/MGMRTFh0) and submit it for review.
 
 The Push Missions team will review applications on a rolling basis, and the rewards will be distributed monthly. For more detailed information about the program, visit the <a href="https://www.notion.so/Push-Missions-b38048e307d949aeaf807f40396cc731"><b>Push Missions Information Page</b></a>.

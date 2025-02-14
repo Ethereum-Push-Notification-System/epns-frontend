@@ -277,7 +277,7 @@ function Footer() {
                 className='pushLinks'
               >
                 <FooterAnchorIcon
-                  href='https://twitter.com/pushprotocol'
+                  href='https://x.com/PushChain'
                   title='Push Twitter'
                   target='_blank'
                 >

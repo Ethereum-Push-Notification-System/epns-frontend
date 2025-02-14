@@ -24,13 +24,13 @@ With that, here’s a look at everything that kept us busy 🤩
 
 ## Product Updates
 
-We’re kicking off the year with one of the most significant items on our roadmap - completion of the security audit and successful upgradation to [smart contracts v1.5](https://twitter.com/pushprotocol/status/1610706705439916032). This update breaks ground for the next phase of developments at Push and we are delighted to share all the [new functionalities](https://medium.com/push-protocol/introducing-push-protocol-v1-5-80eb39b55424) as a result.
+We’re kicking off the year with one of the most significant items on our roadmap - completion of the security audit and successful upgradation to [smart contracts v1.5](https://x.com/PushChain/status/1610706705439916032). This update breaks ground for the next phase of developments at Push and we are delighted to share all the [new functionalities](https://medium.com/push-protocol/introducing-push-protocol-v1-5-80eb39b55424) as a result.
 
 With the groundwork for Push Smart Contracts v2 in place, we’re already making strides in its development. Onwards and upwards! 🚀
 
 Besides the upgrade to v1.5, we’ve also had a host of fantastic developments have taken place including:
 
-- New features to the [Push Chat SDK](/docs/chat)
+- New features to the [Push Chat SDK](https://comms.push.org/docs/chat)
 - The analytical dashboard undergoing extensive quality assurance
 
 In addition to all our progress on the development front and the successful update to v1.5, we’ve got a loaded roadmap with more exciting new features to come. Stay updated with all the latest happenings on[ Push Discord](https://discord.com/invite/pushprotocol).
@@ -39,8 +39,8 @@ In addition to all our progress on the development front and the successful upda
 
 We welcomed many new frens to the Push ecosystem this month including:
 
-- [TaylerLayer](https://twitter.com/pushprotocol/status/1610992421848092675): to enable on-chain messaging for platforms building on TalentLayer.
-- [Hats Finance](https://twitter.com/pushprotocol/status/1613248106769834007): to deliver wallet-to-wallet notifications and ensure decentralized relay and storage.
+- [TaylerLayer](https://x.com/PushChain/status/1610992421848092675): to enable on-chain messaging for platforms building on TalentLayer.
+- [Hats Finance](https://x.com/PushChain/status/1613248106769834007): to deliver wallet-to-wallet notifications and ensure decentralized relay and storage.
 - [EPI](https://twitter.com/0xEPI/status/1615799534105559040): to enable in-app messaging and notifications.
   We’re delighted to be teaming up with these amazing projects and look forward to enhancing the web3 space together🤝
 
@@ -54,11 +54,11 @@ If you haven’t already, be sure to read about how our frens Developer DAO and 
 
 Look out for all the amazing events and giveaways we’re hosting! We collaborated with a bunch of our frens this month to organize hackathons and contests for our community.
 
-- [Livepeer x Encode Next Video Build Hackathon](https://twitter.com/pushprotocol/status/1616496305995452466): We had 25+ submissions competing to build the next-gen video app with Push and four fantastic winners made it.
-- [Superfluid Wave Pool](https://twitter.com/pushprotocol/status/1610828089856249857): Superfluid Wave #5 went live and Push had $2,000 up for grabs for the best project that integrated Superfluid with Push notifications.
-- [FVM Space Wrap](https://twitter.com/pushprotocol/status/1616462062753808385): Push sponsored the event and had bounties for numerous projects enhancing their UX with Push notifications and Chat.
+- [Livepeer x Encode Next Video Build Hackathon](https://x.com/PushChain/status/1616496305995452466): We had 25+ submissions competing to build the next-gen video app with Push and four fantastic winners made it.
+- [Superfluid Wave Pool](https://x.com/PushChain/status/1610828089856249857): Superfluid Wave #5 went live and Push had $2,000 up for grabs for the best project that integrated Superfluid with Push notifications.
+- [FVM Space Wrap](https://x.com/PushChain/status/1616462062753808385): Push sponsored the event and had bounties for numerous projects enhancing their UX with Push notifications and Chat.
 - [Gitcoin-Push Chat](https://twitter.com/gitcoin/status/1615078161817165824): Once a grantee, now a funder, Push gave back to the Gitcoin community by giving early access to Push Chat with all their supporters from GR6 and GR7.
-- [LearnWeb3 challenge](https://twitter.com/pushprotocol/status/1617506921426173956): Push is hosting a #100DaysOfCode challenge with LearnWeb3 DAO and giving away exciting prizes to the winners. (the event is still live!)
+- [LearnWeb3 challenge](https://x.com/PushChain/status/1617506921426173956): Push is hosting a #100DaysOfCode challenge with LearnWeb3 DAO and giving away exciting prizes to the winners. (the event is still live!)
 
 It was an incredibly fun month with the lots of momentum on the community front 🙌
 

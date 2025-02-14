@@ -26,7 +26,7 @@ In this article, we will discuss the extension and improvements made to the Push
 
 With V2 of Push Protocol and the introduction of fee pool staking, $PUSH stakers will now be able to claim fee pool rewards in addition to staking rewards for providing liquidity.
 
-You can find a more detailed breakdown regarding Push Tokenomics and the Push Fee Pool <a href="https://push.org/docs/tokenomics/deepdive/$push/#push-fee-pool"><b>here</b></a>.
+You can find a more detailed breakdown regarding Push Tokenomics and the Push Fee Pool <a href="https://comms.push.org/docs/tokenomics/deepdive/$push/#push-fee-pool"><b>here</b></a>.
 
 This new strategy will improve liquidity rewards at levels above the ones observed during the first iteration of the program.
 

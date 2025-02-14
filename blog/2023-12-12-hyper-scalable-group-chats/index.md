@@ -283,7 +283,7 @@ Only one thing: Update the SDK to the latest version (1.4.45 or upwards), thatâ€
 
 #### How to enable Push SDK Feature Flag
 
-In-depth details for how to enable this can be found in the [Push Chat documentation](https://push.org/docs/chat/) and [GitHub repository](https://github.com/push-protocol/push-sdk/tree/main/packages/restapi).
+In-depth details for how to enable this can be found in the [Push Chat documentation](https://comms.push.org/docs/chat/) and [GitHub repository](https://github.com/push-protocol/push-sdk/tree/main/packages/restapi).
 
 ### Push SDK V2 is Coming
 

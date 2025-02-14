@@ -48,7 +48,7 @@ Their main task is to validate that:
 - the payload is following the corresponding payload standard,
 - the sender can actually send the message, and signature validation,
 - if the payload is valid, the Push Nodes will store the message on IPFS and then send a notification to the receiver of the message.
-  <i>Note: Push Nodes are in alpha right now and are currently run by the push protocol team with an alpha version of these nodes scheduled to come out around Q1 / Q2 of 2023.</i>
+  <i>Note: Push Nodes are in alpha right now and are currently run by the Push Chain team with an alpha version of these nodes scheduled to come out around Q1 / Q2 of 2023.</i>
 
 ## Who is currently running Push Nodes?
 
@@ -58,7 +58,7 @@ Once the network becomes fully decentralized, Push Nodes will be incentivized to
 
 <i>Read about Push Economics here:</i><br/><br/>
 
-[Push Token Economics](https://push.org/docs/tokenomics/deepdive/$push/)
+[Push Token Economics](https://comms.push.org/docs/tokenomics/deepdive/$push/)
 
 ## How Does a User Send a Message Using Their Account Address?
 
@@ -138,6 +138,6 @@ If you’re interested in exploring how Push Chat can boost user engagement and 
 
 - Share this article
 - Join our Discord [#push-chat-alpha channel](https://discord.gg/pushprotocol), and tell us what you’re building, we’ve got devs who can help give consultation and we’ll be sharing exclusive Push Chat access to Discord members soon!
-- To get started building right away, head over to the [Push Chat developer docs](/docs/chat).
+- To get started building right away, head over to the [Push Chat developer docs](https://comms.push.org/docs/chat).
 
 See you soon on Push Chat!

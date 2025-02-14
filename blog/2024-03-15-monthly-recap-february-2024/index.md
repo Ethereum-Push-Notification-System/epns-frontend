@@ -26,11 +26,11 @@ To enhance user experience, we’ve introduced guest mode on our [dApp](https://
 
 **Community Engagement:**
 
-We kept the [community](https://www.notion.so/March-24-519415cc4d9f45678982f74429bee0b5?pvs=21) buzzing with exciting initiatives like the “[Share & Win](https://twitter.com/pushprotocol/status/1759622094294331761) Challenge”, “[Decentralize with PUSH](https://twitter.com/pushprotocol/status/1760632158945698090)” quest contest alongside [Galxe](https://galxe.com/), a giveaway contest with [Griffy](https://twitter.com/pushprotocol/status/1755581480472883270) featuring enticing rewards for the winners, and much more…
+We kept the [community](https://www.notion.so/March-24-519415cc4d9f45678982f74429bee0b5?pvs=21) buzzing with exciting initiatives like the “[Share & Win](https://x.com/PushChain/status/1759622094294331761) Challenge”, “[Decentralize with PUSH](https://x.com/PushChain/status/1760632158945698090)” quest contest alongside [Galxe](https://galxe.com/), a giveaway contest with [Griffy](https://x.com/PushChain/status/1755581480472883270) featuring enticing rewards for the winners, and much more…
 
 **Ecosystem Highlights:**
 
-We introduced the Push Grantee: A mobile decentralized video-sharing app: [Lens play](https://lensplay.xyz/), powered by [Push Protocol](https://twitter.com/pushprotocol), [Lens Protocol](https://www.lens.xyz/), and [Livepeer](https://livepeer.org/). We also announced the BRB coding challenge winners for [The Graph](https://thegraph.com/), [Filecoin](https://filecoin.io/), & [ChainSafe](https://chainsafe.io/) challenges.
+We introduced the Push Grantee: A mobile decentralized video-sharing app: [Lens play](https://lensplay.xyz/), powered by [Push Protocol](https://x.com/PushChain), [Lens Protocol](https://www.lens.xyz/), and [Livepeer](https://livepeer.org/). We also announced the BRB coding challenge winners for [The Graph](https://thegraph.com/), [Filecoin](https://filecoin.io/), & [ChainSafe](https://chainsafe.io/) challenges.
 
 **DAO:**
 

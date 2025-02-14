@@ -1,0 +1,48 @@
+---
+id: dao
+title: Push DAO
+hide_title: true
+displayed_sidebar: pushDaoSidebar
+slug: ./
+sidebar_position: 1
+---
+
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
+import PushLogo from '@site/static/assets/website/brb/pushIcon.svg';
+import ChainLogoDark from '@site/static/assets/website/chain/ChainLogoDark.svg';
+
+import { ItemV } from '../../src/css/SharedStyling';
+
+export default function ChatRedirect() {
+    useEffect(() => {
+        window.location.href = 'https://comms.push.org/docs/dao';
+    }, []);
+
+const Container = styled.div`  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: white;
+  text-align: center;`;
+
+const PushLogoBlackContainer = styled(ItemV)`  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;`;
+
+const Message = styled.p` font-size: 18px;
+color: var(--ifm-color-primary-text);
+margin-top: 8px;`;
+
+return (
+
+<Container>
+  <PushLogoBlackContainer className='headerlogo' flex='initial'>
+    <PushLogo style={{ margin: '0px 9px 0px 4px' }} />
+    <ChainLogoDark />
+  </PushLogoBlackContainer>
+  <Message>Redirecting...</Message>
+</Container>
+) }

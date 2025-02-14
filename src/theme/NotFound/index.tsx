@@ -1,12 +1,9 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+/* eslint-disable */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 
 // External Components
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 // Internal Components
 import { translate } from '@docusaurus/Translate';
@@ -16,7 +13,7 @@ import NotFoundContent from '@theme/NotFound/Content';
 import { useLocation } from '@docusaurus/router';
 import { useSiteBaseUrl } from '@site/src/utils/useSiteBaseUrl';
 
-export default function Index(): JSX.Element {
+export default function Index(): ReactElement {
   const location = useLocation();
   const pathname = location?.pathname;
 
@@ -34,7 +31,7 @@ export default function Index(): JSX.Element {
         showNavbar={
           !pathname.startsWith(baseURL + '/docs') &&
           !pathname.startsWith(baseURL + '/blog')
-            ? 'website'
+            ? 'chain'
             : 'docusaurus'
         }
       >

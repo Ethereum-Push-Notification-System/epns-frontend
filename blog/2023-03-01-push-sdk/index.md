@@ -21,7 +21,7 @@ import { ABlock } from "@site/src/css/SharedStyling";
 Socket API is deprecated. Push has revamped it's socket API into stream API which is more versatile and developer friendly, click on the link below to learn more 👇.
 :::
 
-<ABlock href="/docs/chat/stream-chat" title="Link to learn more about Push Stream API">Learn about Push Stream API</ABlock>
+<ABlock href="https://comms.push.org/docs/chat/stream-chat" title="Link to learn more about Push Stream API">Learn about Push Stream API</ABlock>
 
 ## Note on Addresses
 
@@ -154,9 +154,9 @@ That’s it! You now know how to use the main features of the Push Protocol Sock
 
 We’ll cover other parts of the Push SDK in coming posts so stay tuned!
 
-- [Push Protocol SDK documentation here](https://push.org/docs/) — if you’d like more reference material to chew on.
+- [Push Protocol SDK documentation here](https://comms.push.org/docs/) — if you’d like more reference material to chew on.
 - [Push SDK on GitHub](https://github.com/push-protocol/push-sdk)
 - [Our Discord](https://discord.gg/pushprotocol) — we’ve got devs ready to give your project whatever support and consultation you need.
-- [Push developer docs](/docs/ 'Push developer docs') to get started on building right away!
+- [Push developer docs](https://comms.push.org/docs/ 'Push developer docs') to get started on building right away!
 
 #PoweredbyPush

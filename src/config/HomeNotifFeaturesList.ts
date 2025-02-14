@@ -131,7 +131,7 @@ export const NotifFeaturesList = {
         {
           type: 'button',
           buttontext: 'home.notification-section.box4.buttontext',
-          buttonlink: '/docs/notifications/quickstart',
+          buttonlink: 'https://comms.push.org/docs/notifications/quickstart',
           buttontitle: 'home.notification-section.box4.buttontitle',
         },
         {
@@ -298,7 +298,7 @@ export const NotifUseCasesList = [
     title: 'Blockchain',
   },
   {
-    url: 'https://twitter.com/pushprotocol/status/1336359832081768448',
+    url: 'https://x.com/PushChain/status/1336359832081768448',
     title: 'Gaming',
   },
   {

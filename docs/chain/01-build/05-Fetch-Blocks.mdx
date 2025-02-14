@@ -1,0 +1,144 @@
+---
+id: docs-fetch-blocks
+title: Fetch Blocks
+hide_title: true
+slug: ./fetch-blocks
+displayed_sidebar: pushChainSidebar
+sidebar_position: 5
+image: '/assets/docs/previews/docs_notifications_develop--channel_settings.png'
+---
+
+# Fetch Blocks Overview
+
+These APIs are useful for fetching list of blocks by hash or by timestamp.
+
+<head>
+  <title>{`Fetch Blocks | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+import {
+  ModalContainer,
+  ModalSmall,
+  ModalWrapper,
+  AFocus,
+} from '@site/src/css/SharedStyling';
+
+## Get Blocks API
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+```typescript
+// pushChain.block.get(reference, {options?})
+const block = await pushChain.block.get('36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee');
+```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+```typescript
+// pushChain.block.get(reference, {options?})
+const block = await pushChain.block.get('36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee');
+```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+```typescript
+// pushChain.block.get(reference, {options?})
+const block = await pushChain.block.get('36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee');
+```
+  </TabItem>
+</Tabs>
+
+---
+
+### Get Blocks parameters
+
+| Param       | Type               | Remarks                               | Default         |
+|-------------|--------------------|---------------------------------------|-----------------|
+| `reference`      | `string`, `'*'`       | Specifies the query target: `'*'` for all blocks or a block hash. | `*`                |
+| `options.raw`            | `boolean`                                | If `true`, returns the raw `BlockResponse`. If `false`, returns a `SimplifiedBlockResponse`. For most cases use default `raw = false`.     | `false`            |
+| `options.startTime`      | `number` (timestamp)                     | Fetches blocks starting from this timestamp.                                                | Current timestamp  |
+| `options.order`          | `Order` (`'ASC'` or `'DESC'`)            | Determines the sort order of blocks (`'ASC'` for ascending, `'DESC'` for descending).        | `'DESC'`           |
+| `options.page`           | `number`                                 | Specifies the page number for paginated results.                                                  | `1`                |
+| `options.limit`          | `number`                                 | Sets the maximum number of transactions to fetch per page.                                        | `30`               |
+
+<Details summary="Expected response">
+
+```typescript
+{
+  "totalPages": 1,
+  "lastTs": "1736076322681",
+  "blocks": [
+    {
+      "blockHash": "36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee",
+      "ts": "1736076322681",
+      "totalNumberOfTxns": 1,
+      "transactions": [
+        {
+          "txnHash": "177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23",
+          "ts": "1736076322681",
+          "blockHash": "36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee",
+          "category": "CUSTOM:SAMPLE_TX",
+          "status": "SUCCESS",
+          "from": "push:devnet:pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6",
+          "recipients": {
+            "recipients": [
+              {
+                "address": "eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4"
+              },
+              {
+                "address": "eip155:97:0xD8634C39BBFd4033c0d3289C4515275102423681"
+              }
+            ]
+          },
+          "txnData": "0102030405",
+          "sig": "6nmaU8lrzsLu62T9yNhCgFlcGrwmx9lcvyoU63g6g4tgldp0RSNQEVZZJlKn0gPt7AuXTDCb+rW6nkS0Gs6/pxw="
+        }
+      ]
+    }
+  ]
+}
+```
+
+Response properties description:
+
+| **Property**             | **Type**                 | **Description**                                                                                     |
+|---------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| `totalPages`             | `number`                | The total number of pages available for the query results.                                         |
+| `lastTs`                 | `string` (timestamp)    | The timestamp of the last transaction or block in the current response, used for pagination.       |
+| `blocks`                 | `array`                 | A list of blocks included in the response. Each block contains its transactions and metadata.      |
+| `blocks[].blockHash`     | `string`                | The unique hash of the block. Identifies the block on the blockchain.                              |
+| `blocks[].ts`            | `string` (timestamp)    | The timestamp indicating when the block was created.                                               |
+| `blocks[].totalNumberOfTxns` | `number`             | The total number of transactions included in the block.                                            |
+| `blocks[].transactions`  | `array`                 | A list of transactions included in the block.                                                     |
+| `blocks[].transactions[].txnHash` | `string`        | The unique hash of the transaction. Identifies the transaction on the blockchain.                 |
+| `blocks[].transactions[].ts` | `string` (timestamp) | The timestamp indicating when the transaction occurred.                                            |
+| `blocks[].transactions[].blockHash` | `string`      | The hash of the block that includes this transaction.                                              |
+| `blocks[].transactions[].category` | `string`      | The category of the transaction, often application-specific (e.g., `CUSTOM:SAMPLE_TX`).            |
+| `blocks[].transactions[].status`  | `string`       | The status of the transaction, such as `SUCCESS` or `FAILED`.                                      |
+| `blocks[].transactions[].from`    | `string`       | The sender's address in a chain-agnostic format (e.g., `push:devnet:...`).                         |
+| `blocks[].transactions[].recipients` | `object`    | An object containing the list of recipient addresses for the transaction.                         |
+| `blocks[].transactions[].recipients.recipients` | `array` | A list of recipient addresses. Each address is specified in a chain-agnostic format.               |
+| `blocks[].transactions[].txnData` | `string`       | The transaction data in hexadecimal format.                                                        |
+| `blocks[].transactions[].sig`     | `string`       | The digital signature of the transaction, verifying its authenticity.                              |
+
+</Details>
+
+## Retrieving by hash
+
+Fetch a Block that has the hash `36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee`.
+
+```typescript
+const block = await pushChain.block.get('36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee');
+```
+
+## Retrieving by time
+
+```typescript
+const yesterday = Math.floor(Date.now() - 24 * 60 * 60 * 1000);
+const blockByTime = await pushChain.block.get('*', {
+  startTime: yesterday,
+});
+```

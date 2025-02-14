@@ -18,7 +18,7 @@ Welcome to this last month's highlights and fresh product launches! From excitin
 
 Most notably we launched our [Community Based Messaging](https://push.org/blog/announcing-group-chat-from-push-unstoppable/) feature for Group Chats directly on Unstoppable Domains! With this collaboration, every ‘badge’ (NFTs assigned to wallets based on wallet holder status/activity history) will have its own Group Chat. Holding badges allow you to access the respective Group Chat. [Try it out for yourself!](https://unstoppabledomains.com/)
 
-We also launched our [Live Push Roadmap for 2024](https://push.org/docs/roadmap/). It’s an all-new way to track and follow along with all of our planned developments for the year. Spoiler, there is no shortage of exciting developments to come. We’ll be launching Push Nodes (our final hurdle to achieve full scale decentralization) as well as new MetaMask Snap enhancements.
+We also launched our [Live Push Roadmap for 2024](https://comms.push.org/docs/roadmap/). It’s an all-new way to track and follow along with all of our planned developments for the year. Spoiler, there is no shortage of exciting developments to come. We’ll be launching Push Nodes (our final hurdle to achieve full scale decentralization) as well as new MetaMask Snap enhancements.
 
 ### Frens of Push
 
@@ -33,16 +33,16 @@ Push added several new and exciting partners to its ecosystem in January.
 January was one of our most publicized months to date!
 
 1. In response to our announcement of community based messaging now live on Unstoppable Domains, we received over 70+ pieces of organic coverage including: [Cryptonews](https://cryptonews.com/news/unstoppable-and-push-protocol-launch-token-gated-chat-more-crypto-news.htm), [ERC-4337 team](https://erc4337.mirror.xyz/ghX6mENwSgsNqLz7Gqlt940akHzYWZH4LRaRAgx77VI), [CoinTelegraph](https://cointelegraph.com/news/unstoppable-domains-launches-badge-gated-group-chat-feature-username-holders), [CoinDesk](https://www.coindesk.com/tech/2024/01/11/protocol-latest-tech-news-crypto-blockchain/) and many more…
-2. We hosted an exciting Twitter Space along team members, from SOCLLY, Talent Protocol, and Mirror to discuss [decentralized social media](https://twitter.com/pushprotocol/status/1745080872737313067)
-3. We also hosted a Twitter Space on [ambassador programs in web3](https://twitter.com/pushprotocol/status/1750199280667705389)sharing how your project can leverage them too
+2. We hosted an exciting Twitter Space along team members, from SOCLLY, Talent Protocol, and Mirror to discuss [decentralized social media](https://x.com/PushChain/status/1745080872737313067)
+3. We also hosted a Twitter Space on [ambassador programs in web3](https://x.com/PushChain/status/1750199280667705389)sharing how your project can leverage them too
 
 ### Community and Governance
 
-We’re going to be expanding our [Push India Ambassador program](https://twitter.com/pushprotocol/status/1742942832782983452) after receiving such great feedback and results from our initial launch in India. Applications are still open!
+We’re going to be expanding our [Push India Ambassador program](https://x.com/PushChain/status/1742942832782983452) after receiving such great feedback and results from our initial launch in India. Applications are still open!
 
-We featured two exciting devs this last month in our Dev Spotlight series – [Avril Gupta](https://twitter.com/pushprotocol/status/1747983834405093833) and [Satyam](https://twitter.com/pushprotocol/status/1754503913322000662) from the Push team.
+We featured two exciting devs this last month in our Dev Spotlight series – [Avril Gupta](https://x.com/PushChain/status/1747983834405093833) and [Satyam](https://x.com/PushChain/status/1754503913322000662) from the Push team.
 
-All new [Push Missions are also available](https://twitter.com/pushprotocol/status/1752333849642652113) for you to complete! Earn rewards for contributing to web3’s leading communication layer.
+All new [Push Missions are also available](https://x.com/PushChain/status/1752333849642652113) for you to complete! Earn rewards for contributing to web3’s leading communication layer.
 
 ### BRB India
 

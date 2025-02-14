@@ -49,4 +49,4 @@ Thanks for making it this far.
 If you’re interested in exploring how Push Notifications or Push Chat can boost user engagement and benefit your project, check out:
 
 - [Our Discord](https://discord.gg/pushprotocol) — we’ve got devs ready to give your project whatever support and consultation you need.
-- [Push developer docs](/docs/) to get started on building right away!
+- [Push developer docs](https://comms.push.org/docs/) to get started on building right away!

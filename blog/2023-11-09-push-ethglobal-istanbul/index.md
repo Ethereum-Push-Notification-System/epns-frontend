@@ -72,15 +72,15 @@ Your task? Integrate the Push Chat conditional gating feature in your dApp, util
 - Game theories by combining multiple conditions
 - Ensure smooth UX/UI and seamless user verification based on the set rules
 
-For more information regarding Conditional Gating and Rules for Group Chats, checkout our documentation here 👉https://push.org/docs/chat/build/conditional-rules-for-group/
+For more information regarding Conditional Gating and Rules for Group Chats, checkout our documentation here 👉https://comms.push.org/docs/chat/build/conditional-rules-for-group/
 
 #### 4. 🏆 Cappadocia Hot Air Balloon ⸺ $5,000
 
 This is a Pool Bounty prize which will be given to top 10 implementations, priority will be given to those who integrate the following Push Notification/Chat features:
 
-- [Channel settings](https://push.org/docs/notifications/build/create-channel-settings/)
-- [Conditional gating](https://push.org/docs/chat/build/conditional-rules-for-group/)
-- [Stream notifications](https://push.org/docs/notifications/build/stream-notifications/)
+- [Channel settings](https://comms.push.org/docs/notifications/build/create-channel-settings/)
+- [Conditional gating](https://comms.push.org/docs/chat/build/conditional-rules-for-group/)
+- [Stream notifications](https://comms.push.org/docs/notifications/build/stream-notifications/)
 
 ### Everything You Need – Covered in the Push Workshop 🛠️
 

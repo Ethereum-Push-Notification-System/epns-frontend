@@ -1,23 +1,15 @@
+/* eslint-disable @docusaurus/no-html-links */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 // External Components
 import React, { useState } from 'react';
-import styles from './styles.module.css';
 import styled from 'styled-components';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
 // Internal Components
-import {
-  Button,
-  Content,
-  H2,
-  H3,
-  LinkTo,
-  Image,
-  ItemH,
-  ItemV,
-  Section,
-  Span,
-} from '@site/src/css/SharedStyling';
+import { H2, H3 } from '@site/src/css/SharedStyling';
 import useMediaQuery from '@site/src/hooks/useMediaQuery';
+import { useSiteBaseUrl } from '../../utils/useSiteBaseUrl';
 
 // Internal Configs
 import { device } from '@site/src/config/globals';
@@ -35,6 +27,8 @@ interface AccordionProps {
   fontFamily?: string;
   firstOpen?: boolean;
   textColor?: string;
+  fontWeight?: string;
+  fontSize?: string;
 }
 
 const Accordion: React.FC<AccordionProps> = ({
@@ -42,16 +36,19 @@ const Accordion: React.FC<AccordionProps> = ({
   fontFamily,
   firstOpen,
   textColor,
+  fontWeight,
+  fontSize,
 }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(
     firstOpen === false ? null : 0
   );
   const isMobile = useMediaQuery(device.mobileL);
-  const isTablet = useMediaQuery(device.tablet);
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  const baseUrl = useSiteBaseUrl() || '';
 
   return (
     <div>
@@ -59,19 +56,19 @@ const Accordion: React.FC<AccordionProps> = ({
         <AccordionSection key={index}>
           <AccordionParent onClick={() => toggleAccordion(index)}>
             <H2
-              color='#FFF'
-              fontSize={isMobile ? '20px' : '22px'}
+              color={textColor || '#FFF'}
+              fontSize={fontSize ? fontSize : isMobile ? '20px' : '22px'}
               fontFamily={fontFamily}
-              fontWeight='400'
+              fontWeight={fontWeight || '400'}
               lineHeight='140%'
             >
               {item.title || item.question}
             </H2>
             <div>
               {activeIndex === index ? (
-                <AiOutlineMinus color='#FFF' size={22} />
+                <AiOutlineMinus color={textColor || '#FFF'} size={22} />
               ) : (
-                <AiOutlinePlus color='#FFF' size={22} />
+                <AiOutlinePlus color={textColor || '#FFF'} size={22} />
               )}
             </div>
           </AccordionParent>
@@ -108,7 +105,7 @@ const Accordion: React.FC<AccordionProps> = ({
 
           {activeIndex === index &&
             item.renderAnswer !== undefined &&
-            item.renderAnswer()}
+            item.renderAnswer(baseUrl)}
         </AccordionSection>
       ))}
     </div>

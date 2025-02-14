@@ -40,7 +40,7 @@ Push は、オープンなコミュニケーションのミドルウェアであ
 
 さらに、チャンネルのオーナーは、通知送信権限を他の任意のウォレットアドレスに委任することもできます。これにより、選択されたウォレットアドレスがチャンネルを代表して通知を送信できます。ただし、チャンネルのオーナーはいつでも委任を取り消すことができます。
 
-👉 https://push.org/docs/
+👉 https://comms.push.org/docs/
 
 ### Push Chat
 
@@ -55,7 +55,7 @@ Push Chat SDKの統合は非常に簡単で、以下の機能に分かれます�
 - 特定のチャットの個々のメッセージの取得
 - チャットへの返信
 
-👉 https://push.org/docs/chat/ui-components/integrate-push-chat/
+👉 https://comms.push.org/docs/chat/ui-components/integrate-push-chat/
 
 ### Push Group Chat
 
@@ -71,7 +71,7 @@ Group Chatには、以下のようなユーザーエクスペリエンスを向�
 - アドミンコントロール：グループチャットの作成者は、ユーザーを管理者に昇格させたり、グループ情報の変更、チャットからウォレットを追加または削除することができます。
 - ファイル共有：ユーザーはGIF、画像を共有したり、ファイルをアップロードしてグループチャットのメンバーと共有することができます。
 
-👉 [Integrating Push Chat](/docs/chat/ 'Docs explaining how to integrate Push Chat')
+👉 [Integrating Push Chat](https://comms.push.org/docs/chat/ 'Docs explaining how to integrate Push Chat')
 
 ## ユースケース
 
@@ -125,7 +125,7 @@ Pushが<b>Polygon</b>でローンチされているため、Polygon Mumbaiテス
 
 ### 🦍 NFTローン清算bot
 
-Push [Showrunner Scaffold](/docs/notifications/showrunners-scaffold/) とPush [SNS webhook](/docs/notifications/tutorials/integrate-notifications-via-aws-sns/) およびNFT APIを使用して、NFTローンの清算が発生する前にメール、Twitter、Telegramでアラートを送信するボットを作成することができます。ユースケースとして[BAYCローン清算](https://cointelegraph.com/news/nearly-55m-worth-of-bored-ape-cryptopunks-nfts-risk-liquidation-amid-debt-crisis)をご参照ください。
+Push [Showrunner Scaffold](https://comms.push.org/docs/notifications/showrunners-scaffold/) とPush [SNS webhook](https://comms.push.org/docs/notifications/tutorials/integrate-notifications-via-aws-sns/) およびNFT APIを使用して、NFTローンの清算が発生する前にメール、Twitter、Telegramでアラートを送信するボットを作成することができます。ユースケースとして[BAYCローン清算](https://cointelegraph.com/news/nearly-55m-worth-of-bored-ape-cryptopunks-nfts-risk-liquidation-amid-debt-crisis)をご参照ください。
 
 ### 🌱 Grants
 
@@ -163,4 +163,4 @@ IPFSに何かをアップロードしたとき、またはバリデーターが�
 
 Push ChatとPush Notificationsの仕組みに興味がある場合は、是非[discordチャンネル](https://discord.com/invite/pushprotocol)に参加し、あなたが何をビルドしているのかを教えてください。Pushチームは、あなたがそれを実現するために必要なすべての開発者リソースを提供できます。
 
-すぐにビルドを開始するには、<a href="https://push.org/docs/"><b>こちら</b></a>のPush開発者ドキュメントにアクセスしてください。
+すぐにビルドを開始するには、<a href="https://comms.push.org/docs/"><b>こちら</b></a>のPush開発者ドキュメントにアクセスしてください。

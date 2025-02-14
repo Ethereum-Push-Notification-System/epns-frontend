@@ -135,4 +135,4 @@ As you get cracking on BUIDLing with us we thought we’ll sign off with some me
 
 All the best! 👍🤞👍🍀
 
-[**Website**](http://epns.io/) **|** [**dApp (live tutorial)**](https://github.com/push-protocol/embed-demo-app)**|** [**RoadMap 2022**](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a) **|** [**Twitter**](http://x.com/pushprotocol) **|** [**Telegram**](https://t.me/epnsproject) **|** [**Discord**](https://discord.com/invite/YVPB99F9W5)
+[**Website**](http://epns.io/) **|** [**dApp (live tutorial)**](https://github.com/push-protocol/embed-demo-app)**|** [**RoadMap 2022**](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a) **|** [**Twitter**](http://x.com/PushChain) **|** [**Telegram**](https://t.me/epnsproject) **|** [**Discord**](https://discord.com/invite/YVPB99F9W5)

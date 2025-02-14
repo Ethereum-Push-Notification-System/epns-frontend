@@ -45,11 +45,11 @@ Every month we have the pleasure to collaborate with more and more important tea
 
 - [<b>H2O:</b>](https://twitter.com/epnsproject/status/1533737279562297350?s=20&t=j8CeYXy-_t5LXS8C2Ruaow) to receive notifications whenever their loans approach liquidation. This allows users to take appropriate action o
 
-- [<b>H2O:</b>](https://twitter.com/pushprotocol/status/1533832757138206720?s=20&t=j8CeYXy-_t5LXS8C2Ruaow) went live, and now users can opt-in to receive notifications regarding all governance proposals.
+- [<b>H2O:</b>](https://x.com/PushChain/status/1533832757138206720?s=20&t=j8CeYXy-_t5LXS8C2Ruaow) went live, and now users can opt-in to receive notifications regarding all governance proposals.
 
-- [<b>Digible:</b>](https://twitter.com/pushprotocol/status/1534947343724081152?s=20&t=j8CeYXy-_t5LXS8C2Ruaow) : the Digible channel went Live! Allowing users to receive timely notifications about their NFTs in the Digible marketplace.
+- [<b>Digible:</b>](https://x.com/PushChain/status/1534947343724081152?s=20&t=j8CeYXy-_t5LXS8C2Ruaow) : the Digible channel went Live! Allowing users to receive timely notifications about their NFTs in the Digible marketplace.
 
-- [<b>Stox:</b>](https://twitter.com/pushprotocol/status/1536757201435471872?s=20&t=w1JGdsczeh4RJWdxXG4Btw) to notify Stox users about their NFT sales directly into the Stox app!
+- [<b>Stox:</b>](https://x.com/PushChain/status/1536757201435471872?s=20&t=w1JGdsczeh4RJWdxXG4Btw) to notify Stox users about their NFT sales directly into the Stox app!
 
 - [<b>Pine Protocol:</b>](https://twitter.com/epnsproject/status/1542553551901278211?s=20&t=im07nJLlpEmhWljYo73dHA) for users to opt-in to receive notifications about their loans approaching liquidation and about to expire.
 

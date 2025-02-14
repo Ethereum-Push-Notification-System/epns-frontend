@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
@@ -6,11 +6,9 @@
 import React, { useRef } from 'react';
 
 // External Components
-// import Marquee, { MarqueeDirection } from 'react-marquee-slider';
-import styled from 'styled-components';
 import useMediaQuery from '@site/src/hooks/useMediaQuery';
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Splide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
@@ -21,6 +19,8 @@ type Props = {
   gradientWidth?: number;
   children?: React.ReactNode;
   pause?: boolean;
+  width?: string;
+  height?: string;
 };
 
 function NewMarqueeAnimation(props: Props) {
@@ -33,24 +33,38 @@ function NewMarqueeAnimation(props: Props) {
     fixedWidth,
     pause = false,
     bg,
+    width,
+    height,
   } = props;
 
   const isMobile = useMediaQuery('(max-width: 480px)');
   const isTablet = useMediaQuery('(max-width: 1130px)');
   const splideRef = useRef(null);
-  const scrollRef = useRef(null);
 
   return (
-    <div style={{ maxHeight: '85px', background: bg }}>
+    <div
+      style={{
+        maxHeight: height || '85px',
+        minHeight: height || '85px',
+        background: bg,
+        margin: 'auto 0',
+      }}
+    >
       <Splide
         ref={splideRef}
         options={{
-          width: isMobile ? '90vw' : isTablet ? '95vw' : '1213px',
+          width: width
+            ? width
+            : isMobile
+              ? '90vw'
+              : isTablet
+                ? '95vw'
+                : '1213px',
           type: 'loop',
           direction: direction,
           arrows: false,
           pagination: false,
-          drag: 'free',
+          drag: false,
           gap: gap,
           fixedWidth: fixedWidth ? fixedWidth : 'auto',
           autoScroll: {

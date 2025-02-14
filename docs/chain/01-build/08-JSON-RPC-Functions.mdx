@@ -1,0 +1,470 @@
+---
+id: docs-json-rpc-functions
+title: JSON-RPC Functions
+hide_title: true
+slug: ./json-rpc-functions
+displayed_sidebar: pushChainSidebar
+sidebar_position: 8
+image: "/assets/docs/previews/docs_notifications_develop_fetch_chats--create_channel.png"
+---
+
+# JSON-RPC Functions
+
+This section covers the JSON-RPC functions that allow you to interact with the Push Chain network. These functions provide a standardized interface for sending requests and receiving responses from the network.
+
+<head>
+  <title>{`JSON-RPC Functions | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+import {
+  ModalContainer,
+  ModalSmall,
+  ModalWrapper,
+  AFocus,
+} from '@site/src/css/SharedStyling';
+
+## Validator Node
+
+### `push_sendTransaction`
+
+Sends a transaction to the blockchain. `apiToken` is required for this, you need to obtain it in a special call. 
+
+```typescript
+// Request
+// 1. string, TRANSACTION data in base16
+"params": ["1208494e49545f4449441a336569703135353a313a30786633394664366535316161643838463646346365366142383832373237396366664662393232363622336569703135353a313a30783730393937393730433531383132646333413031304337643031623530653064313764633739433822336569703135353a313a3078334334344364446442366139303066613262353835646432393965303364313246413432393342432a320a043078424210011a043078434322220a0430784141121a0a130a03717765120371617a2207707573683a76351203112233321071d60eecc00f4cc8ac898784a7eeb98f3a9f0f56543165794a756232526c6379493657337369626d396b5a556c6b496a6f694d48686d524546465957593359575a44526d4a694e4755305a44453252454d324e6d4a454d6a417a4f575a6b4e6a41774e454e47593255344969776964484e4e6157787361584d694f6a45334d6a67324e7a45794f4441774d6a4d73496e4a68626d52766255686c65434936496d466a4d32597a4e6a67355a4749794d446c6c596a686d4e4456695a57457a4e4455354d6a526b4e325a6c59545a6a4d546c684e6d4d694c434a776157356e556d567a645778306379493657337369626d396b5a556c6b496a6f694d4867345a5445795a4555784d6b4d7a4e575642516d597a4e5749314e6d49774e4555314d304d30525451324f4755304e6a63794e3055344969776964484e4e6157787361584d694f6a45334d6a67324e7a45794e5441774d6a4573496e4e3059585231637949364d58307365794a756232526c535751694f69497765446b34526a6c454f5445775157566d4f55497a516a6c424e4455784d7a64685a6a4644515463324e7a566c52446b775954557a4e5455694c434a306330317062477870637949364d5463794f4459334d5449314d4441794d537769633352686448567a496a6f7866563073496e4e705a323568644856795a534936496a42344d5441305a6d49774e54457a4e544a6959546378596a4d345a6a6b354d325a684e445a69593255324e474d325a444d79597a42685a44526c5a5759785a5467784f44566a5a6a56694d44526d596d566a4f474d345954526d4d44686d597a67334d7a426a5a4749344e4463794d6d5a6b595449784d4455334d7a526b4f5755354d474e6a4d7a6c6d5a4745305a6a566b4d5459785a6a6c6a4f5746694e4745794d7a49784d32526c5a47457859794a394c487369626d396b5a556c6b496a6f694d4867354f45593552446b784d45466c5a6a6c434d304935515451314d544d3359575978513045334e6a63315a5551354d4745314d7a55314969776964484e4e6157787361584d694f6a45334d6a67324e7a45794f4441774d6a4173496e4a68626d52766255686c65434936496a6b354e544179596d4d344d5751794e5745324e6a646c4f446c6d59545a6b4e6d59335a44426a5a6d55784e7a646d4f446b795a6a4d694c434a776157356e556d567a645778306379493657337369626d396b5a556c6b496a6f694d4867345a5445795a4555784d6b4d7a4e575642516d597a4e5749314e6d49774e4555314d304d30525451324f4755304e6a63794e3055344969776964484e4e6157787361584d694f6a45334d6a67324e7a45794e5441774d6a4973496e4e3059585231637949364d58307365794a756232526c535751694f69497765475a45515556685a6a64685a6b4e47596d49305a54526b4d545a45517a5932596b51794d444d355a6d51324d44413051305a6a5a5467694c434a306330317062477870637949364d5463794f4459334d5449314d4441794d537769633352686448567a496a6f7866563073496e4e705a323568644856795a534936496a42344d6d52694e6a59344d5449354e4759304e4756684d7a566d595755785a4752684f4468684d5449795a6a6b314e54426c4e6a67344d7a49775a4759314d7a55314d444a6d4e6a51314e325532596d59794e6d4577597a497a4f47566a4e446c6b4e5446684e474d334d546c6d4f446868597a457a4d57466d4f4749795a5463784f5464684f5759344d47517a4d4441795954686b4f545134597a4d35595455344e44677a4e545977597a517859694a394c487369626d396b5a556c6b496a6f694d4867345a5445795a4555784d6b4d7a4e575642516d597a4e5749314e6d49774e4555314d304d30525451324f4755304e6a63794e3055344969776964484e4e6157787361584d694f6a45334d6a67324e7a45794f4441774d6a5173496e4a68626d52766255686c65434936496a597a59574978595755345a446b304d444e6b593249314e7a4d344e475a694e7a45304e445179596d49794d6d49304e6a59784e3255694c434a776157356e556d567a645778306379493657337369626d396b5a556c6b496a6f694d48686d524546465957593359575a44526d4a694e4755305a44453252454d324e6d4a454d6a417a4f575a6b4e6a41774e454e47593255344969776964484e4e6157787361584d694f6a45334d6a67324e7a45794e5441774d6a4973496e4e3059585231637949364d58307365794a756232526c535751694f69497765446b34526a6c454f5445775157566d4f55497a516a6c424e4455784d7a64685a6a4644515463324e7a566c52446b775954557a4e5455694c434a306330317062477870637949364d5463794f4459334d5449314d4441794d697769633352686448567a496a6f7866563073496e4e705a323568644856795a534936496a42344d3251335a4441784d7a64694e4745304d574e6c4e44637a5a546c6a5a6a426b4e446b7a5a5745344f544d30595746685a574978595468695a47466c4e7a466c4d5759794e544d314d4459785a4463324d6a41784d5449794d4459355a54597a4f4755335a54426b4d6d4e69593255314d6d46694e324933597a5a6c4d546b77597a4a6c4e57457a4d3255315954566b5a6a67305a544a6d593256695a6a6c6c5a4467774f446c6b4d6a677859794a395858303d42419d15e53d0e2c03f840553f65a6a09a44912213ff3145b4f5140e8ca8b6f643b7674379a22d64b2ced6b9acfa775fd1195c34b3d072e47a73077c9913a07809a51c4a0130"]
+
+// Result
+// returns transaction hash 
+"result": "98752902f140943aace03d297064c211f5e8576d2fc8cff559fa314b8233ce0b"
+```
+
+### `push_getTransactions`
+
+Search a transaction for a specific user,
+
+```typescript
+// Request
+"params":["eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC","INIT_DID","1728904873.000", "DESC"],
+// Result
+"result": {
+  "items": [
+    {
+      "type": 0,
+      "category": "INIT_DID",
+      "sender": "eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "recipients": [
+        "eip155:1:0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+      ],
+      "data": "CgQweEJCEAEaBDB4Q0MiIgoEMHhBQRIaChMKA3F3ZRIDcWF6IgdwdXNoOnY1EgMRIjM=",
+      "ts": "1728904875.011000",
+      "salt": "cdYO7MAPTMisiYeEp+65jw=="
+    }
+  ],
+  "result": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "1728904875.011000"
+  }
+}
+```
+
+### `push_getApiToken`
+
+Fetches a randomized token from a validator, which points to a specific node that can accept sendTransaction query
+
+```typescript
+// Request
+"params": []
+// Result
+"result": {
+    "apiToken": "VT1eyJub2RlcyI6W3sibm9kZUlkIjoiMHhmREFFYWY3YWZDRmJiNGU0ZDE2REM2NmJEMjAzOWZkNjAwNENGY2U4IiwidHNNaWxsaXMiOjE3MjkyMzQ4MDAwMzMsInJhbmRvbUhleCI6IjhhODQzODhhZDY3YmZmZmMyOGJkMDE3NWQ3Yzg4YmVjODA3ZWM3NmMiLCJwaW5nUmVzdWx0cyI6W3sibm9kZUlkIjoiMHg4ZTEyZEUxMkMzNWVBQmYzNWI1NmIwNEU1M0M0RTQ2OGU0NjcyN0U4IiwidHNNaWxsaXMiOjE3MjkyMzQ3NzAwNzUsInN0YXR1cyI6MX0seyJub2RlSWQiOiIweDk4RjlEOTEwQWVmOUIzQjlBNDUxMzdhZjFDQTc2NzVlRDkwYTUzNTUiLCJ0c01pbGxpcyI6MTcyOTIzNDc3MDAzNCwic3RhdHVzIjoxfV0sInNpZ25hdHVyZSI6IjB4ZTE0NzVhMWYwMDRlZjA3MzIxMTMzY2VkNmM0ZDMzMDc4OTkyZjMzODlmMmNlZDk1NTQzMTc2YzI5OWVhMzA2YzE1YjE1ODdmMTgwY2NjY2RlNjQ4NGQ3MzNjMTYxMjYyNGNlNmI4Mzk4OWMwNWE4MzVkZDhmZjFmNTY1YmY0YzAxYiJ9LHsibm9kZUlkIjoiMHg5OEY5RDkxMEFlZjlCM0I5QTQ1MTM3YWYxQ0E3Njc1ZUQ5MGE1MzU1IiwidHNNaWxsaXMiOjE3MjkyMzQ4MDAwNDAsInJhbmRvbUhleCI6IjVmYWIwOTU2OTZjMzgxODZlOGFmZDg5NDQ0ODZmYzlkMDJmYThmODYiLCJwaW5nUmVzdWx0cyI6W3sibm9kZUlkIjoiMHg4ZTEyZEUxMkMzNWVBQmYzNWI1NmIwNEU1M0M0RTQ2OGU0NjcyN0U4IiwidHNNaWxsaXMiOjE3MjkyMzQ4MDAwMzYsInN0YXR1cyI6MX0seyJub2RlSWQiOiIweGZEQUVhZjdhZkNGYmI0ZTRkMTZEQzY2YkQyMDM5ZmQ2MDA0Q0ZjZTgiLCJ0c01pbGxpcyI6MTcyOTIzNDgwMDAzNywic3RhdHVzIjoxfV0sInNpZ25hdHVyZSI6IjB4OGQxNjA0MGNiMTc1Zjc2ZjI0Mzg4NTg2MWYyZGFkZjA0Nzk0YzZhNGI4OTQ1ZDc1NTYwMTgwYjExNTlhNjYxNDQ1OThmYmE2M2Q1NmIxYjZlMTcxYWQ4NmI4N2ZkOTdhZTNkMGZjYWIwMTIzZjE3ZTc0YjlmMjcyNWIzY2I3MDMxYiJ9LHsibm9kZUlkIjoiMHg4ZTEyZEUxMkMzNWVBQmYzNWI1NmIwNEU1M0M0RTQ2OGU0NjcyN0U4IiwidHNNaWxsaXMiOjE3MjkyMzQ4MDAwNDEsInJhbmRvbUhleCI6ImI2NDg1YzFlODg0MGQ4ZmQ4YWVkNzQ1OTMzYWJmYmNjYTc1YThjNzAiLCJwaW5nUmVzdWx0cyI6W3sibm9kZUlkIjoiMHhmREFFYWY3YWZDRmJiNGU0ZDE2REM2NmJEMjAzOWZkNjAwNENGY2U4IiwidHNNaWxsaXMiOjE3MjkyMzQ3NzAwNzEsInN0YXR1cyI6MX0seyJub2RlSWQiOiIweDk4RjlEOTEwQWVmOUIzQjlBNDUxMzdhZjFDQTc2NzVlRDkwYTUzNTUiLCJ0c01pbGxpcyI6MTcyOTIzNDc3MDEwNiwic3RhdHVzIjoxfV0sInNpZ25hdHVyZSI6IjB4YjY0YTI0YTJlMDc5M2E0NmRhYWJlZTI3NjliZDU5ZjAyMDdkZGQ1MDQxMjJkNTUxNTZkN2I3OTU0MWI1ZTYzMjcwNjM5ZmNkN2EzNjAwZmVmZjdjYzNhY2NkZDRiMjg2ZGNjNzBkODQyYzliNGJiNTcyNmJkMTBkZTA4MmZkNGYxYyJ9XX0=",
+    "apiUrl": "http://localhost:4003"
+}
+```
+
+### `push_getTransactionCount`
+
+Returns the number of transactions sent from an address.
+
+```typescript
+// Request
+// DATA, 20 Bytes - address.
+"params": ["eip155:1:0x0a6579a62f7d91eeb9c4525d03d3b1749c0d1645"]
+// Result
+// Num of transacitons from this address
+"result": "1000"
+```
+
+### `push_protocolVersion`
+
+Returns the current protocol version (software version, payload formats, etc)
+
+```typescript
+// Request
+"params": []
+// Result
+"result": "0x01" 
+```
+
+### `push_networkId`
+
+Returns the current network ID (testnet, devnet, mainnet)
+
+```typescript
+// Request
+"params": []
+// Result
+"result": "0x01" 
+```
+
+### `push_listening`
+
+Returns true if the client is actively listening for network connections.
+
+```typescript
+// Request
+"params": []
+// Result
+"result": true
+```
+
+### `push_syncing`
+
+Returns an object with data about the sync status or false.
+
+```typescript
+// Request
+"params": []
+// Result
+"result": {
+    lastPublishedOffset: 1001
+} 
+```
+
+### `push_accountInfo`
+
+Returns account information.
+
+```typescript
+
+// Request
+// DID, string - account id.
+"params":["eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"]
+
+// Result
+"result": {
+  "items": [
+    {
+      "masterpublickey": "020729246afe83defdf0e6a0d2947b149eff9abbe1e53c3cb0c23ad7bdd8368b6c",
+      "did": "PUSH_DID:242771746d7ac4c03a6d6fdf745db7ad3df1b5372b249e4fd597fcbc4429a39f",
+      "derivedpublickey": "02c675bdd5ed25b6950b5fd9bcd1af690c632359c4f9eab77a28d8b87c9515610a",
+      "derivedkeyindex": "2147483648",
+      "attachedaccounts": [
+        {
+          "address": "push:devnet:push18a93dp4rvz0wag7exwa8yzswrtt3lqyu63vpc5",
+          "derivedkeyindex": 2147483648
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "0"
+  }
+}
+```
+
+## Storage Node
+
+### `storage_getTransactions`
+
+Returns transactions for a specific category, ordered by time 
+
+```typescript
+"params": [ "eip155:1:0xAA", "NOTIF", "1722512552.001000", "DESC"] 
+
+"result": {
+  "items": [
+    {
+      "type": 0,
+      "category": "INIT_DID",
+      "sender": "eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "recipients": [
+        "eip155:1:0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+      ],
+      "data": "CgQweEJCEAEaBDB4Q0MiIgoEMHhBQRIaChMKA3F3ZRIDcWF6IgdwdXNoOnY1EgMRIjM=",
+      "ts": "1728904875.011000",
+      "salt": "cdYO7MAPTMisiYeEp+65jw=="
+    }
+  ],
+  "result": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "1728904875.011000"
+  }
+}
+```
+
+### `storage_getTransaction`
+
+Fetches one single transaction by key
+
+```typescript
+"params": [ "eip155:1:0xAA", "NOTIF", "0x1234"] 
+
+// Result
+"result": {
+  "items": [
+    {
+      "type": 0,
+      "category": "INIT_DID",
+      "sender": "eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "recipients": [
+        "eip155:1:0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+      ],
+      "data": "CgQweEJCEAEaBDB4Q0MiIgoEMHhBQRIaChMKA3F3ZRIDcWF6IgdwdXNoOnY1EgMRIjM=",
+      "ts": "1728904875.011000",
+      "salt": "cdYO7MAPTMisiYeEp+65jw=="
+    }
+  ],
+  "result": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "1728904875.011000"
+  }
+}
+```
+
+### `push_getBlockTransactionCountByHash`
+
+Returns number of transactions per block
+
+```typescript
+// Request
+// 1. DATA, 32 Bytes - hash of a block.
+"params": ["0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"]
+// Result
+"result": "25"
+```
+
+### `push_getBlockByHash`
+
+Retrieves block data, paginated by time, from latest to earliest
+
+```typescript
+// Request
+// 1. latest block timestamp - maximum timestamp for the block
+"params": [
+    "1722512552.001000"
+  ]
+
+// Result
+// attested block
+"result": {	
+	[
+	  {
+	  "transactions": [
+		{
+			$TX_FIELDS
+		},
+		...
+	],
+	"blockSignatures" : { V1sig, V2sig, V3sig }
+	},
+	....
+	],
+	lastTs: "1722512552.001000"
+}
+```
+
+### `push_getTransactionByHash`
+
+Returns the information about a transaction requested by transaction hash.
+
+```typescript
+/* 
+Request
+1. DATA, 32 Bytes - hash of a transaction.
+*/
+"params": ["0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"]
+
+/* 
+Result
+Object - A transaction object, or null when no transaction was found:
+*/
+"result": {
+  "items": [
+    {
+      "type": 0,
+      "category": "INIT_DID",
+      "sender": "eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "recipients": [
+        "eip155:1:0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+      ],
+      "data": "CgQweEJCEAEaBDB4Q0MiIgoEMHhBQRIaChMKA3F3ZRIDcWF6IgdwdXNoOnY1EgMRIjM=",
+      "ts": "1728904875.011000",
+      "salt": "cdYO7MAPTMisiYeEp+65jw=="
+    }
+  ],
+  "result": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "1728904875.011000"
+  }
+}
+```
+
+## Archival Node
+
+### `push_getBlocksByTime`
+
+Returns information about a block by hash.
+
+```typescript
+/* request
+1 string, timestamp to start from
+default: NOW()
+2 string, ASC|DESC - direction of pagination from the timestamp
+default: DESC
+3 boolean, show transaction details if true
+default: false
+*/
+"params": ["1722512552.001000",  "DESC",   false]
+  
+// response
+"result": {
+  "blocks": [
+    {
+      // block 1
+      // TODO define block format in json-friendly protobuf
+      },
+      {
+        $BLOCK_FIELDS
+      }
+    ]
+  ],
+  "lastTs": "1722512559.001000"
+}
+```
+
+### `push_getTransactions`
+
+Returns information about a block by hash.
+
+```typescript
+
+/* request
+1 string, category - optional
+2 string, sortKey
+depends on the tx type
+for NOTIF it is a UNIXTIMESTAMP.MICROSECONDS
+3 string, ASC|DESC - direction of pagination from the timestamp
+default: DESC
+4 boolean, show transaction details if true
+default: false
+
+NOTE: the reply page size is determined by the network (vnodes/snodes)
+the client cannot control it
+
+*/
+"params": ["EMAIL", "1722512552.001000",  "DESC",   true ]
+ 
+// response
+"result": {
+  "blocks": [
+    {
+      // block 1
+      "ts": "1722512552.001000",
+      "transactions": [
+        {
+          $TX_FIELDS
+        },
+        {
+          $TX_FIELDS
+        }
+      },
+      {
+        // block N..
+      }
+    ]
+  ],
+  "lastTs": "1722512559.001000"
+}
+```
+
+### `push_getTransactionByHash`
+
+Returns the information about a transaction requested by transaction hash.
+
+```typescript
+ /* 
+Request
+1. DATA, 32 Bytes - hash of a transaction.
+*/
+"params": ["0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"]
+
+/* 
+Result
+Object - A transaction object, or null when no transaction was found:
+*/
+"result": {
+  "items": [
+    {
+      "type": 0,
+      "category": "INIT_DID",
+      "sender": "eip155:1:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "recipients": [
+        "eip155:1:0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "eip155:1:0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+      ],
+      "data": "CgQweEJCEAEaBDB4Q0MiIgoEMHhBQRIaChMKA3F3ZRIDcWF6IgdwdXNoOnY1EgMRIjM=",
+      "ts": "1728904875.011000",
+      "salt": "cdYO7MAPTMisiYeEp+65jw=="
+    }
+  ],
+  "result": {
+    "itemCount": 1,
+    "keysWithoutQuorumCount": 0,
+    "keysWithoutQuorum": [],
+    "quorumResult": "QUORUM_OK",
+    "lastTs": "1728904875.011000"
+  }
+}
+```
+
+### `push_putBlock`
+
+Sends block data
+
+```typescript
+ // blocks in base16 + sig
+ "params": { "blocks" : ["0xFFFFFFFFFFFFFFFFFFFF", "0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"] , "signature" : "0xAAAA" }
+
+// Result: 
+// 1 ACCEPTED for blocks that have been correctly parsed and handled
+// 2 REJECTED for any issues (shows some useful error)
+// V node won't retry sending in any case
+[
+  { "status": "ACCEPTED" },
+  { "status": "REJECTED", "reason": "invalid_block_format" }
+]
+```

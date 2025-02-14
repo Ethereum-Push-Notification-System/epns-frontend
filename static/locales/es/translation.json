@@ -224,7 +224,7 @@
         "imagetitle": "Integrate Push Protocol in less than 4 minutes and 2 lines of code",
         "titletext": "<4 minutos",
         "buttontext": "Comenzar a construir",
-        "buttonlink": "/docs/notifications/quickstart",
+        "buttonlink": "https://comms.push.org/docs/notifications/quickstart",
         "buttontitle": "Documentation for instant integration of notifications via Push Protocol in your dapp."
       },
       "box5": {
@@ -273,7 +273,7 @@
         "imagetitle": "Integra Push Chat en 2 minutos y con 2 líneas de código",
         "titletext": "<2 minutos",
         "buttontext": "Comenzar a construir",
-        "buttonlink": "/docs/chat/quickstart",
+        "buttonlink": "https://comms.push.org/docs/chat/quickstart",
         "buttontitle": "Explora la documentación para la integración instantánea del chat mediante el Protocolo Push en tu dapp"
       },
       "box5": {

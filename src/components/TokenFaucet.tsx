@@ -99,7 +99,7 @@ export const TokenFaucet = ({
             background={isFollowed ? '#FFF' : '#25AAF5'}
             border='1px solid #25AAF5'
             padding='6.5px 8.5px'
-            onClick={() => openLink('https://twitter.com/pushprotocol')}
+            onClick={() => openLink('https://x.com/PushChain')}
           >
             {!isPosted && <X />}
             {isPosted && <XCompleted />}
@@ -108,7 +108,8 @@ export const TokenFaucet = ({
               fontWeight='400'
               color={isFollowed ? '#25AAF5' : '#FFF'}
             >
-              {isFollowed ? 'Following' : 'Follow @pushprotocol'}
+              PushChain
+              {isFollowed ? 'Following' : 'Follow @PushChain'}
             </Span>
             {isFollowed && (
               <Icon src={XRight} height='18px' width='18px' alt='x' />

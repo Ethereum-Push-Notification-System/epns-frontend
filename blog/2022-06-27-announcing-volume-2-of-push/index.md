@@ -34,6 +34,6 @@ So what are some ideas for you to get Volume 2 drops? Well, in no particular ord
 
 ### Rules for Participation?
 
-The best way is to follow Push Protocol on [Twitter](https://twitter.com/pushprotocol) and join [Discord](https://discord.gg/YVPB99F9W5) to stay up to date when we announce each weekly competition. Every entry that tags [@pushprotocol](https://twitter.com/PushProtocol) and uses #Rockstars will be considered. Being active on Discord and gathering community love will play a role in nominations though winners (as always) will be decided through governance. Top-notch entries (even in earlier weeks) will be eligible in rolling weeks and sometimes the Push team will try to spruce things up sometimes with some cool creative weekly contests so do keep an eye out on our Twitter handle!
+The best way is to follow Push Protocol on [Twitter](https://x.com/PushChain) and join [Discord](https://discord.gg/YVPB99F9W5) to stay up to date when we announce each weekly competition. Every entry that tags [@PushChain](https://x.com/PushChain) and uses #Rockstars will be considered. Being active on Discord and gathering community love will play a role in nominations though winners (as always) will be decided through governance. Top-notch entries (even in earlier weeks) will be eligible in rolling weeks and sometimes the Push team will try to spruce things up sometimes with some cool creative weekly contests so do keep an eye out on our Twitter handle!
 
 Rock on and join the Push community! 🔔🧑‍🤝‍🧑

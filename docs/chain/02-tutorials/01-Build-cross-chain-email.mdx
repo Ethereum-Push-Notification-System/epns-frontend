@@ -1,0 +1,170 @@
+---
+id: docs-chain-tutorial-build-email
+title: Build Cross-Chain Email
+hide_title: true
+slug: ./build-email
+displayed_sidebar: pushChainSidebar
+sidebar_position: 1
+image: "/assets/docs/previews/docs_notifications_tutorial_create_channel--creating_your_channel.png"
+---
+
+# Build a Cross-Chain Email
+
+In this guide, we’ll demonstrate how to send a cross-chain email using the updated **Push Chain SDK**. This example shows how a user on Ethereum can send an email to their friend `ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR` on Solana.
+
+We'll cover:
+1. Setting up the SDK
+2. Configuring sender and recipient addresses
+3. Signing and sending a transaction
+4. Fetching sent and received emails
+
+
+<head>
+  <title>{`Cross-Chain Email | Tutorial | Push Chain | Push Documentation`}</title>
+</head>
+
+## 1. Installing dependencies
+
+To get started, install the required dependencies:
+
+```shell
+npm install @pushchain/devnet viem
+```
+
+**Why These Libraries?**
+
+-	`@pushchain/devnet`: Core SDK for interacting with Push Chain.
+-	`viem`: Utilities for Ethereum key management and signing.
+
+Import installed dependencies:
+
+```typescript
+// Import Push Chain SDK
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+```
+
+## 2. Creating the Signer Object
+
+Let's create now the signer object that is responsible for proving ownership of the sender’s account by signing the transaction.
+
+```typescript
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+```
+
+## 3. Initialize Push Chain
+
+Initialize the Push Chain SDK using the signer object. The default environment is `devnet`:
+
+```typescript
+const pushChain = await PushChain.initialize(signer);
+```
+
+## 4. Recipient Addresses
+
+For this example, we’ll use Ethereum as the sender’s blockchain and Solana as the recipient’s. Here’s how to configure the recipient Solana address:
+
+```typescript
+const recipients = [
+  createUniversalAccount({
+    chain: CONSTANTS.CHAIN.SOLANA,
+    chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+    address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+  }),
+];
+```
+
+## 5. Send Email
+
+Send the serialized data and category (e.g., `MY_EMAIL_APP`) to the recipients:
+
+```typescript
+const tx = await pushChain.tx.send(recipients, {
+  category: 'MY_EMAIL_APP',
+  data: JSON.stringify({
+    title: 'Hello from Ethereum!',
+    message: 'This is a cross-chain email to Solana.',
+  }),
+});
+```
+
+## 6. Fetch Emails
+
+Now, let's fetch all the emails that a particular user has sent and received.
+
+For fetching the emails sent, we use the function `get` function from the `tx` class.
+
+```typescript
+const results = await pushChain.tx.get(tx.txHash);
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('email: ', t.data);
+  }
+}
+```
+
+## Complete Example Code
+
+```typescript
+// Import Push Chain SDK
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+
+const recipients = [
+  createUniversalAccount({
+    chain: CONSTANTS.CHAIN.SOLANA,
+    chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+    address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+  }),
+];
+
+const tx = await pushChain.tx.send(recipients, {
+  category: 'MY_EMAIL_APP',
+  data: JSON.stringify({
+    title: 'Hello from Ethereum!',
+    message: 'This is a cross-chain email to Solana.',
+  }),
+});
+
+// Delay for 3 seconds
+
+const results = await pushChain.tx.get(tx.txHash);
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('email: ', t.data);
+  }
+}
+```
+
+# Conclusion
+
+This tutorial demonstrated how to build a cross-chain email system using the Push Chain SDK, enabling seamless communication between blockchains like Ethereum and Solana. By setting up the SDK, configuring accounts, and signing transactions, you’ve learned how to send and fetch messages securely across chains.
+
+With this foundation, you can explore more use cases for cross-chain messaging and integrate these features into your dApps. Push Chain simplifies creating interoperable Web3 solutions, opening the door to innovative decentralized applications. 
+

@@ -6,8 +6,6 @@ import React, { useState } from 'react';
 
 // External Components
 import styled from 'styled-components';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-// import { ChatUIProvider } from '@pushprotocol/uiweb';
 
 // Internal Components
 import { PushChatTheme } from '@site/src/components/BRB/PushChatTheme';
@@ -44,7 +42,7 @@ export const ChatComponent = () => {
     <Container>
       <Header>
         Join the conversation
-        <BrandA href={useBaseUrl('/docs/chat')} target='_blank'>
+        <BrandA href='https://comms.push.org/docs' target='_blank'>
           <Image
             src={
               require(

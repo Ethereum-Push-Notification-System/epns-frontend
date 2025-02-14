@@ -224,7 +224,7 @@
         "imagetitle": "पुश प्रोटोकॉल को 4 मिनट से कम समय में और 2 पंक्तियों के कोड के साथ एकीकृत करें",
         "titletext": "<4 मिनट",
         "buttontext": "निर्माण शुरू करें",
-        "buttonlink": "/docs/notifications/quickstart",
+        "buttonlink": "https://comms.push.org/docs/notifications/quickstart",
         "buttontitle": "अपने डैप में पुश प्रोटोकॉल के माध्यम से तत्काल सूचनाओं के एकीकरण के लिए दस्तावेज़ीकरण।"
       },
       "box5": {
@@ -273,7 +273,7 @@
         "imagetitle": "2 मिनट और 2 पंक्तियों के कोड के साथ पुश चैट को एकीकृत करें",
         "titletext": "<2 मिनट",
         "buttontext": "निर्माण शुरू करें",
-        "buttonlink": "/docs/chat/quickstart",
+        "buttonlink": "https://comms.push.org/docs/chat/quickstart",
         "buttontitle": "अपने डैप में चैट के तत्काल एकीकरण के लिए पुश प्रोटोकॉल के माध्यम से दस्तावेज़ीकरण का अन्वेषण करें"
       },
       "box5": {

@@ -35,4 +35,4 @@ We are beyond thrilled and honored to welcome Nischal to the EPNS family!
 
 Don’t forget to 🌩⚡👉 ️ [FEEL THE THUNDER](https://epns.io/) 👈⚡🌩️
 
-Stay in touch with Push! [Twitter](http://x.com/pushprotocol), [Telegram](https://t.me/epnsproject), [Newsletter](https://epns.substack.com/), [Website](http://epns.io)
+Stay in touch with Push! [Twitter](http://x.com/PushChain), [Telegram](https://t.me/epnsproject), [Newsletter](https://epns.substack.com/), [Website](http://epns.io)

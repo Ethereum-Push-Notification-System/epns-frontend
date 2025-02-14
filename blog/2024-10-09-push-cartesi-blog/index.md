@@ -49,7 +49,7 @@ Here’s the architecture of how the Push Cartesi Notification Server works:
 ![Push Cartesi Notification Server](cover-image1.webp)
 
 2. **Creating a Push Notification Channel:**
-To start, developers must set up a Push notification channel using [Push Protocol’s official guide](https://push.org/docs/notifications/tutorials/create-your-channel/). The rest of the setup process is explained below. 
+To start, developers must set up a Push notification channel using [Push Protocol’s official guide](https://comms.push.org/docs/notifications/tutorials/create-your-channel/). The rest of the setup process is explained below. 
 
 3. **Efficient Notification Management Using Notices:**
 Developers can include a "notice" alongside vouchers to ensure users are properly informed about important, on-chain events. For example, when an NFT is minted, a notice can be generated to notify the user of this event, while the voucher handles the asset’s actual minting process. A notice is a verifiable data statement that confirms off-chain events or conditions, supported by accompanying proof.

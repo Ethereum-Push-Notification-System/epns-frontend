@@ -1,0 +1,169 @@
+---
+id: docs-chain-fetch-transaction
+title: Fetch Transaction
+hide_title: true
+slug: ./fetch-transaction
+displayed_sidebar: pushChainSidebar
+sidebar_position: 4
+image: "/assets/docs/previews/docs_notifications_develop--manage_user.png"
+---
+
+# Fetch Transaction Overview
+
+These APIs are useful for fetching list of transactions by hash, category or sender/recipient address.
+
+<head>
+  <title>{`Fetch Transaction | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+
+## Fetch transactions API
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+```typescript
+// pushChain.tx.get(reference, {options?})
+const transaction = await pushChain.tx.get('177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23');
+```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+```typescript
+// pushChain.tx.get(reference, {options?})
+const transaction = await pushChain.tx.get('177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23');
+```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+```typescript
+// pushChain.tx.get(reference, {options?})
+const transaction = await pushChain.tx.get('177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23');
+```
+  </TabItem>
+</Tabs>
+
+---
+
+### Get Transactions parameters
+
+| Param       | Type               | Remarks                               | Default         |
+|-------------|--------------------|---------------------------------------|-----------------|
+| `reference`      | `UniversalAccount`, `string`, `'*'`       | Specifies the query target: `'*'` for all transactions, a transaction hash, or a UniversalAccount. | `*`                |
+| `options.raw`            | `boolean`                                | If `true`, returns the raw `BlockResponse`. If `false`, returns a `SimplifiedBlockResponse`. For most cases use default `raw = false`.     | `false`            |
+| `options.category`       | `string`                                 | Filters transactions by category (e.g., application-specific tags).                               | `undefined`        |
+| `options.startTime`      | `number` (timestamp)                     | Fetches transactions starting from this timestamp.                                                | Current timestamp  |
+| `options.order`          | `Order` (`'ASC'` or `'DESC'`)            | Determines the sort order of transactions (`'ASC'` for ascending, `'DESC'` for descending).        | `'DESC'`           |
+| `options.page`           | `number`                                 | Specifies the page number for paginated results.                                                  | `1`                |
+| `options.limit`          | `number`                                 | Sets the maximum number of transactions to fetch per page.                                        | `30`               |
+| `options.filterMode`     | `'both'`, `'sender'`, `'recipient'`       | Determines the query type: `'both'` fetches all, `'sender'` fetches sent, `'recipient'` fetches received. | `'both'`           |
+
+<Details summary="Expected response">
+
+```typescript
+{
+  "totalPages": 1,
+  "lastTs": "1736076322681",
+  "blocks": [
+    {
+      "blockHash": "36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee",
+      "ts": "1736076322681",
+      "totalNumberOfTxns": 1,
+      "transactions": [
+        {
+          "txnHash": "177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23",
+          "ts": "1736076322681",
+          "blockHash": "36939148bee59c6e1a9d4e6e6fb4e72d407f8667324714c206e64e1485f0f5ee",
+          "category": "CUSTOM:SAMPLE_TX",
+          "status": "SUCCESS",
+          "from": "push:devnet:pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6",
+          "recipients": {
+            "recipients": [
+              {
+                "address": "eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4"
+              },
+              {
+                "address": "eip155:97:0xD8634C39BBFd4033c0d3289C4515275102423681"
+              }
+            ]
+          },
+          "txnData": "0102030405",
+          "sig": "6nmaU8lrzsLu62T9yNhCgFlcGrwmx9lcvyoU63g6g4tgldp0RSNQEVZZJlKn0gPt7AuXTDCb+rW6nkS0Gs6/pxw="
+        }
+      ]
+    }
+  ]
+}
+```
+
+Response properties description:
+
+| **Property**             | **Type**                 | **Description**                                                                                     |
+|---------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| `totalPages`             | `number`                | The total number of pages available for the query results.                                         |
+| `lastTs`                 | `string` (timestamp)    | The timestamp of the last transaction or block in the current response, used for pagination.       |
+| `blocks`                 | `array`                 | A list of blocks included in the response. Each block contains its transactions and metadata.      |
+| `blocks[].blockHash`     | `string`                | The unique hash of the block. Identifies the block on the blockchain.                              |
+| `blocks[].ts`            | `string` (timestamp)    | The timestamp indicating when the block was created.                                               |
+| `blocks[].totalNumberOfTxns` | `number`             | The total number of transactions included in the block.                                            |
+| `blocks[].transactions`  | `array`                 | A list of transactions included in the block.                                                     |
+| `blocks[].transactions[].txnHash` | `string`        | The unique hash of the transaction. Identifies the transaction on the blockchain.                 |
+| `blocks[].transactions[].ts` | `string` (timestamp) | The timestamp indicating when the transaction occurred.                                            |
+| `blocks[].transactions[].blockHash` | `string`      | The hash of the block that includes this transaction.                                              |
+| `blocks[].transactions[].category` | `string`      | The category of the transaction, often application-specific (e.g., `CUSTOM:SAMPLE_TX`).            |
+| `blocks[].transactions[].status`  | `string`       | The status of the transaction, such as `SUCCESS` or `FAILED`.                                      |
+| `blocks[].transactions[].from`    | `string`       | The sender's address in a chain-agnostic format (e.g., `push:devnet:...`).                         |
+| `blocks[].transactions[].recipients` | `object`    | An object containing the list of recipient addresses for the transaction.                         |
+| `blocks[].transactions[].recipients.recipients` | `array` | A list of recipient addresses. Each address is specified in a chain-agnostic format.               |
+| `blocks[].transactions[].txnData` | `string`       | The transaction data in hexadecimal format.                                                        |
+| `blocks[].transactions[].sig`     | `string`       | The digital signature of the transaction, verifying its authenticity.                              |
+
+</Details>
+
+## Retrieving by hash
+
+Fetch a transaction that has the hash `177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23`.
+
+```typescript
+const transaction = await pushChain.tx.get('177482c5a504f3922875c216f71a2b236f344cfbf334f97c8f59547e1e21fb23');
+```
+
+## Retrieving by category
+
+```typescript
+const transactionByCategory = await pushChain.tx.get('*', {
+  category: 'CUSTOM:SAMPLE_TX',
+});
+```
+
+## Retrieving by sender address
+
+We will fetch transactions sent by this CAIP-10 address: `push:devnet:pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6`.
+
+```typescript
+const transctionBySender = await pushChain.tx.get(
+  {
+    chain: CONSTANTS.Chain.Push.devnet.name,
+    chainId: CONSTANTS.Chain.Push.devnet.chainId,
+    account: 'pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6',
+  },
+  { filterMode: 'sender' }
+);
+```
+
+## Retrieving by receiver address
+
+We will fetch transactions received by this CAIP-10 address: `push:devnet:pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6`.
+
+```typescript
+const transctionBySender = await pushChain.tx.get(
+  {
+    chain: CONSTANTS.Chain.Push.devnet.name,
+    chainId: CONSTANTS.Chain.Push.devnet.chainId,
+    account: 'pushconsumer1l8wd6ucrwf43stuavxwfc9jmr5emlkr66guml6',
+  },
+  { filterMode: 'recipient' }
+);
+```

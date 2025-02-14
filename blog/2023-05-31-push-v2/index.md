@@ -32,7 +32,7 @@ Push Protocol is thrilled to announce the successful completion of the security 
 ## What’s next?
 
 - Push Protocol v2 tentative launch date is late June, 2023 along with [yield farming v2 for fee pool and Uniswap v2 LP pool](https://snapshot.org/?utm_source=Twitter&utm_medium=Post&utm_campaign=RockstarsOfPushWeek17%2618Post#/pushdao.eth/proposal/0x54092053eff30c3c304e45b575881945192e710bc9b3914bfe1d1eadcda3f114).
-- This marks the beginning of [protocol fees](https://push.org/docs/tokenomics/deepdive/$push/#push-fee-pool) incentivizing and rewarding token holders and crypto wallets.
+- This marks the beginning of [protocol fees](https://comms.push.org/docs/tokenomics/deepdive/$push/#push-fee-pool) incentivizing and rewarding token holders and crypto wallets.
 - Push v2 has cleared Chainsafe audit. However, owing to the core and critical features of v2, the team has decided to launch it after 4 weeks.
 - This gives team enough time to run white hat contests among major platform(s) to ensure v2 is battle tested.
 - Prior to the tentative launch in late June, 2023, there will be an open, incentivized bug bounty program available to the community. More information coming soon.
@@ -51,7 +51,7 @@ In simple terms, this means PUSH holders can now stake and earn PUSH rewards dir
 
 Before delving into how the Core v2 staking works, let’s take a step back to quickly recap the concept of the Protocol Fee Pool.
 
-Protocol Feel Pool was introduced in the Version 1.5 of Push smart contracts. Fee Pool is a term used to signify small fees charged by the protocol actions like channel creation, channel reactivation, channel detail modification. They don’t affect users and for users, everything is always feeless, with the exception of few features for super users as [outlined here](https://push.org/docs/tokenomics/deepdive/$push/#push-fee-pool).
+Protocol Feel Pool was introduced in the Version 1.5 of Push smart contracts. Fee Pool is a term used to signify small fees charged by the protocol actions like channel creation, channel reactivation, channel detail modification. They don’t affect users and for users, everything is always feeless, with the exception of few features for super users as [outlined here](https://comms.push.org/docs/tokenomics/deepdive/$push/#push-fee-pool).
 
 In other words, for every crucial transaction on the Core contract, it takes a small fee amount and stores it in what we call a <b>Push Fee Pool</b>.
 
@@ -59,7 +59,7 @@ The protocol fee is currently set to be equal to <b>10 PUSH tokens</b>. This val
 
 <blockquote><i><b>Note:</b> This is not an additional fee that is charged on top of channel creation fees. Instead, the protocol fee is simply deducted from the same amount that a channel creator chooses to stake in the protocol.
 For example, if you chose to stake 50 PUSH during channel creation, 10 of those 50 PUSH tokens go into Protocol Fee Pool, while the remaining goes into Channel Pool Funds that are claimable by channel owners anytime they choose to deactivate their channel.*
-Read more about Fee Pool and how it operates over here: https://push.org/docs/tokenomics/deepdive/$push/#push-fee-pool.</i></blockquote>
+Read more about Fee Pool and how it operates over here: https://comms.push.org/docs/tokenomics/deepdive/$push/#push-fee-pool.</i></blockquote>
 
 ## The Fee Pool Staking
 

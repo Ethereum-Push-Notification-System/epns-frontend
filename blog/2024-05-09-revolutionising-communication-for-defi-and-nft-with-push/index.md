@@ -38,9 +38,8 @@ Defi Protocol's like the [Angle Protocol](https://app.push.org/channels/0xA2dEe3
 - DeFi platforms like [Aave](https://app.push.org/channels/0xAA940b3501176af328423d975C350d0d1BaAae50?utm_source=Dapp&utm_medium=blog&utm_campaign=amplify_upgrade) send real-time health factor warning alerts to their users, helping them avoid liquidation risks.
 
 - NFT marketplaces or communities can notify its users about upcoming drops or exclusive minting opportunities.
-  Similar to the [Pudgy Penguin's Unstopabble Domains token gated group chat](https://twitter.com/pushprotocol/status/1777929898784444842?utm_source=google&utm_medium=twitter&utm_campaign=amplify_upgrade) powered by Push Protocol.
+  Similar to the [Pudgy Penguin's Unstopabble Domains token gated group chat](https://x.com/PushChain/status/1777929898784444842?utm_source=google&utm_medium=twitter&utm_campaign=amplify_upgrade) powered by Push Protocol.
 
 By leveraging Push Protocol notifications, DeFi and NFT brands can create a more informed and responsive user base, ultimately leading to a stronger and more successful ecosystem.
-
 
 **Want to AMPLIFY🔊 your insights on Push's latest upgrades in areas of new Protocol features, Decentralization, and Tokenomics? Explore our [latest blog post](https://push.org/blog/amplify-campaign/?utm_source=google&utm_medium=blog&utm_campaign=amplify_upgrade) to discover how these advancements can benefit you!📈**

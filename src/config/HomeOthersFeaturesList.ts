@@ -66,7 +66,7 @@ export const OthersFeaturesList = {
         },
         {
           type: 'styled-link',
-          href: 'https://push.org/docs/video/',
+          href: 'https://comms.push.org/docs/video/',
           hrefText: 'home.video-section.itemLink',
           margin: '4px 0 0 0',
           align: 'left',

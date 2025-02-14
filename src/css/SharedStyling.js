@@ -329,6 +329,7 @@ export const Button = styled.button`
   z-index: ${(props) => props.zIndex || '3'};
   pointer: ${(props) => props.pointer || 'hand'};
   cursor: ${(props) => props.cursor || 'pointer'};
+  gap: ${(props) => props.gap};
   font-family: ${(props) =>
     props.fontFamily || 'Strawford, Helvetica, sans-serif'};
 

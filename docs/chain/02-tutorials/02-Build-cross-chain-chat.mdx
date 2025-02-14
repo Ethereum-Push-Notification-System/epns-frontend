@@ -1,0 +1,186 @@
+---
+id: docs-chain-tutorial-build-chat
+title: Build Cross-Chain Chat
+hide_title: true
+slug: ./build-chat
+displayed_sidebar: pushChainSidebar
+sidebar_position: 1
+image: "/assets/docs/previews/docs_notifications_tutorial_create_channel--creating_your_channel.png"
+---
+
+# Build a Cross-Chain Chat Application
+
+If you’ve already seen our cross-chain email tutorial, you know the power of the **Push Chain SDK** for sending data securely across different blockchains. This time, let’s apply the same underlying concepts to build a decentralized chat system, enabling quick, on-chain message exchanges between Ethereum and Solana users.
+
+A chat interface is often more dynamic than an email-based approach. While email structures might imply a more formal flow, chats tend to be instantaneous and conversational. However, at a protocol level, sending a chat message is similar to sending an email: you’re transmitting serialized data through a transaction. With **Push Chain**, you can harness the same transaction pattern—just tweak the content to be a real-time conversation. Let’s get started.
+
+<head>
+  <title>{`Cross-Chain Chat | Tutorial | Push Chain | Push Documentation`}</title>
+</head>
+
+---
+
+## Step 1: Dependencies and Setup
+
+You’ll need to install (or already have) the following libraries in your project:
+
+```bash
+npm install @pushchain/devnet viem
+```
+
+**What’s Included?**
+
+- `@pushchain/devnet`: Gives you the methods for initializing, signing, and sending transactions over Push Chain.
+- `viem`: Helps manage private keys and produce signatures on Ethereum.
+
+Import installed dependencies:
+
+```typescript
+// Import Push Chain SDK
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+```
+
+## Step 2: Create Your Signer
+
+Before you can chat, you must authenticate yourself as the message sender. We’ll use a private key for this example (though other signing methods are possible such as using the Push Wallet):
+
+```typescript
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+```
+
+## Step 3: Initialize Push Chain
+
+With your signer ready, initialize the Push Chain instance:
+
+```typescript
+const pushChain = await PushChain.initialize(signer);
+// devnet is default, but other environments can be specified
+```
+
+## Step 4: Add Recipient
+
+Specify which accounts you want to chat with. Each recipient requires a chain name, ID and an address:
+
+```typescript
+const recipients = [
+  createUniversalAccount({
+    chain: CONSTANTS.CHAIN.SOLANA,
+    chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+    address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+  }),
+];
+```
+
+## Step 5: Compose a Chat Message
+
+Unlike emails, chat messages are typically shorter and more frequent. Let’s wrap our text, sender info, and timestamp in JSON:
+
+```typescript
+const chatMessage = {
+  sender: account.address,
+  text: 'Hello from Ethereum to Solana!',
+  timestamp: Date.now(),
+};
+```
+
+## Step 6: Send the Chat Data
+
+Push Chain transactions should be labeled with categories (e.g., `CHAT_APP`) so you can differentiate them from other message types:
+
+```typescript
+const tx = await pushChain.tx.send(recipients, {
+  category: 'CHAT_APP',
+  data: JSON.stringify(chatMessage),
+});
+```
+
+## Step 7: Fetch Chat History
+
+To visualize previous messages, we’ll decode them from a transaction response. Pass in the hash or a user address to retrieve transactions, then parse out the chat details:
+
+```typescript
+const results = await pushChain.tx.get(tx.txHash);
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('email: ', t.data);
+  }
+}
+```
+
+## Complete Example Code
+
+```typescript
+// Import Push Chain SDK
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+
+// Create Your Signer
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+// Initialize Push Chain
+const pushChain = await PushChain.initialize(signer);
+// devnet is default, but other environments can be specified
+
+// Add Recipient
+const recipients = [
+  createUniversalAccount({
+    chain: CONSTANTS.CHAIN.SOLANA,
+    chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+    address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+  }),
+];
+
+// Compose a Chat Message
+const chatMessage = {
+  sender: account.address,
+  text: 'Hello from Ethereum to Solana!',
+  timestamp: Date.now(),
+};
+
+// Send the Chat Data
+const tx = await pushChain.tx.send(recipients, {
+  category: 'CHAT_APP',
+  data: JSON.stringify(chatMessage),
+});
+
+// Delay for 3 seconds
+
+// Fetch Chat History
+const results = await pushChain.tx.get(tx.txHash);
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('email: ', t.data);
+  }
+}
+
+```
+
+# Conclusion
+
+Creating a cross-chain chat experience reveals how flexible the Push Chain SDK can be. With just a few modifications to your code, you can switch from a “mailbox” format to a real-time messaging interface that works across multiple networks. Adapt this foundation to add channels for group chat, user profiles, or any custom messaging feature you envision. This is just one more example of how Push Chain opens doors to more fluid Web3 interactions.
+
+Experiment with new ideas, extend this chat to other blockchains, and bring your dApp users the power of borderless on-chain communication!
+

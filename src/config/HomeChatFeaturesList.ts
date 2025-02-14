@@ -127,7 +127,7 @@ export const ChatFeaturesList = {
         {
           type: 'button',
           buttontext: 'home.chat-section.box4.buttontext',
-          buttonlink: '/docs/chat',
+          buttonlink: 'https://comms.push.org/docs/chat',
           buttontitle: 'home.chat-section.box4.buttontitle',
         },
         {
@@ -338,7 +338,7 @@ export const ChatUseCasesList = [
     title: 'Blockchain',
   },
   {
-    url: 'https://twitter.com/pushprotocol/status/1336359832081768448',
+    url: 'https://x.com/PushChain/status/1336359832081768448',
     title: 'Gaming',
   },
   {

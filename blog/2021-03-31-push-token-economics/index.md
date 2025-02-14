@@ -19,7 +19,7 @@ import { ImageText } from '@site/src/css/SharedStyling';
 
 <!--truncate-->
 
-> **Update:** Push Protocol (Previously EPNS) and $PUSH is evolving, The evolved version of Pusheconomics can be found here: [https://push.org/docs/tokenomics/deepdive/$push/](https://push.org/docs/tokenomics/deepdive/$push/)
+> **Update:** Push Protocol (Previously EPNS) and $PUSH is evolving, The evolved version of Pusheconomics can be found here: [https://comms.push.org/docs/tokenomics/deepdive/$push/](https://comms.push.org/docs/tokenomics/deepdive/$push/)
 
 Ethereum Push Notification Service (EPNS) is a protocol for decentralized notifications on the Ethereum blockchain. EPNS enables applications and users to create and subscribe to notification channels, enabling blockchain-native communication between apps and users. The Web3 ecosystem today communicates through channels like email, Medium, Twitter, Discord, WeChat, and more. For rapidly-evolving use cases like DeFi, these forms of communication struggle to scale. EPNS protocol lets applications send push notifications to users regarding updates, account information, product drops, and more. Users can also set up custom notifications in response to on-chain events to better monitor investments, transactions, app security, protocol performance, and more.
 

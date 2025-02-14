@@ -131,7 +131,7 @@ This is great since it means that token holders really do have a say in what get
 
 So building out better tools and processes for the operation of the DAO is really important to things running smoothly and we think EPNS can be very useful for that.
 
-The other big category is the projects that we are building. These are all supported by the DAO, funded by the treasury, and built by contributors. Yam Synths is our most developed product, but we are working on others, as mentioned by @zetaleak above. I like to think that anyone could come to the DAO with a great idea, propose it the the community of YAM holders, and get it funded from the treasury.
+The other big category is the projects that we are building. These are all supported by the DAO, funded by the treasury, and built by contributors. Yam Synths is our most developed product, but we are working on others, as mentioned by @zetaleak above. I like to think that anyone could come to the DAO with a great idea, propose it to the community of YAM holders, and get it funded from the treasury.
 
 Done! :D
 
@@ -281,7 +281,7 @@ Anyone can vote in the DAO if they hold YAM tokens. There is no other requiremen
 
 > I💚HANOI: Hello, What is the next big step for your project — YAM ? Thank you!
 
-We are creating a Strategic Vision to drive Yam into the future. The vision will dovetail with our current projects but also officially define a parallel track of new innovations. The vision describes how these two parallel tracks will compliment and enhance each other, and eventually merge.
+We are creating a Strategic Vision to drive Yam into the future. The vision will dovetail with our current projects but also officially define a parallel track of new innovations. The vision describes how these two parallel tracks will complement and enhance each other, and eventually merge.
 
 > CR_7: In your view how has the trajectory of yield farming and yield aggregating platforms changed in the past year?
 

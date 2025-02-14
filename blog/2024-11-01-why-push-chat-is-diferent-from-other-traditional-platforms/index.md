@@ -11,13 +11,13 @@ tags: [Technical, Push Tech]
 ![Cover image of How Push Chat is Different from Traditional Chat Platforms](./cover-image.webp)
 <!-- truncate -->
 
-As the digital landscape shifts toward further decentralization, users' expectations around privacy, control, and engagement in their favorite chat platforms are evolving too.  [Push Chat](https://push.org/docs/chat/#:~:text=Push%20Chat%20is%20a%20web3,numbers%2C%20email%20addresses%2C%20etc.), the communication protocol of Web3 reimagines digital messaging by incorporating new technologies, improved UX, and user-first functionalities that traditional platforms like WhatsApp, Telegram, and Signal lack.
+As the digital landscape shifts toward further decentralization, users' expectations around privacy, control, and engagement in their favorite chat platforms are evolving too.  [Push Chat](https://comms.push.org/docs/chat/#:~:text=Push%20Chat%20is%20a%20web3,numbers%2C%20email%20addresses%2C%20etc.), the communication protocol of Web3 reimagines digital messaging by incorporating new technologies, improved UX, and user-first functionalities that traditional platforms like WhatsApp, Telegram, and Signal lack.
 
 In this article, we dig deeper into what sets Push Chat apart.
 
 ### Privacy+Anonymity: No Phone Number or Email Required
 
-Traditional chat apps like WhatsApp and Telegram require a phone number or email to register, tying users to a specific identity, which can expose them to data tracking, phishing, or unwanted contacts. Push Chat bypasses this entirely. Users only need a [compatible EVM wallet](https://push.org/docs/notifications/supported-wallet-standards/) to connect, meaning they can remain anonymous and communicate securely without compromising their identity while keeping personal data decentralized and user-controlled. 
+Traditional chat apps like WhatsApp and Telegram require a phone number or email to register, tying users to a specific identity, which can expose them to data tracking, phishing, or unwanted contacts. Push Chat bypasses this entirely. Users only need a [compatible EVM wallet](https://comms.push.org/docs/notifications/supported-wallet-standards/) to connect, meaning they can remain anonymous and communicate securely without compromising their identity while keeping personal data decentralized and user-controlled. 
 
 Unlike centralized platforms that store personal information on servers, Push Chat’s decentralized model gives users complete control over their data, removing the risk of centralized data leaks or misuse. 
 
@@ -38,7 +38,7 @@ When a user registers with Push Chat using their wallet, a public-private key pa
 
 This encryption is achieved through asymmetric cryptography, a standard cryptographic technique where public keys are used to encrypt data and private keys to decrypt it. This setup makes it difficult for third parties to intercept messages, ensuring only the sender and recipient can read their conversations.
 
-In summary, [Push Chat’s end-to-end encryption](https://push.org/docs/chat/concepts/encryption-version-in-push-chat/#:~:text=Encryption%20in%20Push%20Chat,or%20decrypt%20your%20PGP%20keys) leverages advanced cryptographic standards, entirely decentralized public-key management, and blockchain-based verification to ensure messages remain private, authenticated, and secure across the network.
+In summary, [Push Chat’s end-to-end encryption](https://comms.push.org/docs/chat/concepts/encryption-version-in-push-chat/#:~:text=Encryption%20in%20Push%20Chat,or%20decrypt%20your%20PGP%20keys) leverages advanced cryptographic standards, entirely decentralized public-key management, and blockchain-based verification to ensure messages remain private, authenticated, and secure across the network.
 
 ### Enhanced Interactivity with Farcaster Frames Support
 
@@ -59,7 +59,7 @@ Push Chat’s architecture is fundamentally decentralized, leveraging blockchain
 
 ### **Its Ecosystem Integration Potential**
 
-Push Chat is designed with [seamless Web3-based integration](https://push.org/docs/chat/ui-components/) in mind, allowing it to be embedded directly within dApps across various ecosystems, from DeFi and DAOs to NFT platforms through its SDK. This flexibility means that users can access messaging features directly from within their favorite Web3 applications, enhancing usability by keeping interactions within a single interface. Whether coordinating within a DAO, interacting with DeFi protocols, or engaging in NFT communities, Push Chat’s integration potential ensures it can become a core component of any Web3 platform, streamlining communication without disrupting the user experience.
+Push Chat is designed with [seamless Web3-based integration](https://comms.push.org/docs/chat/ui-components/) in mind, allowing it to be embedded directly within dApps across various ecosystems, from DeFi and DAOs to NFT platforms through its SDK. This flexibility means that users can access messaging features directly from within their favorite Web3 applications, enhancing usability by keeping interactions within a single interface. Whether coordinating within a DAO, interacting with DeFi protocols, or engaging in NFT communities, Push Chat’s integration potential ensures it can become a core component of any Web3 platform, streamlining communication without disrupting the user experience.
 
 ### **Hyperscalable Group Chats**
 

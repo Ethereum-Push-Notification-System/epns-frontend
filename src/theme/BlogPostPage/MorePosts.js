@@ -3,24 +3,10 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 // Internal Components
-import {
-  A,
-  Button,
-  Content,
-  H2,
-  Image,
-  ItemH,
-  ItemV,
-  Span,
-} from '@site/src/css/SharedStyling';
+import { Button, H2, Image } from '@site/src/css/SharedStyling';
 import useMediaQuery from '@site/src/hooks/useMediaQuery';
-import BlogPostItem from '@theme/BlogPostItem';
-import BlogPostItemFooter from '@theme/BlogPostItem/Footer';
-import BlogPostItemHeader from '@theme/BlogPostItem/Header';
 import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info';
-import { BiLink, BiShareAlt } from 'react-icons/bi';
-import { BsLinkedin, BsTwitter, BsX, BsYoutube } from 'react-icons/bs';
-import { FaDiscord, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { BsTwitter } from 'react-icons/bs';
 
 // Internal Configs
 import GLOBALS, { device } from '@site/src/config/globals';
@@ -30,23 +16,31 @@ const MorePosts = ({ allPosts, post }) => {
   const [filteredArray, setFilteredArray] = useState();
 
   const filterPost = () => {
-    const tagList = post?.Preview?.metadata?.tags;
-    const allOtherPosts = allPosts.filter((item) => item !== post);
+    const tagList = post?.Preview?.metadata?.tags; // Get tags of the current post
+    const allOtherPosts = allPosts.filter((item) => item !== post); // Exclude current post
 
-    const sortArray = tagList?.map((item) => {
-      const matchingTags = allOtherPosts?.filter((obj) =>
-        obj?.Preview?.metadata?.tags?.some((tag) => tag?.label === item?.label)
+    const seenPosts = new Set(); // To track blogs already added
+    const filteredPosts = [];
+
+    tagList?.forEach((tag) => {
+      const matchingTags = allOtherPosts.filter(
+        (obj) =>
+          obj?.Preview?.metadata?.tags?.some((t) => t?.label === tag?.label) &&
+          !seenPosts.has(obj) // Ensure it's not already added
       );
 
-      if (matchingTags && matchingTags.length > 0) {
+      if (matchingTags.length > 0) {
         // Randomly select one from matchingTags
         const randomIndex = Math.floor(Math.random() * matchingTags.length);
-        return matchingTags[randomIndex];
+        const selectedPost = matchingTags[randomIndex];
+
+        // Add to results and mark as seen
+        filteredPosts.push(selectedPost);
+        seenPosts.add(selectedPost);
       }
-      return null;
     });
 
-    setFilteredArray(sortArray);
+    setFilteredArray(filteredPosts);
   };
 
   useEffect(() => {
@@ -63,7 +57,7 @@ const MorePosts = ({ allPosts, post }) => {
           lineHeight='110%'
           color='#00000'
         >
-          More from Push Protocol
+          More from Push Chain
         </ResponsiveH2>
 
         <MoreButton
@@ -80,7 +74,7 @@ const MorePosts = ({ allPosts, post }) => {
           alignItems='center'
           self={isMobile ? 'stretch' : 'self'}
           onClick={() => {
-            window.open(`https://twitter.com/pushprotocol`, '_blank');
+            window.open(`https://x.com/PushChain`, '_blank');
           }}
         >
           <BsTwitter size={23} color='#fff' style={{ marginRight: '10px' }} />

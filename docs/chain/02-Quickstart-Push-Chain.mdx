@@ -1,0 +1,277 @@
+---
+id: docs-chain-quickstart
+title: Quickstart
+hide_title: false
+slug: ./quickstart
+displayed_sidebar: pushChainSidebar
+sidebar_position: 2
+image: "/assets/docs/previews/docs_notifications--quickstart.png"
+---
+
+# Quickstart
+
+Everything you will need to get up and running in 2 minutes or less!
+
+<head>
+  <title>Quickstart | Push Chain | Push Documentation</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Installation
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+
+```bash
+npm install @pushchain/devnet viem
+```
+
+  </TabItem>
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+
+```bash
+npm install @pushchain/devnet viem
+```
+
+  </TabItem>
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+
+```bash
+npm install @pushchain/devnet viem
+```
+
+  </TabItem>
+</Tabs>
+
+### Import libraries
+
+
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+```
+
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+```
+
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+```
+
+  </TabItem>
+</Tabs>
+
+### Initialize Push Chain SDK
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+
+```typescript
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+
+```typescript
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+
+```typescript
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+
+  </TabItem>
+</Tabs>
+
+### Send Transaction
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+
+```typescript
+// Send transaction
+const tx = await pushChain.tx.send(
+  // We will send the transaction to a Solana address
+  [
+    createUniversalAccount({
+      chain: CONSTANTS.CHAIN.SOLANA,
+      chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+      address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY', // Specify the category of the transaction
+    // Sample email payload
+    data: JSON.stringify({
+      title: 'Hello old friend from Solana!',
+      message: 'Greetings from Ethereum world.',
+    }),
+  }
+);
+```
+
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+
+```typescript
+// Send transaction
+const tx = await pushChain.tx.send(
+  // We will send the transaction to a Solana address
+  [
+    createUniversalAccount({
+      chain: CONSTANTS.CHAIN.SOLANA,
+      chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+      address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY', // Specify the category of the transaction
+    // Sample email payload
+    data: JSON.stringify({
+      title: 'Hello old friend from Solana!',
+      message: 'Greetings from Ethereum world.',
+    }),
+  }
+);
+```
+
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+
+```typescript
+// Send transaction
+const tx = await pushChain.tx.send(
+  // We will send the transaction to a Solana address
+  [
+    createUniversalAccount({
+      chain: CONSTANTS.CHAIN.SOLANA,
+      chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+      address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY', // Specify the category of the transaction
+    // Sample email payload
+    data: JSON.stringify({
+      title: 'Hello old friend from Solana!',
+      message: 'Greetings from Ethereum world.',
+    }),
+  }
+);
+```
+
+  </TabItem>
+</Tabs>
+
+### Fetch Transactions
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+
+```typescript
+// Fetch the latest 5 transactions
+const results = await pushChain.tx.get('*', { limit: 5 });
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('transaction: ', t);
+  }
+}
+```
+
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+
+```typescript
+// Fetch the latest 5 transactions
+const results = await pushChain.tx.get('*', { limit: 5 });
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('transaction: ', t);
+  }
+}
+```
+
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+
+```typescript
+// Fetch the latest 5 transactions
+const results = await pushChain.tx.get('*', { limit: 5 });
+for (const blocks of results.blocks) {
+  for (const t of blocks.transactions) {
+    console.log('transaction: ', t);
+  }
+}
+```
+
+  </TabItem>
+</Tabs>

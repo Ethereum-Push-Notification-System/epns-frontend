@@ -64,7 +64,7 @@ Note, each channel will also set a ‘default value’ setting. This ensures sub
 
 For builders looking to integrate Notification Settings, you can find all the relevant and associated documentation here
 
-👉 https://push.org/docs/notifications/build/create-channel-settings/
+👉 https://comms.push.org/docs/notifications/build/create-channel-settings/
 
 ### Notification Settings for Channel Subscribers
 

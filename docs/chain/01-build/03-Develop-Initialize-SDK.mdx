@@ -1,0 +1,161 @@
+---
+id: docs-chain-develop-initialize-sdk
+title: Initialize SDK
+hide_title: true
+slug: ./initialize-chain
+displayed_sidebar: pushChainSidebar
+sidebar_position: 3
+image: "/assets/docs/previews/docs_notifications_develop--initialize_user.png"
+---
+
+# Initialize SDK overview
+
+Push Chain SDK enables seamless integration with Push Chain, a Proof-of-Stake layer 1 blockchain optimized for building hyper-scalable, consumer-centric web3 applications. This guide covers the installation and initialization of the SDK.
+
+<head>
+  <title>{`Initialize SDK | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+
+## Initialize Push Chain API
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+  </TabItem>
+
+      <TabItem value="react" attributes={{className: "codetab react"}} default>
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+```typescript
+// Import Push Chain SDK for blockchain interactions
+import { PushChain, CONSTANTS, createUniversalSigner, createUniversalAccount } from '@pushchain/devnet';
+
+// Import utility functions from viem
+import { hexToBytes } from 'viem';
+import { privateKeyToAccount, generatePrivateKey } from 'viem/accounts';
+
+const privateKey = generatePrivateKey(); // Replace it with your private key generation logic
+const account = privateKeyToAccount(privateKey);
+
+// Create Signer. Defaults to Ethereum Sepolia
+const signer = createUniversalSigner({
+  address: account.address,
+  signMessage: async (data) =>
+    hexToBytes(await account.signMessage({ message: { raw: data } })),
+});
+
+const pushChain = await PushChain.initialize(signer);
+```
+  </TabItem>
+</Tabs>
+
+> Note: If signer is not provided or is `null`, then the SDK will switch to read-only mode. This means that you can only read data from the blockchain and not send transactions.
+
+### Initialize Push Chain parameters
+
+When initializing your Push Chain instance, you can customize the process using several parameters. Here's a breakdown:
+
+| Param      | Type                     |  Default       | Remarks                                                                                                                                                                         |
+| ---------- | ------------------------ |  ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _`universalSigner`_ | `UniversalSigner`             |  null             | Signer responsible for signing when sending transactions. Only used for `send` function                                                                                         |
+|  `options.network`   | `ENV`         | `devnet`     | Push Chain environment                                                                                                                                        |
+
+
+<Details summary="Expected response">
+
+```typescript
+{
+  block: Block {
+    validator: Validator {
+      activeValidatorURL: 'https://vv3.dev.push.org',
+      env: 1,
+      validatorContractClient: [Object],
+      ReqModifier: [Function (anonymous)],
+      call: [Function (anonymous)]
+    },
+    get: [Function (anonymous)]
+  },
+  tx: Tx {
+    validator: Validator {
+      activeValidatorURL: 'https://vv3.dev.push.org',
+      env: 1,
+      validatorContractClient: [Object],
+      ReqModifier: [Function (anonymous)],
+      call: [Function (anonymous)]
+    },
+    env: 1,
+    signer: null,
+    get: [Function (anonymous)],
+    send: [Function (anonymous)],
+    tokenCache: TokenCache {
+      validator: [Validator],
+      TOKEN_EXPIRE_SECONDS: 60,
+      cachedToken: [Object],
+      cachedTokenTs: 1736287769818
+    }
+  },
+  wallet: Wallet {
+    env: 1,
+    walletWindow: null,
+    connect: [Function (anonymous)],
+    sign: [Function (anonymous)],
+    appConnectionStatus: [Function (anonymous)],
+    requestAppConnection: [Function (anonymous)],
+    openWalletWindow: [Function (anonymous)],
+    requestWalletAddress: [Function (anonymous)],
+    walletUrl: 'https://wallet.push.org'
+  }
+}
+```
+
+| Param      | Type                     |  Remarks                                                                                                                                                                         |
+| ---------- | ------------------------ |  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `block` | `Block` | The Block class in the PushChain handles operations related to blockchain blocks. It provides methods to initialize a block instance and fetch blocks from the network. |
+|  `tx`   | `Tx`  | The Transaction class in the PushChain is designed to manage transactions within the network. It provides functionality to send and transactions to the network. |
+|  `wallet`   | `Wallet`  | The Wallet class manages wallet interactions, including connecting to a wallet, signing data, and checking the connection status. |
+
+</Details>

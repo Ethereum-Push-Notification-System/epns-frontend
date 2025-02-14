@@ -29,41 +29,41 @@ There’s more! We continue to elevate the Push experience as we [unveiled Push 
 
 July was brimming with exciting partnerships, forging a stronger web3 communication ecosystem for Push and our frens. We’re excited to have new members in the fam:
 
-1. Our collaboration with [DataverseOS](https://twitter.com/pushprotocol/status/1678455797867585564) allows web3 data infrastructure developers to leverage the power of decentralized Push communication tools.
-2. The partnership with [Linea](https://twitter.com/pushprotocol/status/1678746417018413058) enables UX enhancements for builders using their zkEVM rollup.
-3. We are thrilled to power web3 messaging and notifications on [ReviseNFT’s LensBird](https://twitter.com/pushprotocol/status/1679083431022723072), a decentralized social gaming platform.
+1. Our collaboration with [DataverseOS](https://x.com/PushChain/status/1678455797867585564) allows web3 data infrastructure developers to leverage the power of decentralized Push communication tools.
+2. The partnership with [Linea](https://x.com/PushChain/status/1678746417018413058) enables UX enhancements for builders using their zkEVM rollup.
+3. We are thrilled to power web3 messaging and notifications on [ReviseNFT’s LensBird](https://x.com/PushChain/status/1679083431022723072), a decentralized social gaming platform.
 4. We teamed up with [Idential](https://twitter.com/identialxyz/status/1674792960632975365?s=20) to provide users with real-time notifications to stay updated on new attestations.
-5. We’re excited to integrate Push Notifications for [Lif3 Wallet](https://twitter.com/pushprotocol/status/1680245839636176897) users, delivering real-time alerts based on individual configurations.
+5. We’re excited to integrate Push Notifications for [Lif3 Wallet](https://x.com/PushChain/status/1680245839636176897) users, delivering real-time alerts based on individual configurations.
 
 ## Featured In📰
 
 We had the privilege of being featured and participating in various esteemed events and platforms:
 
-1. [EthCC was incredible](https://twitter.com/pushprotocol/status/1686053348619829256). We were delighted to be part of several awesome discussions and events. We always enjoy making new frens and meeting old ones. Here’s what we got up to:
+1. [EthCC was incredible](https://x.com/PushChain/status/1686053348619829256). We were delighted to be part of several awesome discussions and events. We always enjoy making new frens and meeting old ones. Here’s what we got up to:
 
-- Our CEO and co-founder, Harsh, took the stage at EthCC with his insights on “[How Improving the Crypto UX Can Drive Mass Adoption.](https://twitter.com/pushprotocol/status/1681695398191325184)”
-- Harsh also joined in various discussions during EthCC, including topics like “[Pushing the Boundaries of Web3 UX](https://twitter.com/pushprotocol/status/1679845888854831105)” at Infracon hosted by Biconomy, Particle Network, and Transak, and “[Unleashing the Crypto AI Nexus”](https://twitter.com/pushprotocol/status/1681240353750253569) with IOSG Ventures.
-- Our co-founder, Richa, joined a panel of experts to talk about “[The Power of Unstoppable Marketplace and Building a Community with Branded TLDS](https://twitter.com/pushprotocol/status/1680238517006336006)” hosted by Unstoppable Domains.
+- Our CEO and co-founder, Harsh, took the stage at EthCC with his insights on “[How Improving the Crypto UX Can Drive Mass Adoption.](https://x.com/PushChain/status/1681695398191325184)”
+- Harsh also joined in various discussions during EthCC, including topics like “[Pushing the Boundaries of Web3 UX](https://x.com/PushChain/status/1679845888854831105)” at Infracon hosted by Biconomy, Particle Network, and Transak, and “[Unleashing the Crypto AI Nexus”](https://x.com/PushChain/status/1681240353750253569) with IOSG Ventures.
+- Our co-founder, Richa, joined a panel of experts to talk about “[The Power of Unstoppable Marketplace and Building a Community with Branded TLDS](https://x.com/PushChain/status/1680238517006336006)” hosted by Unstoppable Domains.
 
-2. We were honored to be featured on [Polygon’s MerokuStore](https://twitter.com/pushprotocol/status/1681988469873168384) “dApp-sdk” as their trusted messaging partner with other EthCC partners like Transak, Biconomy, and DappLooker.
+2. We were honored to be featured on [Polygon’s MerokuStore](https://x.com/PushChain/status/1681988469873168384) “dApp-sdk” as their trusted messaging partner with other EthCC partners like Transak, Biconomy, and DappLooker.
 
-3. Push was featured at [Encode Club’s Hacker House](https://twitter.com/pushprotocol/status/1679181327340273695) as a Zero to dApp partner, shedding light on the significance of web3 messaging, notification, and video apps.
+3. Push was featured at [Encode Club’s Hacker House](https://x.com/PushChain/status/1679181327340273695) as a Zero to dApp partner, shedding light on the significance of web3 messaging, notification, and video apps.
 
-4. Harsh was featured in [Quickswap’s Mega Twitter Space](https://twitter.com/pushprotocol/status/1681768659214106627) event, “All Roads Lead to Polygon,” alongside other prominent Polygon frens, discussing the exciting “Wild West of web3 Marketing.”
+4. Harsh was featured in [Quickswap’s Mega Twitter Space](https://x.com/PushChain/status/1681768659214106627) event, “All Roads Lead to Polygon,” alongside other prominent Polygon frens, discussing the exciting “Wild West of web3 Marketing.”
 
 ## Community and Governance🤝
 
 Our community continues to thrive with a multitude of exciting engagements.
 
-We hosted two engaging Twitter Spaces. The first session, “[The Art of Successful Grant Proposals](https://twitter.com/pushprotocol/status/1681664158582939648)” featured industry experts sharing invaluable insights on securing grants for web3 projects. Our second session, “[How to Create a Sticky web3 Gaming UX,](https://twitter.com/pushprotocol/status/1680980161137704961)” delved into the realm of web3 gaming, where experts shared their secrets on crafting immersive user experiences in web3 gaming.
+We hosted two engaging Twitter Spaces. The first session, “[The Art of Successful Grant Proposals](https://x.com/PushChain/status/1681664158582939648)” featured industry experts sharing invaluable insights on securing grants for web3 projects. Our second session, “[How to Create a Sticky web3 Gaming UX,](https://x.com/PushChain/status/1680980161137704961)” delved into the realm of web3 gaming, where experts shared their secrets on crafting immersive user experiences in web3 gaming.
 
-To further empower the next generation of web3 developers, we launched the [Back2School Push Grant Program](https://twitter.com/pushprotocol/status/1679818451945136128). This program is focused on student-led web3 community projects at universities, with the aim to foster learning, collaboration, and education on cutting-edge web3 development.
+To further empower the next generation of web3 developers, we launched the [Back2School Push Grant Program](https://x.com/PushChain/status/1679818451945136128). This program is focused on student-led web3 community projects at universities, with the aim to foster learning, collaboration, and education on cutting-edge web3 development.
 
-In addition, we introduced 2 [brand new Push missions](https://twitter.com/pushprotocol/status/1680472360313577472), offering our community members a chance to contribute to the ecosystem while earning $PUSH tokens.
+In addition, we introduced 2 [brand new Push missions](https://x.com/PushChain/status/1680472360313577472), offering our community members a chance to contribute to the ecosystem while earning $PUSH tokens.
 
-What’s more? The [Push India tour](https://twitter.com/pushprotocol/status/1682737259282325511) is on the horizon, providing a platform for web3 enthusiasts from all across India to connect, engage, and collaborate. We look forward to seeing you all!
+What’s more? The [Push India tour](https://x.com/PushChain/status/1682737259282325511) is on the horizon, providing a platform for web3 enthusiasts from all across India to connect, engage, and collaborate. We look forward to seeing you all!
 
-Lastly, we congratulate the [16 incredible winning teams](https://twitter.com/pushprotocol/status/1684189869478760448) who built using Push at the ETHGlobal Paris Hackathon. Their innovative projects showcased the power and potential of decentralized communication in various domains.
+Lastly, we congratulate the [16 incredible winning teams](https://x.com/PushChain/status/1684189869478760448) who built using Push at the ETHGlobal Paris Hackathon. Their innovative projects showcased the power and potential of decentralized communication in various domains.
 
 As we bid farewell to July, we are inspired by the progress we’ve made and the extraordinary community support.
 

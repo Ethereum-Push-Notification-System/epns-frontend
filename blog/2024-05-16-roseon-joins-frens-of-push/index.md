@@ -1,15 +1,17 @@
 ---
 slug: roseon-joins-frens-of-push
-title: "Roseon - Leading AI-Powered Exchange Joins Frens Of Push"
+title: 'Roseon - Leading AI-Powered Exchange Joins Frens Of Push'
 authors: [push]
-image: "./cover-image.webp"
-description: "Roseon - Leading AI-Powered Exchange Joins Frens Of Push"
+image: './cover-image.webp'
+description: 'Roseon - Leading AI-Powered Exchange Joins Frens Of Push'
 text: "Welcome back to Frens of Push”- a deep dive into the top protocols and Push ecosystem partners. This week, we're joined by Roseon, a leading AI-powered cryptocurrency exchange."
 tags: [Push Protocol, Web3, Blockchain Technology, Roseon, frensofpush]
 ---
+
 ![Cover Image of Roseon - Leading AI-Powered Exchange Joins Frens Of Push  ](./cover-image.webp)
 
 <!--truncate-->
+
 Welcome back to "Frens of Push”- a deep dive into the top protocols and Push ecosystem partners. This week, we're joined by Roseon, a leading AI-powered cryptocurrency exchange.
 
 Roseon is the ultimate crypto ecosystem prioritizing user experience and gamification. It includes RoseonX, an AI-driven exchange with a modular architecture, and DeFi SuperApp, a one-stop mobile crypto app. With over 330K+ users and a global reach of 750K, it aims to boost crypto adoption and optimize investments.
@@ -58,4 +60,4 @@ RoseonX is an AI-powered exchange with a modular architecture, providing multi-c
 
 [RoseonX](https://dex.roseon.world/#/trade) | [Whitepaper](https://roseon.gitbook.io/roseon-whitepaper/whitepaper/master) | [Twitter](https://twitter.com/RoseonExchange) | [Telegram](https://t.me/Roseon) | [RoseonX Notification Channel](http://app.push.org/channels/0xcBEBcCCF0B846C686D68c4D9EDA95fb17a7eedaE)
 
-“Frens of Push” is our weekly content series to spotlight outstanding projects building with Push. If you want to be featured, reach out to us on [X](https://twitter.com/pushprotocol/), and you could be our next Fren in the series.
+“Frens of Push” is our weekly content series to spotlight outstanding projects building with Push. If you want to be featured, reach out to us on [X](https://x.com/PushChain/), and you could be our next Fren in the series.

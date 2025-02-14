@@ -4,7 +4,7 @@ title: 'Huobi Global will launch $PUSH (Ethereum Push Notification Service)'
 authors: [push]
 image: './cover-image.webp'
 text: 'We’re excited to announce that Huobi Global will list PUSH (Ethereum Push Notification Service) on August 30 in the sector of Huobi New.'
-tags: [Annoucements, Huobiglobal, Listings, Ethereum]
+tags: [Announcements, Huobiglobal, Listings, Ethereum]
 ---
 
 import { ImageText } from '@site/src/css/SharedStyling';

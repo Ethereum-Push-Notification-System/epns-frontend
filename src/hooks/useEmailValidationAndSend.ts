@@ -3,10 +3,13 @@
 // @ts-nocheck
 
 // React + Web3 Essentials
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 
 // Internal Components
-import { sendEmailToMailingList } from '@site/src/api';
+import {
+  sendEmailToChainMailingList,
+  sendEmailToMailingList,
+} from '@site/src/api';
 
 const MESSAGES = {
   SUCCESS: 'Thanks for subscribing!',
@@ -20,8 +23,10 @@ const validateEmail = (email) => {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 };
-
-function useEmailValidationAndSend() {
+type EmailValidationType = {
+  chain?: boolean;
+};
+const useEmailValidationAndSend: FC<EmailValidationType> = (chain) => {
   const [emailSuccess, setEmailSuccess] = useState(false);
   const [emailError, setEmailError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -29,14 +34,18 @@ function useEmailValidationAndSend() {
   const onEmailSubmit = async (e) => {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target));
-    // console.log(formData.email);
 
     if (validateEmail(formData.email)) {
       try {
         setIsLoading(true);
-        const sendyAPIResponse = await sendEmailToMailingList({
-          email: formData.email,
-          name: formData.email,
+        // Dynamically choose the API based on `chain`
+        const apiToCall = chain
+          ? sendEmailToChainMailingList
+          : sendEmailToMailingList;
+
+        const sendyAPIResponse = await apiToCall({
+          email: formData.email as string,
+          name: formData.email as string,
         });
 
         // check https://sendy.co/api for details
@@ -61,6 +70,6 @@ function useEmailValidationAndSend() {
   };
 
   return [isLoading, emailSuccess, emailError, onEmailSubmit];
-}
+};
 
 export default useEmailValidationAndSend;

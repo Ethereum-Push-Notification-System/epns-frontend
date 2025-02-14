@@ -58,4 +58,4 @@ These were just a few daily use-cases for the citizens of Blockville. With a cit
 
 EPNS is a decentralized notification protocol that enables users (wallet addresses) to receive notifications. Using the protocol, any dApp, service or smart contract can send notifications to users in a platform-agnostic fashion (mobile, tablet, web, user wallets, etc).
 
-Stay in touch with Push! [Twitter](http://x.com/pushprotocol), [Telegram](https://t.me/epnsproject), [Newsletter](https://epns.substack.com/), [Website,](http://epns.io/) [Discord](https://discord.gg/YVPB99F9W5)
+Stay in touch with Push! [Twitter](http://x.com/PushChain), [Telegram](https://t.me/epnsproject), [Newsletter](https://epns.substack.com/), [Website,](http://epns.io/) [Discord](https://discord.gg/YVPB99F9W5)

@@ -32,7 +32,7 @@ import {
   Section,
   Span,
 } from '@site/src/css/SharedStyling';
-import Footer from '@site/src/segments/Footer';
+import ChainFooter from '../Chain/ChainFooter';
 
 // Import Assets
 import ArrowUp from '@site/static/assets/docs/ArrowUpRight-pink.svg';
@@ -40,6 +40,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 // Internal Configs
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Spinner, {
   SPINNER_TYPE,
 } from '@site/src/components/reusables/spinners/SpinnerUnit';
@@ -51,7 +52,6 @@ import {
 } from '@site/src/config/DocsHubList';
 import GLOBALS, { device } from '@site/src/config/globals';
 import { PageMeta } from '@site/src/config/pageMeta';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useSiteBaseUrl } from '@site/src/utils/useSiteBaseUrl';
 
 function QuickstartList({ title, codeblock, Svg }: IQuickstartItem) {
@@ -84,6 +84,8 @@ function TechDocItem({
   const baseUrl = useSiteBaseUrl();
 
   const handleOpenLink = (e, link: { e: any; link: string }) => {
+    if (!link) return;
+
     // Check if link is an absolute URL (starts with http or https)
     const isAbsoluteUrl = /^https?:\/\//i.test(link);
 
@@ -213,7 +215,7 @@ export default function HomepageFeatures(): JSX.Element {
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:site' content='@pushprotocol' />
+        <meta name='twitter:site' content='@PushChain' />
         <meta name='twitter:title' content='Push | Documentation Hub' />
         <meta
           name='twitter:description'
@@ -231,12 +233,12 @@ export default function HomepageFeatures(): JSX.Element {
           {JSON.stringify({
             '@context': 'https://schema.org/',
             '@type': 'Organization',
-            name: 'Push Protocol',
+            name: 'Push Chain',
             description: 'The Communication Protocol of Web3',
             url: 'https://push.org',
             logo: '/assets/website/favicon.ico',
             sameAs: [
-              'https://twitter.com/pushprotocol',
+              'https://x.com/PushChain',
               'https://www.linkedin.com/company/push-protocol/mycompany/',
             ],
           })}
@@ -257,21 +259,20 @@ export default function HomepageFeatures(): JSX.Element {
           <HeroHeader>
             <ItemV zIndex='1'>
               <H1 color='var(--ifm-color-primary-text)' margin='0 !important'>
-                Push Documentation Hub
+                Push Chain Documentation Hub
               </H1>
               <Span
                 color='var(--ifm-color-primary-text)'
                 padding='0 0 64px 0'
                 textAlign='center'
               >
-                Get started with building native web3 communition for your
-                protocol!
+                Get started with building shared state apps for any chain.
               </Span>
-              <HeroButton to='#techdocs'>
+              <HeroButton onClick={() => (window.location.href = '#techdocs')}>
                 <Span padding='0 10px 0 0' fontSize='18px'>
-                  Get Started
-                </Span>
-                <FiArrowUpRight size={16} />
+                  Explore Docs
+                </Span>{' '}
+                ↗
               </HeroButton>
             </ItemV>
 
@@ -300,7 +301,9 @@ export default function HomepageFeatures(): JSX.Element {
       {/* QUICKSTART SECTION */}
       <HomepageSection alignItems='flex-start'>
         <FluidContent>
-          <HomepageSubHeader>Popular Quickstart</HomepageSubHeader>
+          <HomepageSubHeader id='quickstart'>
+            Popular Quickstart
+          </HomepageSubHeader>
 
           <PopularQuickiesList>
             {QuickstartItems.map((item, idx) => {
@@ -343,7 +346,7 @@ export default function HomepageFeatures(): JSX.Element {
       <HomepageSection>
         <FluidContent>
           <ItemH justifyContent='flex-start'>
-            <HomepageSubHeader>Push SDK</HomepageSubHeader>
+            <HomepageSubHeader>Push Chain SDK</HomepageSubHeader>
             <Link
               to='https://www.npmjs.com/package/@pushprotocol/restapi'
               target='_blank'
@@ -371,26 +374,26 @@ export default function HomepageFeatures(): JSX.Element {
           </PushSdkCardList>
 
           {/* <div className='Faqs-main-container'>
-            <div className='sub-container'>
-              <span className="hero_home_Faq_header">
-                Frequently Asked Questions
-              </span>
-              <Link to='https://push.org/faq' target='_blank'>
-                <div className='hero_home_explore'>
-                  <p className='hero_home_explore_link'>
-                    Explore FAQs
-                  </p>
-                  <FiArrowUpRight className='arrowUp-icon' />
-                </div>
-              </Link>
-            </div>
-            <FAQ />
+                  <div className='sub-container'>
+                    <span className="hero_home_Faq_header">
+                      Frequently Asked Questions
+                    </span>
+                    <Link to='https://push.org/faq' target='_blank'>
+                      <div className='hero_home_explore'>
+                        <p className='hero_home_explore_link'>
+                          Explore FAQs
+                        </p>
+                        <FiArrowUpRight className='arrowUp-icon' />
+                      </div>
+                    </Link>
+                  </div>
+                  <FAQ />
 
-          </div> */}
+                </div> */}
         </FluidContent>
       </HomepageSection>
 
-      <Footer />
+      <ChainFooter showPattern={false} />
     </Layout>
   );
 }
@@ -424,7 +427,8 @@ const HeroHeader = styled(ItemV)`
   }
 `;
 
-const HeroButton = styled(Link)`
+const HeroButton = styled(Button)`
+  cursor: ${(props) => (props.disabled ? 'not-allowed !important' : 'pointer')};
   align-items: center;
   background-color: #d548ec;
   border-radius: 16px;
@@ -445,7 +449,7 @@ const HeroButton = styled(Link)`
 `;
 
 const pulseStaticAnim = keyframes`
-  100% { 
+  100% {
     opacity: 0.25;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
@@ -471,7 +475,7 @@ const Pulse = styled.div`
 `;
 
 const pulsateAnim = keyframes`
-  100% { 
+  100% {
     opacity: 0;
     transform: scale(12);
   }
@@ -543,9 +547,7 @@ const PopularQuickiesList = styled(ItemH)`
 const PopularQuickiesCard = styled(ItemV)`
   margin: 0px;
   align-self: flex-start;
-  flex: 0 0 calc(50% - 21.33px);
-  min-width: 280px;
-  max-width: calc(50% - 21.33px);
+  flex: 1;
   overflow: auto;
   width: 100%;
 

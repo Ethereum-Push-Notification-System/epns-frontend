@@ -120,4 +120,4 @@ We are excited for this new era for the Push Protocol Network and we are extreme
 
 For more questions or queries, join us in Discord 👉https://discord.com/invite/pushprotocol
 
-You can also get started building with Push tools 👉https://push.org/docs/
+You can also get started building with Push tools 👉https://comms.push.org/docs/

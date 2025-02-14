@@ -4138,7 +4138,7 @@ export const objChannelList = [
     id: 2132,
     ipfshash: 'Qmat292UQa1UUoMhD5oacZhtYq9pyQ1qfLzUmpnCrQbt7u',
     name: 'Push Developers',
-    url: 'https://push.org/docs',
+    url: 'https://comms.push.org/docs',
     icon: 'https://backend.epns.io/apis/v1/channels/icon/0x057fcD7BD66e0b0e7CBF387D12b2A49A20d30922',
     subscriber_count: 60,
     type: 'Service',

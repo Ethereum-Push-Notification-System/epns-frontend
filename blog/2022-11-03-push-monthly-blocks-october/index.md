@@ -29,7 +29,7 @@ The fun in the development team never ends. As we mentioned last month, many ini
 
 October started strong with our announcement of Push Protocol deployed in Polygon Mainnet to bring world-class communication infrastructure to the Polygon ecosystem.
 
-You can [read more here](https://twitter.com/pushprotocol/status/1575485566065381377?s=20&t=TdVmvodS54VtGSPTMr-Ovw&utm_source=substack&utm_medium=email) in case you missed it!
+You can [read more here](https://x.com/PushChain/status/1575485566065381377?s=20&t=TdVmvodS54VtGSPTMr-Ovw&utm_source=substack&utm_medium=email) in case you missed it!
 
 ### Push Chat (Alpha)
 
@@ -58,11 +58,11 @@ And last, but not least… Push Smart Contracts v2 is now in development. More n
 
 Always exciting to see more projects trusting their Web3 communication on Push Protocol!
 
-This month we started with amazing news of many projects joining us to celebrate Push Protocol coming to Polygon. We announced our partnerships with <a href="https://twitter.com/pushprotocol/status/1576959192761438209?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Lens Protocol</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>PoolTogether</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Qi Dao</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Mean Finance</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>GoodGhosting</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b></b>MahaDAO</a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>EthSign</b></a>, <a href="https://twitter.com/pushprotocol/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Polychain Monsters</b></a> on Polygon Mainnet.
+This month we started with amazing news of many projects joining us to celebrate Push Protocol coming to Polygon. We announced our partnerships with <a href="https://x.com/PushChain/status/1576959192761438209?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Lens Protocol</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>PoolTogether</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Qi Dao</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Mean Finance</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>GoodGhosting</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b></b>MahaDAO</a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>EthSign</b></a>, <a href="https://x.com/PushChain/status/1577328098047332358?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Polychain Monsters</b></a> on Polygon Mainnet.
 
-We also announced our collaboration with <a href="https://twitter.com/pushprotocol/status/1580563883823022080?s=20&t=8Uce2YW1VuHsKVjqMAhKQQ&utm_source=substack&utm_medium=email"><b>BeInCrypto</b></a> to deliver news directly to readers’ web3 wallets.
+We also announced our collaboration with <a href="https://x.com/PushChain/status/1580563883823022080?s=20&t=8Uce2YW1VuHsKVjqMAhKQQ&utm_source=substack&utm_medium=email"><b>BeInCrypto</b></a> to deliver news directly to readers’ web3 wallets.
 
-And closer to the end of month we also announced our collaboration with <a href="https://twitter.com/pushprotocol/status/1584907724504305664?s=20&t=WLH5_GW8954-niduUfDuNg&utm_source=substack&utm_medium=email"><b>Phuture Finance</b></a> to notify users about rebalances and index changes over the week.
+And closer to the end of month we also announced our collaboration with <a href="https://x.com/PushChain/status/1584907724504305664?s=20&t=WLH5_GW8954-niduUfDuNg&utm_source=substack&utm_medium=email"><b>Phuture Finance</b></a> to notify users about rebalances and index changes over the week.
 
 We love how all our frens help make Push notifications a battle tested use case for the Web3. We are looking forward to start seeing more Push Chat integrations as we make progress.
 
@@ -72,16 +72,16 @@ We love how all our frens help make Push notifications a battle tested use case 
 
 This was a very intense & beautiful month for the Push Team to interact with our community thanks to all the virtual and IRL events that happened this month.
 
-1. We received an overwhelming response with 55+ projects building on top of <a href="https://twitter.com/pushprotocol/status/1575838134251626496?s=20&t=9cwhxiIYke5lIs7SM5f8Hg&utm_source=substack&utm_medium=email"><b>Push at EthGlobal’s ETHOnline2022 Hackathon!</b></a> Lots and lots of very creative projects by awesome hackers.
-2. Push Team had the opportunity to participate in in ETHGlobal’s <a href="https://twitter.com/pushprotocol/status/1577698820632084489?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>ETHBogota hackathon</b></a>. Which again gave us the chance to interact IRL with hackers and receive first-hand feedback from them to improve our Protocol. Thanks for that hackers! And congratulations to all <a href="https://twitter.com/pushprotocol/status/1580196671266246656?s=20&t=8Uce2YW1VuHsKVjqMAhKQQ&utm_source=substack&utm_medium=email"><b>EthBogota Hackathon Winners</b></a>.
-3. Right after ETHBogota, DevCon came in! And the <a href="https://twitter.com/pushprotocol/status/1578782319430623232?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Push Crew</b></a> was there ready to mingle with all our old and new frens! We couldn’t have had more fun.
+1. We received an overwhelming response with 55+ projects building on top of <a href="https://x.com/PushChain/status/1575838134251626496?s=20&t=9cwhxiIYke5lIs7SM5f8Hg&utm_source=substack&utm_medium=email"><b>Push at EthGlobal’s ETHOnline2022 Hackathon!</b></a> Lots and lots of very creative projects by awesome hackers.
+2. Push Team had the opportunity to participate in in ETHGlobal’s <a href="https://x.com/PushChain/status/1577698820632084489?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>ETHBogota hackathon</b></a>. Which again gave us the chance to interact IRL with hackers and receive first-hand feedback from them to improve our Protocol. Thanks for that hackers! And congratulations to all <a href="https://x.com/PushChain/status/1580196671266246656?s=20&t=8Uce2YW1VuHsKVjqMAhKQQ&utm_source=substack&utm_medium=email"><b>EthBogota Hackathon Winners</b></a>.
+3. Right after ETHBogota, DevCon came in! And the <a href="https://x.com/PushChain/status/1578782319430623232?s=20&t=PVga-t-8zgBi6Vw5A6EWqA&utm_source=substack&utm_medium=email"><b>Push Crew</b></a> was there ready to mingle with all our old and new frens! We couldn’t have had more fun.
 
 ![EthBogota](./image-2.jpg)
 
 During DevCon week the Push Crew also participated in talks, workshops , and panels:
 
 1. Harsh talked about <a href="https://www.youtube.com/watch?v=Diln2WBL7a0&list=PLvTrX8LNPbPkQ3qDNpQDRZQClhUl_BJQp"><b>Why Communication is a Public Good?</b></a> during Schelling Point in Bogota.
-2. Richa joined the <a href="https://twitter.com/pushprotocol/status/1578782336103038977?s=20&t=f2WEtOkUpYSQcSSqB1JvjQ"><b>Social Media Reimagined</b></a> panel during Polygon Connect to talk about how to build Forward-Thinking platforms
+2. Richa joined the <a href="https://x.com/PushChain/status/1578782336103038977?s=20&t=f2WEtOkUpYSQcSSqB1JvjQ"><b>Social Media Reimagined</b></a> panel during Polygon Connect to talk about how to build Forward-Thinking platforms
 3. Jaf joined ETH Latam Bogota day to talk about <b>Why Communication matters in the Web3?</b>
 4. Fabio gave a workshop on<a href="https://www.youtube.com/watch?v=h0I7QrRHKzs"><b> How to add Web3 Notifications to your project using Push Protocol</b></a>.
 

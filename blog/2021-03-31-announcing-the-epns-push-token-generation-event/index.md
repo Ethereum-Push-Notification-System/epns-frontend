@@ -19,7 +19,7 @@ import { ImageText } from '@site/src/css/SharedStyling';
 
 <!--truncate-->
 
-> Note: EPNS has been rebranded to Push. The latest token design is available at [https://push.org/docs/tokenomics/deepdive/$push/](https://push.org/docs/tokenomics/deepdive/$push/)
+> Note: EPNS has been rebranded to Push. The latest token design is available at [https://comms.push.org/docs/tokenomics/deepdive/$push/](https://comms.push.org/docs/tokenomics/deepdive/$push/)
 
 Since we announced our seed round last fall, we’ve been heads down continuing to build the world’s first decentralized notification protocol for Ethereum. We’re fast approaching mainnet launch, so we’re taking the time today to explain to the community what they can expect for the $PUSH token generation event (TGE).
 

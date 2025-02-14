@@ -1,0 +1,456 @@
+---
+id: docs-utility-functions
+title: Utility Functions
+hide_title: true
+slug: ./utility-functions
+displayed_sidebar: pushChainSidebar
+sidebar_position: 6
+image: "/assets/docs/previews/docs_notifications_develop_fetch_chats--create_channel.png"
+---
+
+# Utility Functions Overview
+
+This page documents the **Utils** class, which provides a set of helper methods for:
+
+1. **Account/Address Conversion** (EVM ↔ Push bech32m ↔ CAIP)
+2. **Conversion between CAIP-10 addresses and UniversalAccount**
+3. **Block Serialization/Deserialization**
+4. **Transaction Serialization/Deserialization**
+5. **Transaction Data Serialization/Deserialization** (by category)
+
+Below is a complete breakdown of each function in the **Utils** class.
+
+<head>
+  <title>{`Utility Functions | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+import {
+  ModalContainer,
+  ModalSmall,
+  ModalWrapper,
+  AFocus,
+} from '@site/src/css/SharedStyling';
+
+---
+
+## 1. `PushChain.utils.account`
+
+A namespace dedicated to converting addresses and handling **UniversalAccount** objects. Each method helps you work with different address formats.
+
+### 1.1 From CAIP-10 to UniversalAccount
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const account = PushChain.utils.account.toUniversal('eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const account = PushChain.utils.account.toUniversal('eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const account = PushChain.utils.account.toUniversal('eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `toUniversal` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `chainAgnosticAddress`  | `string`   | A CAIP-10 address in a chain-agnostic format. |
+
+<Details summary="Expected response">
+
+```typescript
+{
+  chain: 'ETHEREUM',
+  chainId: '1',
+  address: '0x35B84d6848D16415177c64D64504663b998A6ab4'
+}
+```
+
+Response properties description:
+
+| **Property**             | **Type**                 | **Description**                                                                                     |
+|---------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| `chain`             | `string`                | The chain name |
+| `chainId`             | `string`                | The chain ID |
+| `address`             | `string`                | The address |
+
+</Details>
+
+### Example: Convert Push devnet address to UniversalAccount
+
+```typescript
+// A push-formatted address on Push devnet
+const universalAccount = PushChain.utils.account.toUniversal('push:devnet:push1xyz123...');
+// {
+//   chain: 'PUSH',
+//   chainId: 'devnet',
+//   address: 'push1xyz123...'
+// }
+```
+
+### 1.2 From UniversalAccount to CAIP-10
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const universalAccount = {
+    chain: CONSTANTS.CHAIN.ETHEREUM,
+    chainId: CONSTANTS.CHAIN_ID.ETHEREUM.SEPOLIA,
+    address: '0x35B84d6848D16415177c64D64504663b998A6ab4',
+  };
+
+  const result = PushChain.utils.account.toChainAgnostic(universalAccount);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const universalAccount = {
+    chain: CONSTANTS.CHAIN.ETHEREUM,
+    chainId: CONSTANTS.CHAIN_ID.ETHEREUM.SEPOLIA,
+    address: '0x35B84d6848D16415177c64D64504663b998A6ab4',
+  };
+
+  const result = PushChain.utils.account.toChainAgnostic(universalAccount);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const universalAccount = {
+    chain: CONSTANTS.CHAIN.ETHEREUM,
+    chainId: CONSTANTS.CHAIN_ID.ETHEREUM.SEPOLIA,
+    address: '0x35B84d6848D16415177c64D64504663b998A6ab4',
+  };
+
+  const result = PushChain.utils.account.toChainAgnostic(universalAccount);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `toChainAgnostic` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `universalAccount`  | `UniversalAccount`   | A UniversalAccount object. |
+
+<Details summary="Expected response">
+
+```typescript
+eip155:1:0x35B84d6848D16415177c64D64504663b998A6ab4
+```
+
+</Details>
+
+### Example: Convert Mainnet Ethereum UniversalAccount to CAIP-10
+
+```typescript
+const chainAgnosticStr = PushChain.utils.account.toChainAgnostic({
+  chain: 'ETHEREUM',
+  chainId: '1',
+  address: '0xabc123...'
+});
+// => 'eip155:1:0xabc123...'
+```
+
+## 1.3 Converts an EVM (Ethereum) address to a Push (bech32m) address
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const pushAddr = PushChain.utils.account.evmToPushAddress('0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const pushAddr = PushChain.utils.account.evmToPushAddress('0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const pushAddr = PushChain.utils.account.evmToPushAddress('0x35B84d6848D16415177c64D64504663b998A6ab4');
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `evmToPush` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `evmAddress`  | `string`   | An EVM address. |
+
+<Details summary="Expected response">
+
+```typescript
+push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux
+```
+
+</Details>
+
+### Example: Convert Ethereum mainnet address to Push devnet address
+
+```typescript
+// A standard EVM address on Ethereum mainnet
+const pushAddr = PushChain.utils.account.evmToPushAddress('0x35B84d6848D16415177c64D64504663b998A6ab4');
+// => 'push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux'
+```
+
+## 1.4 Converts a Push (bech32m) address to an EVM (Ethereum) address
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const evmAddr = PushChain.utils.account.pushToEvmAddress('push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux');
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+    const evmAddr = PushChain.utils.account.pushToEvmAddress('push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux');
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+    const evmAddr = PushChain.utils.account.pushToEvmAddress('push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux');
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `evmToPush` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `evmAddress`  | `string`   | An EVM address. |
+
+<Details summary="Expected response">
+
+```typescript
+0x35B84d6848D16415177c64D64504663b998A6ab4
+```
+
+</Details>
+
+
+### Example: Convert Ethereum mainnet address to Push devnet address
+
+```typescript
+// A standard EVM address on Ethereum mainnet
+const pushAddr = PushChain.utils.account.evmToPushAddress('0x35B84d6848D16415177c64D64504663b998A6ab4');
+// => 'push1xkuy66zg69jp29muvnty2prx8wvc5645f9y5ux'
+```
+
+## 2. `PushChain.utils.transaction`
+
+## 2.1 Serialize transaction
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const serializedTx = PushChain.utils.tx.serialize(myTx);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const serializedTx = PushChain.utils.tx.serialize(myTx);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const serializedTx = PushChain.utils.tx.serialize(myTx);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `serialize` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `tx`  | `Transaction`   | A transaction object. |
+
+
+## 2.2 Deserialize transaction
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const deserializedTx = PushChain.utils.tx.deserialize(serializedTx);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const deserializedTx = PushChain.utils.tx.deserialize(serializedTx);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const deserializedTx = PushChain.utils.tx.deserialize(serializedTx);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `deserialize` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `serializedTx`  | `Uint8Array`   | A serialized transaction. |
+
+## 2.3 Serialize Transaction Payload Data
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const initDidData = { /* ...  */ };
+  const serializedData = PushChain.utils.tx.serializeData(initDidData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const initDidData = { /* ...  */ };
+  const serializedData = PushChain.utils.tx.serializeData(initDidData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const initDidData = { /* ...  */ };
+  const serializedData = PushChain.utils.tx.serializeData(initDidData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `serializeData` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `data`  | `InitDid`   | The data to serialize. |
+| `category`  | `string`   | The category of the transaction. |
+
+## 2.4 Serialize Transaction Payload Data
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const deserializedData = PushChain.utils.tx.deserializeData(serializedData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const deserializedData = PushChain.utils.tx.deserializeData(serializedData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const deserializedData = PushChain.utils.tx.deserializeData(serializedData, TxCategory.INIT_DID);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `deserializeData` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `serializedData`  | `Uint8Array`   | The serialized data. |
+| `category`  | `string`   | The category of the transaction. |
+
+## 3. `PushChain.utils.block`
+
+## 3.1 Serialize block
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const encodedBlock = PushChain.utils.block.serialize(myBlock);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const encodedBlock = PushChain.utils.block.serialize(myBlock);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const encodedBlock = PushChain.utils.block.serialize(myBlock);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `serialize` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `block`  | `GeneratedBlock`   | A block object. |
+
+## 3.2 Deserialize block
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+  ```typescript
+  const decodedBlock = PushChain.utils.block.deserialize(encodedBlock);
+  ```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+  ```typescript
+  const decodedBlock = PushChain.utils.block.deserialize(encodedBlock);
+  ```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+  ```typescript
+  const decodedBlock = PushChain.utils.block.deserialize(encodedBlock);
+  ```
+  </TabItem>
+</Tabs>
+
+---
+
+### `deserialize` parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `block`  | `Uint8Array`   | An encoded block. |
+
+
+

@@ -57,4 +57,4 @@ Push Protocol addresses this issue by revolutionizing the user experience in Web
 
 In conclusion, cross-chain communication is a critical component of the Web3 ecosystem, and Push Protocol provides the necessary middleware to make interoperability a reality. With its focus on improving the UX in Web3, Push Protocol is poised to play a vital role in shaping the future of the decentralized world.
 
-If you’re curious to learn more about how Push Protocol’s interoperability works and how you can enable cross-chain communication, come read more in our documentation👉 [right here](/docs/notifications/tutorials/create-your-channel/).
+If you’re curious to learn more about how Push Protocol’s interoperability works and how you can enable cross-chain communication, come read more in our documentation👉 [right here](https://comms.push.org/docs/notifications/tutorials/create-your-channel/).

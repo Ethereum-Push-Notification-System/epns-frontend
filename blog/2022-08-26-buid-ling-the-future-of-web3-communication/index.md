@@ -1,6 +1,6 @@
 ---
 slug: buid-ling-the-future-of-web3-communication-with-epns-at-eth-online-2022
-title: BUIDLing the Future of Web3 Communication With EPNS at ETHOnline 2022
+title: 'BUIDLing the Future of Web3 Communication With EPNS at ETHOnline 2022'
 authors: [push]
 image: './cover-image.png'
 text: 'One of the best things about web3 and hackathons is how unique ideas transform into something tangible and solve web3 challenges and problems.'

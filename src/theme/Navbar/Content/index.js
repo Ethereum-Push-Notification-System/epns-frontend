@@ -238,7 +238,7 @@ export default function NavbarContent() {
               </NavItem>
             ))}
 
-          {!isLaptopM && (
+          {!isLaptopM && pathname?.startsWith(baseURL + '/blog') && (
             <NavigationMenuItem>
               <NavigationMenuHeader
                 onClick={(e) => onMobileHeaderMenuClick(e, 0)}

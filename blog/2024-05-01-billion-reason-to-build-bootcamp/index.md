@@ -14,9 +14,9 @@ tags: [Push Protocol, Web3, Blockchain Technology, BRB]
 
 (BRB Bootcamp is the go-to place to learn every aspect of the web3 ecosystem from fundamentals to shipping your first project)
 
-BRB was initiated with a vision to solve the [1 HARD problem](https://twitter.com/pushprotocol/status/1694711099336347979) with the first step taken in 2023 by traveling to 18 cities where amazing minds come together to learn and build with a chance to win over $50,000 in prizes!
+BRB was initiated with a vision to solve the [1 HARD problem](https://x.com/PushChain/status/1694711099336347979) with the first step taken in 2023 by traveling to 18 cities where amazing minds come together to learn and build with a chance to win over $50,000 in prizes!
 
-Now, we are back with a bigger step "[Billion Reasons to Build (BRB) Bootcamp](https://twitter.com/pushprotocol/status/1785312909649707485)" a global virtual program designed to cover every aspect of the Web3 ecosystem, far beyond technology alone 💯"
+Now, we are back with a bigger step "[Billion Reasons to Build (BRB) Bootcamp](https://x.com/PushChain/status/1785312909649707485)" a global virtual program designed to cover every aspect of the Web3 ecosystem, far beyond technology alone 💯"
 
 With an extensive [6-week curriculum](https://github.com/orgs/push-protocol/discussions/52) we will be covering smart contracts, UI/UX in web3, building blocks of a startup, and many more. **It’s not just a general web3 bootcamp, but a power-packed combo of tutorial lectures, hands-on sessions, assignments, projects, and some special rewards✨**
 
@@ -51,6 +51,6 @@ Check out the [BRB Bootcamp Discussion](https://github.com/orgs/push-protocol/di
 
 ## Push Builders: More things to know!
 
-For the latest on development, hackathons, and exclusive insights, follow Push Builders on X [@pushbuilders](https://twitter.com/pushbuilders) & [@pushprotocol](https://twitter.com/pushprotocol). It's your gateway to all things BRB Bootcamp.
+For the latest on development, hackathons, and exclusive insights, follow Push Builders on X [@pushbuilders](https://twitter.com/pushbuilders) & [@PushChain](https://x.com/PushChain). It's your gateway to all things BRB Bootcamp.
 
 Join our [BRB Bootcamp Discord channel](https://discord.gg/uhSRbPVE) to get any support from the team! Let's drive the future of Web3 together.

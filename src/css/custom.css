@@ -27,6 +27,7 @@
   --ifm-font-family-brbprimary: 'Glancyr', sans-serif;
   --ifm-font-family-brbsecondary: 'Green Brooks', sans-serif;
   --ifm-font-family-homepage: 'FK Grotesk Neue';
+  --ifm-font-family-chainpage: 'N27', sans-serif;
   --ifm-navbar-link-color: #000;
   --ifm-button-background-color: #dd44b9;
   --ifm-custom-base: rgba(59, 59, 59, 0.75);
@@ -202,6 +203,39 @@
     url('../../static/fonts/FKGroteskNeue-Bold.woff2') format('woff2'),
     url('../../static/fonts/FKGroteskNeue-Bold.woff') format('woff'),
     url('../../static/fonts/FKGroteskNeue-Bold.otf') format('opentype');
+  font-weight: 700 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'N27';
+  src:
+    url('../../static/fonts/n27-regular-webfont.woff2') format('woff2'),
+    url('../../static/fonts/n27-regular-webfont.woff') format('woff'),
+    url('../../static/fonts/n27-regular-webfont.ttf') format('ttf');
+  font-weight: 300 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'N27';
+  src:
+    url('../../static/fonts/n27-medium-webfont.woff2') format('woff2'),
+    url('../../static/fonts/n27-medium-webfont.woff') format('woff'),
+    url('../../static/fonts/n27-medium-webfont.ttf') format('ttf');
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'N27';
+  src:
+    url('../../static/fonts/n27-bold-webfont.woff2') format('woff2'),
+    url('../../static/fonts/n27-bold-webfont.woff') format('woff'),
+    url('../../static/fonts/n27-bold-webfont.ttf') format('ttf');
   font-weight: 700 800;
   font-style: normal;
   font-display: swap;

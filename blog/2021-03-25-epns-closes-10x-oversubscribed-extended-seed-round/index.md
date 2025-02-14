@@ -61,6 +61,6 @@ Loads of 💖💖💖
 
 Richa **+** Harsh
 
-Stay in touch with Push! [Website](https://push.org/), [Twitter](https://x.com/pushprotocol), [Telegram](https://t.me/epnsproject)
+Stay in touch with Push! [Website](https://push.org/), [Twitter](https://x.com/PushChain), [Telegram](https://t.me/epnsproject)
 
 **Important:** Please beware of scams. Any information including the token contract address will only be published as a pinned message in our [official EPNS Telegram group](https://t.me/epnsproject) (and our [announcement group](https://t.me/epnsprojectnews)) and other [official channels](https://epns.io/). When in doubt, reach out to us on Telegram or through [our website](http://epns.io/)!

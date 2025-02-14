@@ -4,7 +4,7 @@ title: 'Push Protocol Monthly Updates: A Look Back at July'
 authors: [push]
 image: './cover-image.webp'
 description: 'Push Protocol Monthly Updates: A Look Back at July'
-text: "July was a monumental month for Push Protocol as we hit the huge milestone of 100 Million Push Notifications"
+text: 'July was a monumental month for Push Protocol as we hit the huge milestone of 100 Million Push Notifications'
 tags: [Push Protocol, Web3, Blockchain Technology]
 ---
 
@@ -12,7 +12,7 @@ tags: [Push Protocol, Web3, Blockchain Technology]
 
 <!--truncate-->
 
-July was a monumental month for Push Protocol as we hit the huge milestone of [**100 Million**](https://x.com/pushprotocol/status/1824491148229898313) Push Notifications. More than 8.91 Million Notifications were sent with a cumulative 241k subscribers reached ending the month on a high note marking significant progress in protocol user engagement, development, and community growth. 
+July was a monumental month for Push Protocol as we hit the huge milestone of [**100 Million**](https://x.com/PushChain/status/1824491148229898313) Push Notifications. More than 8.91 Million Notifications were sent with a cumulative 241k subscribers reached ending the month on a high note marking significant progress in protocol user engagement, development, and community growth.
 
 With all of this in mind, we are excited to share the highlights:
 
@@ -20,7 +20,7 @@ With all of this in mind, we are excited to share the highlights:
 
 Our [website](https://push.org/) has undergone a revamp, as we:
 
-- Updated the [developer docs](https://push.org/docs/) and [2024 live roadmap](https://push.org/docs/roadmap/).
+- Updated the [developer docs](https://comms.push.org/docs/) and [2024 live roadmap](https://comms.push.org/docs/roadmap/).
 - Performed various bug fixes for better UX.
 - Uploaded several new [articles](https://push.org/blog/) focused on developer engagement and protocol growth announcements.
 
@@ -43,7 +43,7 @@ On the backend, we are:
 
 On the Smart Contracts side, we have:
 
-- Added additional functional support that enables the update of channel profiles  from any chain.
+- Added additional functional support that enables the update of channel profiles from any chain.
 - Completed the setup of an extensive mainnet testing framework for the CCR feature.
 - Completed the optimizations for additional CCR-related features.
 - Extended the optimization phase of development to include the gas optimization of the current Core and Comm contracts.
@@ -52,14 +52,14 @@ On the Smart Contracts side, we have:
 
 We're thrilled to announce new partnerships:
 
-1. We welcomed [Rivera](https://app.push.org/channels/0xACF193302115b3e1b5E72402657ca3A2A21BeD87) -  a liquidity management platform for transforming concentrated positions into DeFi-composable yield tokens who is integrating Push Notifications to enable weekly epoch rewards, APY changes, and more notification alerts for its users.
-2. We partnered with [ETH Uruguay](https://x.com/pushprotocol/status/1810185041793966136) to co-sponsor the Buildathon event, offering bounties for developing projects using Push’s communication services.
-3. Push Protocol’s long-term partner Unstoppable Domains launched Group Chat powered by Push Protocol for the Crypto ‘[Whale](https://x.com/sandy_carter/status/1809736115861221675)’ group and new gated group chats, powered by Push for [Stepn](https://x.com/pushprotocol/status/1816376657915044173), [Raiin](https://x.com/pushprotocol/status/1815356125178728512), and [.ubu](https://x.com/pushprotocol/status/1819715311253307611) domain holders.
+1. We welcomed [Rivera](https://app.push.org/channels/0xACF193302115b3e1b5E72402657ca3A2A21BeD87) - a liquidity management platform for transforming concentrated positions into DeFi-composable yield tokens who is integrating Push Notifications to enable weekly epoch rewards, APY changes, and more notification alerts for its users.
+2. We partnered with [ETH Uruguay](https://x.com/PushChain/status/1810185041793966136) to co-sponsor the Buildathon event, offering bounties for developing projects using Push’s communication services.
+3. Push Protocol’s long-term partner Unstoppable Domains launched Group Chat powered by Push Protocol for the Crypto ‘[Whale](https://x.com/sandy_carter/status/1809736115861221675)’ group and new gated group chats, powered by Push for [Stepn](https://x.com/PushChain/status/1816376657915044173), [Raiin](https://x.com/PushChain/status/1815356125178728512), and [.ubu](https://x.com/PushChain/status/1819715311253307611) domain holders.
 
 ### Ecosystem Highlights:
 
 - Push Protocol’s Founder Harsh Rajat joined the [**Digital Duniya Podcast**](https://www.youtube.com/watch?v=-AMYb7UWHQk) to talk in-depth about the inception of Push Protocol and entrepreneurial tips for early founders, especially from India.
-- With Push’s expansion to [Arbitrum](https://arbitrum.io/), we conducted an exclusive [AMA Twitter Space](https://x.com/i/spaces/1eaKbaEbBekxX) with Arbitrum ecosystem partners  including [Inferium](https://www.inferium.io/), [LogX](https://www.logx.trade/), and [Factor](https://factor.fi/), moderated by our DAO Lead.
+- With Push’s expansion to [Arbitrum](https://arbitrum.io/), we conducted an exclusive [AMA Twitter Space](https://x.com/i/spaces/1eaKbaEbBekxX) with Arbitrum ecosystem partners including [Inferium](https://www.inferium.io/), [LogX](https://www.logx.trade/), and [Factor](https://factor.fi/), moderated by our DAO Lead.
 - We successfully conducted the second iteration of our [Billion Reasons to Build (BRB) Bootcamp](https://push.org/brb/), this time on a global scale via an online medium. Over six weeks, the [bootcamp](https://x.com/pushbuilders/status/1812855006619423049) attracted 70 participants, featured 10 masterclass lectures, and garnered 60,000+ impressions on social media.
 - Further, we hosted Wormhole for a [Push X Space](https://x.com/i/spaces/1djxXrbEezOGZ) to discuss how Push will enable not just cross-chain but all-chain communications. Zaryab and Ian joined from our side, with Os from Wormhole’s ecosystem participating as well.
 - Push was also invited as a guest at the [Koala Wallet’s AMA X Space](https://x.com/i/spaces/1yoKMwPwyalJQ).
@@ -74,6 +74,6 @@ We're thrilled to announce new partnerships:
 - The Push Alpha Community on Push Chat grew its user base to 500+ participants becoming the largest conditionally gated community on Push DApp.
 - Push Protocol received a notable mention in [Electric Capital’s Crypto Market Map](https://www.cryptomarketmap.org/).
 - The third iteration of the Push India Ambassador’s program has been formally initiated.
-- We also had a booth set up at [ETH CC Brussels](https://x.com/pushprotocol/status/1811046959353880785) at the Metamask Building Onchain event, featuring [Push Metamask Snap](https://snaps.metamask.io/snap/npm/pushprotocol/snap/).
+- We also had a booth set up at [ETH CC Brussels](https://x.com/PushChain/status/1811046959353880785) at the Metamask Building Onchain event, featuring [Push Metamask Snap](https://snaps.metamask.io/snap/npm/pushprotocol/snap/).
 
 Stay tuned for more updates as we continue to push the boundaries of the Web3 ecosystem.

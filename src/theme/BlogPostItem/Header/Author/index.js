@@ -8,6 +8,7 @@ import Link from '@docusaurus/Link';
 import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info';
 import React from 'react';
 import styled from 'styled-components';
+import { useSiteBaseUrl } from '@site/src/utils/useSiteBaseUrl';
 
 function MaybeLink(props) {
   if (props.href) {
@@ -16,13 +17,16 @@ function MaybeLink(props) {
   return <>{props.children}</>;
 }
 export default function BlogPostItemHeaderAuthor({ author, index }) {
+  const baseURL = useSiteBaseUrl() || '';
+
   const { name, title, url, imageURL, email } = author;
   const link = url || (email && `mailto:${email}`) || undefined;
+
   return (
     <AvatarDiv>
       {imageURL && (
         <MaybeLink href={link} className='avatar__photo-link'>
-          <Img src={imageURL} alt={name} itemProp='image' />
+          <Img src={baseURL + imageURL} alt={name} itemProp='image' />
         </MaybeLink>
       )}
 

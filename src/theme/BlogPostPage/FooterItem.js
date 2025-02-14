@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 // Internal Components
-import {
-  A,
-  Button,
-  Content,
-  H2,
-  Image,
-  ItemH,
-  ItemV,
-  Span,
-} from '@site/src/css/SharedStyling';
+import { Button, H2, ItemV, Span } from '@site/src/css/SharedStyling';
 import { BsLinkedin, BsTwitter, BsYoutube, BsX } from 'react-icons/bs';
-import { BiLink, BiShareAlt } from 'react-icons/bi';
+import { BiShareAlt } from 'react-icons/bi';
 import { FaDiscord, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import useMediaQuery from '@site/src/hooks/useMediaQuery';
 
@@ -149,7 +140,7 @@ const FooterItem = () => {
         </ResponsiveH2>
 
         {/* <Anchor
-                  // href="https://twitter.com/pushprotocol"
+                  // href="https://x.com/PushChain"
                   title="Developer Docs"
                   target="_blank"
                   bg="#DD44B9"
@@ -185,7 +176,7 @@ const FooterItem = () => {
       {open && <LinkModal />}
 
       <AboutSection>
-        <AboutTitle>About Push Protocol</AboutTitle>
+        <AboutTitle>About Push Chain</AboutTitle>
         <AboutSpan
           fontFamily='Strawford'
           textAlign='center'
@@ -193,18 +184,18 @@ const FooterItem = () => {
           fontWeight='400'
           lineHeight='32px'
         >
-          Push is the communication protocol of web3. Push protocol enables
-          cross-chain notifications and messaging for dapps, wallets, and
-          services tied to wallet addresses in an open, gasless, and
-          platform-agnostic fashion. The open communication layer allows any
-          crypto wallet / frontend to tap into the network and get the
-          communication across.
+          Push Chain is a Proof of Stake (PoS) layer 1 blockchain network
+          designed to revolutionize web3 by addressing scalability,
+          interoperability, and user experience challenges. Its shared-state
+          architecture empowers developers to create universal applications that
+          can blend financial and non-financial use cases with ease, all while
+          achieving sub-second finality.
         </AboutSpan>
       </AboutSection>
 
       <KPIBanner>
         <BannerItem
-          onClick={() => OpenURL('https://twitter.com/pushprotocol')}
+          onClick={() => OpenURL('https://x.com/PushChain')}
           gap='18px'
           className='kpiItem'
         >
@@ -333,11 +324,6 @@ const KPIBanner = styled.div`
   }
 `;
 
-const KPIFigure = styled.div`
-  height: fit-content;
-  width: fit-content;
-`;
-
 const BannerItem = styled(ItemV)`
   color: var(--ifm-color-footer);
   grid-gap: 8px;
@@ -462,10 +448,6 @@ const ModalInput = styled.div`
     max-width: 150px;
     min-width: 150px;
   }
-`;
-
-const ModalClose = styled.div`
-  cursor: pointer;
 `;
 
 const ModalFigure = styled.div`

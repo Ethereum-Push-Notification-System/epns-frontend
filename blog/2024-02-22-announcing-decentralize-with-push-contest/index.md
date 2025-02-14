@@ -26,7 +26,7 @@ From learning about decentralized notifications to exploring PUSH, each step wil
 
 ![First Image of Announcing Decentralize with PUSH Contest](./image-1.gif)
 
-The top 2,500 participants will receive a Push Alpha Access Pass NFT, allowing them to join the Push Alpha Community. This exclusive NFT serves as a gateway to engaging discussions, early access to features, and the eligibility to participate in airdrops and win prizes when [Push Decentralized Nodes launch in Q3](https://push.org/docs/roadmap/). Embrace your inner Web3 enthusiast with this incredible NFT!
+The top 2,500 participants will receive a Push Alpha Access Pass NFT, allowing them to join the Push Alpha Community. This exclusive NFT serves as a gateway to engaging discussions, early access to features, and the eligibility to participate in airdrops and win prizes when [Push Decentralized Nodes launch in Q3](https://comms.push.org/docs/roadmap/). Embrace your inner Web3 enthusiast with this incredible NFT!
 
 ### Why Participate?
 

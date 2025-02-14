@@ -1,6 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-/* eslint-disable react/prop-types */
 /* eslint-disable */
 
 // React + Web3 Essentials
@@ -76,23 +75,7 @@ const FeaturedList = () => {
       <MarqueeAnimation speed={MARQUEE_ANIMATION_SPEED * 1.15} gradient={false}>
         {MediaList.map((item) => {
           return (
-            <FeaturedCard
-              id={item.srcref}
-              key={item.srcref}
-              // className={`${hovered === item.srcref ? "active" : ""} ${item.srcref}`}
-              // onMouseLeave={(e)=>handleMouseLeave(e, item.srcref)}
-              // onMouseEnter={(e)=>handleMouseEnter(e, item.srcref)}
-              // onMouseMove={(e)=>handleMouseMove(e, item.srcref)}>
-            >
-              {/* <GlowwyBorder 
-                            className={`${hovered === item.srcref ? "active" : ""} glowwy`}
-                        />
-
-                        <Glowwy 
-                            className={`${hovered === item.srcref ? "active" : ""} glowwy`}
-                        />
-                            */}
-
+            <FeaturedCard id={item.srcref} key={item.srcref}>
               <FeaturedCardTitle>{t(item.translatedtitle)}</FeaturedCardTitle>
               <ArticleSource>
                 <Image
@@ -120,7 +103,9 @@ const FeaturedList = () => {
                   borderRadius='16px'
                   padding='0'
                 >
-                  <SpanLink>{t(item.urltranslatedtitle)}</SpanLink>
+                  <SpanLink className='text-underline'>
+                    {t(item.urltranslatedtitle)}
+                  </SpanLink>
                   <FiArrowUpRight className='anchorSVG' />
                 </A>
               </ArticleSource>
@@ -133,7 +118,8 @@ const FeaturedList = () => {
 };
 
 const FeaturedCardList = styled(ItemH)`
-  margin: 72px 0 0 0;
+  margin: 64px 0 0 0;
+  flex: 0;
   flex-flow: nowrap;
 `;
 const FeaturedCard = styled(ItemV)`
@@ -145,7 +131,7 @@ const FeaturedCard = styled(ItemV)`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
   margin: 0 12px;
   overflow: hidden !important;
 
@@ -154,15 +140,10 @@ const FeaturedCard = styled(ItemV)`
   }
   &:hover {
     // background: linear-gradient(251.72deg, rgb(221, 68, 185) 14.29%, rgb(139, 111, 217) 86.35%);
-    background: linear-gradient(
-      234deg,
-      #3e1548 2.83%,
-      #280e2f 24.75%,
-      #0d0d0f 57.42%
-    );
-    & a {
-      //   color: #fff !important;
-      //   border-radius: 0px;
+    background: #d548ec;
+
+    .text-underline {
+      text-decoration: text-underline;
     }
   }
 
@@ -238,7 +219,7 @@ const SpanLink = styled(Span)`
   font-weight: 500;
   letter-spacing: -0.02em;
   color: #fff;
-  font-family: FK Grotesk Neue;
+  font-family: N27;
   line-height: 142%;
 
   &:after {

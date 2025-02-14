@@ -37,17 +37,17 @@ Push has grown tremendously in 2023, we saw an increase in notifications sent (+
 
 ### Unified Push SDK
 
-Push launched a unified SDK for web3 developers to send [**notifications**](/docs/notifications 'Explore Push Notifications Protocol') or [**chats**](/docs/chat 'Explore Push Chat Protocol') to their users with unification of the SDK, with **video** and **spaces** support coming soon!
+Push launched a unified SDK for web3 developers to send [**notifications**](https://comms.push.org/docs/notifications 'Explore Push Notifications Protocol') or [**chats**](https://comms.push.org/docs/chat 'Explore Push Chat Protocol') to their users with unification of the SDK, with **video** and **spaces** support coming soon!
 
 This enabled Push API class that is common for all suite of products by Push enabling developers to use Push products with ease. It also paved the way for Push to heavily abstract away the complexities of web3 communication and provide a seamless experience to developers.
 
-<ABlock href="/docs/" title="Developer documentation hub">Learn all about the Unified Push SDK from Push Documentation Hub</ABlock>
+<ABlock href="https://comms.push.org/docs/" title="Developer documentation hub">Learn all about the Unified Push SDK from Push Documentation Hub</ABlock>
 
 ### Push x MetaMask Snap
 
 Push started with the vision of enabling seamless communication for web3, launching Snaps for 30 Million users of MetaMask was a big step towards that vision as it allows users to have their communication delivered to them right on their MetaMask wallet.
 
-We are excited to share that web3 notifications sent by protocols using Push are now delivered to users on MetaMask. If you are a web3 builder, then re-engagement is a big problem for you which get's solved by implementing [web3 notifications with Push now!](/docs 'Explore Push Docs')
+We are excited to share that web3 notifications sent by protocols using Push are now delivered to users on MetaMask. If you are a web3 builder, then re-engagement is a big problem for you which get's solved by implementing [web3 notifications with Push now!](https://comms.push.org/docs/ 'Explore Push Docs')
 
 <ReactPlayer
   controls
@@ -73,7 +73,7 @@ Push launched gated chats for web3 protocols to enable them to create gated comm
 
 For example: You can gate a group chat for users who hold a certain NFT or have a certain amount of tokens in their wallet or you can gate sending messages in a group chat based on the amount of tokens a user holds. Even custom logic of your choice or web2 logic can be used to gate a group chat paving new token utility use cases for your protocol.
 
-<ABlock href="/docs/chat/build/conditional-rules-for-group/" title="Dev docs explaining how to condional gate a group">Developer guide to conditional gating groups</ABlock>
+<ABlock href="https://comms.push.org/docs/chat/build/conditional-rules-for-group/" title="Dev docs explaining how to condional gate a group">Developer guide to conditional gating groups</ABlock>
 
 ### Hyper-scalable Groups
 
@@ -115,7 +115,7 @@ function App(props) {
 }
 ```
 
-<ABlock href="/docs/chat/ui-components/integrate-push-chat/" title="Developer docs on how to integrate Push Chat">Developer docs showing how to integrate Push Chat in 2 LOCs</ABlock>
+<ABlock href="https://comms.push.org/docs/chat/ui-components/integrate-push-chat/" title="Developer docs on how to integrate Push Chat">Developer docs showing how to integrate Push Chat in 2 LOCs</ABlock>
 
 ### Notification Settings
 
@@ -171,13 +171,13 @@ Push launched a live roadmap for the community which is a massive step up from m
 
 _`Psst`_ - If you want a sneak peak in 2024 already, then check out the link below 👇
 
-<ABlock href="/docs/roadmap" title="Push Protocol Live Roadmap">Check out the live roadmap for Push Protocol</ABlock>
+<ABlock href="https://comms.push.org/docs/roadmap" title="Push Protocol Live Roadmap">Check out the live roadmap for Push Protocol</ABlock>
 
 ### Docs 2.0
 
 Push launched docs 2.0, making it easier for developers to get started with Push Protocol. We also launched playground, live examples and several tutorials to enable frictionless integration of Push Protocol. Try it out, in 4 minutes or less is the our mantra for docs 2.0!
 
-<ABlock href="/docs/" title="Push Protocol Documentation Hub 2.0">Check out Push Documentation Hub 2.0</ABlock>
+<ABlock href="https://comms.push.org/docs" title="Push Protocol Documentation Hub 2.0">Check out Push Documentation Hub 2.0</ABlock>
 
 ### Continued Adoption
 

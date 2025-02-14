@@ -132,7 +132,7 @@ curl - location - request POST 'https://<delivery_node_url>/apis/v1/pushtokens/r
 <iframe width="100%" height="100%" style={{ borderRadius: "32px" }} src="https://www.youtube.com/embed/OlRHL3qd4oY" title="Get started with Push Delivery Nodes | #web3 communication" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </VideoContainer>
 
-<i>PUSH Documentation:</i> <a href='/docs/notifications/tutorials/integrate-notifications-via-delivery-node/'>Integrating notifications via Push Delivery Nodes</a>
+<i>PUSH Documentation:</i> <a href='https://comms.push.org/docs/notifications/tutorials/integrate-notifications-via-delivery-node/'>Integrating notifications via Push Delivery Nodes</a>
 
 ## Push Support
 

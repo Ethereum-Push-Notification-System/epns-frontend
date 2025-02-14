@@ -114,7 +114,7 @@ This you’ll also be able to partake in and it’s running all the way up until
 
 # Who do we reach out to for assistance?
 
-During the event our team is on-ground. You Can Tweet [**@pushprotocol**](http://x.com/pushprotocol) and we’ll get you in touch with the team. You could also tweet the team directly as below.
+During the event our team is on-ground. You Can Tweet [**@PushChain**](http://x.com/PushChain) and we’ll get you in touch with the team. You could also tweet the team directly as below.
 
 1.  [**Jafett Sandi**](http://twitter.com/jafetsc)
 2.  [**Fabio Costa**](http://twitter.com/learn4life6)
@@ -126,7 +126,7 @@ During the event our team is on-ground. You Can Tweet [**@pushprotocol**](http:/
 
 **All the best! We’re happy and excited as #W3BUIDLingTogether!**
 
-[**Website**](http://epns.io/) **|** [**dApp**](https://github.com/push-protocol/embed-demo-app) **(live tutorial)|** [**RoadMap 2022**](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a) **|** [**Twitter**](http://x.com/pushprotocol) **|** [**Telegram**](https://t.me/epnsproject) **|** [**Discord**](https://discord.com/invite/YVPB99F9W5)
+[**Website**](http://epns.io/) **|** [**dApp**](https://github.com/push-protocol/embed-demo-app) **(live tutorial)|** [**RoadMap 2022**](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a) **|** [**Twitter**](http://x.com/PushChain) **|** [**Telegram**](https://t.me/epnsproject) **|** [**Discord**](https://discord.com/invite/YVPB99F9W5)
 
 # **About EPNS**
 

@@ -1,0 +1,135 @@
+---
+id: docs-send-transaction
+title: Send Transaction
+hide_title: true
+slug: ./send-transaction
+displayed_sidebar: pushChainSidebar
+sidebar_position: 6
+image: "/assets/docs/previews/docs_notifications_develop_fetch_chats--create_channel.png"
+---
+
+# Send Transaction Overview
+
+We will go over how you can use the Push Chain SDK to send transactions to the network.
+
+<head>
+  <title>{`Send Transaction | Push Chain | Push Documentation`}</title>
+</head>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+import {
+  ModalContainer,
+  ModalSmall,
+  ModalWrapper,
+  AFocus,
+} from '@site/src/css/SharedStyling';
+
+## Send Transaction API
+
+<Tabs className="codetabs" groupId="code-examples">
+  <TabItem value="js" attributes={{className: "codetab js"}} default>
+```typescript
+const tx = await pushChain.tx.send(
+  [
+    // Defaults to the Ethereum Sepolia chain
+    createUniversalAccount({
+      address: '0x22B173e0596c6723dD1A95817052D96b97176Dd8',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY',
+    data: 'Hello world',
+  }
+);
+```
+  </TabItem>
+
+  <TabItem value="react" attributes={{className: "codetab react"}} default>
+```typescript
+const tx = await pushChain.tx.send(
+  [
+    // Defaults to the Ethereum Sepolia chain
+    createUniversalAccount({
+      address: '0x22B173e0596c6723dD1A95817052D96b97176Dd8',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY',
+    data: 'Hello world',
+  }
+);
+```
+  </TabItem>
+
+  <TabItem value="reactnative" attributes={{className: "codetab reactnative"}} default>
+```typescript
+const tx = await pushChain.tx.send(
+  [
+    // Defaults to the Ethereum Sepolia chain
+    createUniversalAccount({
+      address: '0x22B173e0596c6723dD1A95817052D96b97176Dd8',
+    }),
+  ],
+  {
+    category: 'MY_CUSTOM_CATEGORY',
+    data: 'Hello world',
+  }
+);
+```
+  </TabItem>
+</Tabs>
+
+---
+
+### Send Transaction parameters
+
+| **Param**     | **Type**                | **Remarks**                                                                                       |
+|---------------|-------------------------|---------------------------------------------------------------------------------------------------|
+| `recipients`  | `UniversalAccount[]`   | An array of recipient addresses in a chain-agnostic format. Each address specifies the destination for the transaction. |
+| `options.category`    | `string`               | The category of the transaction, used to classify or tag the transaction (e.g., `example-category`). |
+| `options.data`        | `Uint8Array`           | Serialized data payload for the transaction.                                                      |
+
+--------
+
+<Details summary="Expected response">
+
+```typescript
+{
+  "txHash": "8bff4e865dfb9d4b028ed1924f9151d7a104787617abc0eac3b0869be59db6ad"
+}
+```
+
+Response properties description:
+
+| **Property**             | **Type**                 | **Description**                                                                                     |
+|---------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| `txHash`             | `string`                | Transaction Hash |
+
+</Details>
+
+## Example: send an email to a Solana address
+
+Here below is an example of sending an Email to a Solana address. The payload is a simply JSON object with a title and message.
+
+```typescript
+const tx = await pushChain.tx.send(
+  // We will send the transaction to a Solana address
+  [
+    createUniversalAccount({
+      chain: CONSTANTS.CHAIN.SOLANA,
+      chainId: CONSTANTS.CHAIN_ID.SOLANA.DEVNET,
+      address: 'ySYrGNLLJSK9hvGGpoxg8TzWfRe8ftBtDSMECtx2eJR',
+    }),
+  ],
+  {
+    category: 'MY_EMAIL_APP',
+    // Sample email payload
+    data: JSON.stringify({
+      title: 'Hello old friend from Solana!',
+      message: 'Greetings from Ethereum world.',
+    }),
+  }
+);
+```

@@ -7,7 +7,8 @@ export const size = {
   laptop: 1024,
   laptopM: 1260,
   laptopL: 1440,
-  desktop: 2560,
+  desktop: 2100,
+  desktopL: 2560,
 };
 
 export const device = {
@@ -19,7 +20,7 @@ export const device = {
   laptopM: `(max-width: ${size.laptopM}px)`,
   laptopL: `(max-width: ${size.laptopL}px)`,
   desktop: `(max-width: ${size.desktop}px)`,
-  desktopL: `(max-width: ${size.desktop}px)`,
+  desktopL: `(max-width: ${size.desktopL}px)`,
 };
 
 // Define Margin

@@ -1,0 +1,216 @@
+---
+id: introduction
+title: Intro to Push Chain
+hide_title: true
+slug: ./
+displayed_sidebar: pushChainSidebar
+sidebar_position: 1
+image: "/assets/docs/previews/notifications--intro_to_push_notification.png"
+---
+
+# Intro to Push Chain
+
+Push Chain is a Proof of Stake (PoS) layer 1 blockchain network designed to revolutionize web3 by addressing scalability, interoperability, and user experience challenges. With a roadmap spanning three phases, Push Chain aims to empower developers to create universal applications that blend financial and non-financial use cases, making blockchain accessible to everyone.
+
+<head>
+  <title>Introduction | Push Chain | Push Documentation</title>
+</head>
+
+import {
+  ModalContainer,
+  ModalSmall,
+  AImp,
+  ModalWrapper,
+  ModalMidEqual,
+} from '@site/src/css/SharedStyling';
+
+## Why Push Chain?
+
+Push Chain focuses on consumer-centric applications with seamless UX, scalability, and simplified interactions. Unlike finance-focused blockchains, it enables unique innovations like parallel block execution and dynamic sharding, enhancing usability. Push Chain enables:
+
+- **Empowering Consumer Applications**: Supports financial and non-financial use cases with seamless cross-chain functionality.
+- **Wallet Interactions Made Easy**: Users can interact using existing wallets without creating a new Push Wallet.
+- **Fee Abstraction for User Convenience**: Transaction fees can be paid in native tokens or covered by applications for a seamless experience.
+-	**Unified User Identity (Push ID)**: Links multiple wallets under one identifier for a unified view of assets and activities.
+-	**Comprehensive Wallet Abstraction**: Provides easy onboarding for Web3 users, newcomers, and Web2 users alike.
+
+## How Push Chain works?
+
+All communication with Push Chain is signed and validated by a set of nodes, including validator nodes for transaction verification, storage nodes for efficient data handling, and archival nodes for maintaining complete transaction history. Read the <AImp href="https://whitepaper.push.org/" title="Push Chain Whitepaper">Push Chain Whitepaper</AImp> for an overview of its architecture, node roles, and decentralization efforts.
+
+## SDKs
+
+<ModalContainer>
+  <ModalSmall
+    onClick={() =>
+      window.open('https://github.com/push-protocol/push-chain-sdk', '_blank')
+    }
+  >
+    <img
+      src={require('/static/assets/docs/techstack/javascript.png').default}
+      srcSet={`${
+        require('/static/assets/docs/techstack/javascript@2x.png').default
+      } 2x, ${
+        require('/static/assets/docs/techstack/javascript@3x.png').default
+      } 3x`}
+      alt='Image representation of Javascript SDK of Push Protocol'
+    />
+    <ModalWrapper>
+    <span>
+      Javascript
+      <svg
+        width='20'
+        height='28'
+        viewBox='0 0 29 28'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='m7.501 21.001 14-14M10.125 7.001H21.5v11.375'
+          stroke='#A0A3B1'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        ></path>
+      </svg>
+    </span>
+    </ModalWrapper>
+  </ModalSmall>
+
+  <ModalSmall
+  onClick={() =>
+    window.open('https://github.com/push-protocol/push-chain-sdk', '_blank')
+  }
+>
+  <img
+    src={require('/static/assets/docs/techstack/react.png').default}
+    srcSet={`${
+      require('/static/assets/docs/techstack/react@2x.png').default
+    } 2x, ${require('/static/assets/docs/techstack/react@3x.png').default} 3x`}
+  />
+  <ModalWrapper>
+    <span>
+      React
+      <svg
+        width='20'
+        height='28'
+        viewBox='0 0 29 28'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='m7.501 21.001 14-14M10.125 7.001H21.5v11.375'
+          stroke='#A0A3B1'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        ></path>
+      </svg>
+    </span>
+  </ModalWrapper>
+</ModalSmall>
+
+<ModalSmall
+  onClick={() =>
+    window.open('https://github.com/push-protocol/push-chain-sdk', '_blank')
+  }
+>
+  <img
+    src={require('/static/assets/docs/techstack/reactNative.png').default}
+    srcSet={`${
+      require('/static/assets/docs/techstack/reactNative@2x.png').default
+    } 2x, ${
+      require('/static/assets/docs/techstack/reactNative@3x.png').default
+    } 3x`}
+  />
+  <ModalWrapper>
+    <span>
+      React Native
+      <svg
+        width='20'
+        height='28'
+        viewBox='0 0 29 28'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='m7.501 21.001 14-14M10.125 7.001H21.5v11.375'
+          stroke='#A0A3B1'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        ></path>
+      </svg>
+    </span>
+  </ModalWrapper>
+</ModalSmall>
+
+</ModalContainer>
+
+## Use Cases
+
+<ModalContainer>
+  <ModalSmall onClick={() => window.open('/docs/chain/use-cases/#1-decentralized-social-platforms', '_self')}>
+    <img
+      src={require('/static/assets/docs/chain/usecases/social.png').default}
+      srcSet={`${
+        require('/static/assets/docs/chain/usecases/social@2x.png').default
+      } 2x, ${require('/static/assets/docs/chain/usecases/social@3x.png').default} 3x`}
+    />
+    <span>Social</span>
+  </ModalSmall>
+
+  <ModalSmall onClick={() => window.open('/docs/chain/use-cases/#3-gaming-applications', '_self')}>
+    <img
+      src={require('/static/assets/docs/chain/usecases/gaming.png').default}
+      srcSet={`${
+        require('/static/assets/docs/chain/usecases/gaming@2x.png').default
+      } 2x, ${require('/static/assets/docs/chain/usecases/gaming@3x.png').default} 3x`}
+    />
+    <span>Gaming</span>
+  </ModalSmall>
+
+  <ModalSmall onClick={() => window.open('/docs/chain/use-cases/#4-ai-powered-applications', '_self')}>
+    <img
+      src={require('/static/assets/docs/chain/usecases/AI.png').default}
+      srcSet={`${
+        require('/static/assets/docs/chain/usecases/AI@2x.png').default
+      } 2x, ${require('/static/assets/docs/chain/usecases/AI@3x.png').default} 3x`}
+    />
+    <span>AI</span>
+  </ModalSmall>
+  <ModalSmall onClick={() => window.open('/docs/chain/use-cases/#5-utility-and-productivity-apps', '_self')}>
+    <img
+      src={require('/static/assets/docs/chain/usecases/productivity.png').default}
+      srcSet={`${
+        require('/static/assets/docs/chain/usecases/productivity@2x.png').default
+      } 2x, ${
+        require('/static/assets/docs/chain/usecases/productivity@3x.png').default
+      } 3x`}
+    />
+    <span>Productivity Apps</span>
+  </ModalSmall>
+  <ModalSmall onClick={() => window.open('/docs/chain/use-cases/#6-universal-marketplaces', '_self')}>
+    <img
+      src={require('/static/assets/docs/chain/usecases/marketplaces.png').default}
+      srcSet={`${
+        require('/static/assets/docs/chain/usecases/marketplaces@2x.png').default
+      } 2x, ${
+        require('/static/assets/docs/chain/usecases/marketplaces@3x.png').default
+      } 3x`}
+    />
+    <span>Marketplaces</span>
+  </ModalSmall>
+</ModalContainer>
+
+## Try Push Chain
+
+Best way to understand Push Chain is to interact with it directly. To get started —
+
+1. Head to [https://simulate.push.org/](https://simulate.push.org/)  
+2. Login with your **email** or **existing wallet**. Push Chain supports **multiple login options** including —  
+
+  - **Email Login** — Use your email for quick and easy onboarding.  
+  - **Wallet Addresses** — Connect with wallets like MetaMask or any compatible Web3 wallet.  
+3. Submit a transaction to the Push Chain.  
+4. View your transaction live on **Push Scan**, the blockchain explorer for Push Chain: [https://scan.push.org/transactions](https://scan.push.org/transactions).  

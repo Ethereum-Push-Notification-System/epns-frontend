@@ -1,12 +1,13 @@
 ---
 slug: how-push-protocol-helps-build-thriving-nft-and-defi
-title: "How Push Protocol Helps Build Thriving NFT and DeFi Communities Using Push Group Chats"
+title: 'How Push Protocol Helps Build Thriving NFT and DeFi Communities Using Push Group Chats'
 authors: [push]
-image: "./cover-image.webp"
-description: "How Push Protocol Helps Build Thriving NFT and DeFi Communities Using Push Group Chats"
-text: "Learn how Push Group Chat empowers NFT brands and DeFi protocols to cultivate thriving communities through secure, token-gated experiences."
+image: './cover-image.webp'
+description: 'How Push Protocol Helps Build Thriving NFT and DeFi Communities Using Push Group Chats'
+text: 'Learn how Push Group Chat empowers NFT brands and DeFi protocols to cultivate thriving communities through secure, token-gated experiences.'
 tags: [Push Protocol, Web3, Blockchain Technology]
 ---
+
 ![Cover Image of How Push Protocol Helps Build Thriving NFT and DeFi Communities Using Push Group Chats Blog ](./cover-image.webp)
 
 <!--truncate-->
@@ -27,7 +28,6 @@ Enter **Push Protocol Group Chat**, a revolutionary tool that empowers NFT brand
 
 Push Protocol seamlessly integrates with [Unstoppable Domains (UD)](https://unstoppabledomains.com/). This allows users to join group chats using their UD (e.g., yourname.nft) instead of complex wallet addresses. This enhances user experience and makes it easier for new members to join the conversation.
 
-
 **Taking it a Step Further: Gated Roles with Guild.xyz:**
 
 Push Protocol's partnership with [Guild.xyz](https://guild.xyz/explorer) unlocks even more possibilities for community management. You can now leverage Guild roles to create additional access tiers within your token-gated chat.
@@ -38,10 +38,9 @@ Imagine offering exclusive channels within your main chat, accessible only to us
 
 - A limited-edition NFT collection can create a token-gated chat where holders can discuss upcoming collaborations and access exclusive artwork previews.
 
-Similar to the [Pudgy Penguin's Unstopabble Domains token gated group chat](https://twitter.com/pushprotocol/status/1777929898784444842?utm_source=google&utm_medium=twitter&utm_campaign=amplify_upgrade) powered by Push Protocol, where only Pudgy Penguin Hodlers can join and communicate with each other and share their sense of community pride!
+Similar to the [Pudgy Penguin's Unstopabble Domains token gated group chat](https://x.com/PushChain/status/1777929898784444842?utm_source=google&utm_medium=twitter&utm_campaign=amplify_upgrade) powered by Push Protocol, where only Pudgy Penguin Hodlers can join and communicate with each other and share their sense of community pride!
 
 - A DeFi platform like [Curve](https://curve.fi/#/ethereum/pools) can offer a tiered chat system, with basic access for all token holders and a dedicated channel for high-level stakers to discuss governance proposals and advanced strategies.
-
 
 Push Protocol empowers NFT brands and DeFi protocols to build vibrant, engaged communities that drive long-term success. By fostering a sense of exclusivity, targeted communication, and deeper connections, Push Protocol unlocks the true potential of Web3 communities.
 

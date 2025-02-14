@@ -35,7 +35,7 @@ Token-gated Group Chats are exactly what their name implies, Group Chats that re
 
 For businesses, organizations, and teams, it’s a fantastic way to ensure your communication channels remain private and secure by giving you total control over who enters and participates in the communication channel.
 
-You can learn more about [Token-Gated/Conditional Group Chats here](https://push.org/docs/chat/build/conditional-rules-for-group/).
+You can learn more about [Token-Gated/Conditional Group Chats here](https://comms.push.org/docs/chat/build/conditional-rules-for-group/).
 
 ### Getting Started With UD Group Chat
 
@@ -67,4 +67,4 @@ At launch, every UD badge that exists will have its own Group Chat (currently 40
 
 Like all communication that’s powered by Push Protocol, Unstoppable Group Chat is censorship resistant and private. For friends, DAOs, companies, and organizations, that means secure and private team communication channels.
 
-If you’re interested in boosting your community engagement with Group chat, get [started here](https://push.org/docs/chat/build/conditional-rules-for-group/).
+If you’re interested in boosting your community engagement with Group chat, get [started here](https://comms.push.org/docs/chat/build/conditional-rules-for-group/).

@@ -29,7 +29,7 @@ import ReactPlayer from "react-player";
 
 ## Tokenomics V2 Additions
 
-[**_`$PUSH`_**](https://coinmarketcap.com/currencies/epns/ '$PUSH at Coinmarketcap.com') is the native token of the Push Network and it will be used to enable several key functions of the network apart from the already existing utilities defined in the [current tokenomics](/docs/tokenomics/deepdive/$push/ 'Deepdive on Push Tokenomics').
+[**_`$PUSH`_**](https://coinmarketcap.com/currencies/epns/ '$PUSH at Coinmarketcap.com') is the native token of the Push Network and it will be used to enable several key functions of the network apart from the already existing utilities defined in the [current tokenomics](https://comms.push.org/docs/tokenomics/deepdive/$push/ 'Deepdive on Push Tokenomics').
 
 ### 1. Staking for Push Validator Nodes
 

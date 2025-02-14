@@ -71,13 +71,7 @@ export default function Logo(props: Props): JSX.Element {
 
   // Using useMemo to memoize the logoLink value
   const logoLink = useMemo(() => {
-    if (pathname.startsWith(baseURL + '/docs')) {
-      return baseURL + '/docs';
-    } else if (pathname.startsWith(baseURL + '/blog')) {
-      return baseURL + '/blog';
-    } else {
-      return baseURL || '/';
-    }
+    return baseURL || '/';
   }, [pathname]);
 
   return (

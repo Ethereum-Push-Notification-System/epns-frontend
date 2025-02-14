@@ -92,4 +92,4 @@ Reach out to us today to see how we can help you👋
 
 Contact our team on [Discord](https://discord.gg/pushprotocol)
 
-Send us a DM on [Twitter](https://twitter.com/pushprotocol)
+Send us a DM on [Twitter](https://x.com/PushChain)

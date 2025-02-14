@@ -21,7 +21,7 @@ We are honored to be sponsoring and partaking in Ethereum’s largest hackathon 
 
 Here's everything you need to know.
 
-Quick redirect to our all-in-one✨ [Hacker Building Guide for Push Protocol](https://push.org/docs/hackers/)✨
+Quick redirect to our all-in-one✨ [Hacker Building Guide for Push Protocol](https://comms.push.org/docs/hackers/)✨
 
 ### ETHIndia Hackers ⸺ Ready, Set, Code! 🛠️
 
@@ -46,7 +46,7 @@ Here are a few ideas for inspiration:
 
 The "Namaste Push Protocol" Prize is all about acknowledging the innovative spirit of developers who want to make a meaningful impact in the world using Push Protocol.
 
-👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://push.org/docs/hackers/) ✨
+👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://comms.push.org/docs/hackers/) ✨
 
 ### 2. 🏆 Creativity Prize ⸺ $2,500
 
@@ -60,7 +60,7 @@ Unleash your innovation! We're seeking the all-around most ingenious solutions b
 🤖Push ChatAI
 🌌Push Spaces
 
-👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://push.org/docs/hackers/)✨
+👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://comms.push.org/docs/hackers/)✨
 
 ### 3. 🏆 Push Chat Conditional Gating Integration for DApps ⸺ $2,500
 
@@ -78,7 +78,7 @@ Utilize the full potential of Push Notifications by incorporating the Channel/No
 
 Channel/Notification Settings allow you to segment notifications into different categories so that end-users can select only the kinds of notifications they want to receive. For example, a web3 news site could have Notification Settings for different news categories and let users select accordingly and hence customize their notifications. You can build as many notification categories as you’d like choosing between Boolean and Slider Settings types.
 
-For more information regarding Channel/Notification Settings, checkout our documentation here 👉https://push.org/docs/notifications/build/create-channel-settings/
+For more information regarding Channel/Notification Settings, checkout our documentation here 👉https://comms.push.org/docs/notifications/build/create-channel-settings/
 
 ### 5. 🏆 Best Use of Push Protocol ⸺ $1,500
 
@@ -86,7 +86,7 @@ This bounty recognizes the most exceptional and impactful implementation of the 
 
 Go wild, get crazy, find new and exciting ways to integrate Push that significantly enhance your UX. Think customer support messaging, user-to-user-to-dApp social interactions, creative notification use cases. The list is endless.
 
-👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://push.org/docs/hackers/) ✨
+👉Our all-in-one✨ [Hacker Building Guide for Push Protocol](https://comms.push.org/docs/hackers/) ✨
 
 ### Learn to build a Web3 Messaging and Notifications dApps IRL 🤝
 
@@ -102,7 +102,7 @@ ETHIndia, we're not just attending; we're bringing the party. Let's code, create
 
 Find all the details about the ETHIndia event 👉https://ethindia.co/
 
-Your Push documentation hub for building is here 👉https://push.org/docs/hackers/
+Your Push documentation hub for building is here 👉https://comms.push.org/docs/hackers/
 
 And of course 24/7 dev support can always be found here 👉https://discord.com/invite/pushprotocol
 

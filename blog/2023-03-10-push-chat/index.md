@@ -57,7 +57,7 @@ Centralized tools dominate the space, requiring users to give up some level of t
 
 Push Chat offers a solution to this problem, providing a decentralized communication layer for web3. With Push Chat, DAOs and their users can communicate with each other in a secure, anonymous, and censorship-resistant manner.
 
-Using the power of peer-to-peer networks, Push Chat allows users to send messages directly to each other without the need for a central server. This enhances privacy and security and makes the system more resistant to censorship. But Push Chat isn’t just a messaging platform — it also enables censorship-resistant, decentralized polling and voting on proposals submitted on the blockchain. [With our generalized SDK (docs)](/docs/chat/concepts/push-chat-architecture/), you can use Push Chat for decentralization, security, and significantly lower costs in gas for you and your users.
+Using the power of peer-to-peer networks, Push Chat allows users to send messages directly to each other without the need for a central server. This enhances privacy and security and makes the system more resistant to censorship. But Push Chat isn’t just a messaging platform — it also enables censorship-resistant, decentralized polling and voting on proposals submitted on the blockchain. [With our generalized SDK (docs)](https://comms.push.org/docs/chat/concepts/push-chat-architecture/), you can use Push Chat for decentralization, security, and significantly lower costs in gas for you and your users.
 
 Whether voting on proposals, collaborating on projects, or just keeping in touch with fellow community members, Push Chat provides a powerful and easy-to-use solution for decentralized communication.
 

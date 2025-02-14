@@ -67,7 +67,7 @@ We encourage you to come meet us in person! Now’s your time to do so!
 
 You’ll be able to find us in the pink shirts💗
 
-If you need help getting in touch, you can also always refer to our community channels to get connected: [Twitter](https://twitter.com/pushprotocol) & [Discord](https://discord.gg/pushprotocol).
+If you need help getting in touch, you can also always refer to our community channels to get connected: [Twitter](https://x.com/PushChain) & [Discord](https://discord.gg/pushprotocol).
 
 We look forward to having an amazing week at ETHDenver and we can’t wait to meet everyone!
 

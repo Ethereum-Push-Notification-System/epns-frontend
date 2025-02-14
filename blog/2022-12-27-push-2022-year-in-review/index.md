@@ -26,7 +26,7 @@ With that, here’s a glimpse at everything we got up to in 2022.
 
 This year, we’ve made some major strides in realizing our mission of bringing decentralized communication to web3.
 
-To start with, we evolved from EPNS (Ethereum Push Notification Service) to [Push](https://twitter.com/pushprotocol/status/1574771582790406144). As our ambitions grew beyond just notifications, we felt we needed a brand refresh that would better accommodate our vision of becoming web3’s most widely used communication protocol.
+To start with, we evolved from EPNS (Ethereum Push Notification Service) to [Push](https://x.com/PushChain/status/1574771582790406144). As our ambitions grew beyond just notifications, we felt we needed a brand refresh that would better accommodate our vision of becoming web3’s most widely used communication protocol.
 
 And so far, people seem to love it.
 
@@ -37,7 +37,7 @@ And so far, people seem to love it.
 A fantastic rebrand however needs similarly fantastic project developments behind it. This started included:
 
 - Push going live on [Ethereum](https://medium.com/push-protocol/the-epns-mainnet-is-here-470faec0c01) mainnet in January.
-- Completed our Series A round and honored to have some amazing [investors](https://twitter.com/pushprotocol/status/1514632659514798081) help us realize our vision.
+- Completed our Series A round and honored to have some amazing [investors](https://x.com/PushChain/status/1514632659514798081) help us realize our vision.
 - Many exciting product developments followed including the launch of the [SNS](https://medium.com/push-protocol/introducing-sns-for-push-delivery-nodes-quickest-way-to-bootstrap-your-wallet-app-or-any-c88017595e09) module for Push Delivery Nodes and the release of [SDK monorepo](https://medium.com/push-protocol/here-comes-the-all-new-epns-sdk-monorepo-framework-8447b486a801) structure. Both these developments were aimed at creating a seamless experience for developers.
 - We launched on [Polygon](https://blockworks.co/news/polygon-onboards-new-web3-native-communication-network), adding it to our expanding list of supported chains.
 - Our most awaited product, [Push Chat](https://medium.com/push-protocol/were-still-pushing-a-deeper-look-into-push-chat-90fdea8d9e8e) went live in alpha and with it, we took a huge step in facilitating wallet-to-wallet communication in web3.
@@ -106,7 +106,7 @@ Some of our favorite headlines were:
 
 Community is everything for Push, and 2022 would not have been such a successful year without your help. To all the devs who built using Push, all $PUSH token holders, and users who subscribe to channels — we thank you for being a part of our community!
 
-To foster our community’s growth, we started the [Push Grants Program](https://medium.com/push-protocol/push-grants-program-its-here-f2bfba29388f) earlier this year with the goal of funding builders in the web3 space. With feedback and learnings from the first iteration of the program, [PGP v2.0](https://twitter.com/pushprotocol/status/1604867953190739973) went live later this year and we’ve seen tons of projects begin to apply.
+To foster our community’s growth, we started the [Push Grants Program](https://medium.com/push-protocol/push-grants-program-its-here-f2bfba29388f) earlier this year with the goal of funding builders in the web3 space. With feedback and learnings from the first iteration of the program, [PGP v2.0](https://x.com/PushChain/status/1604867953190739973) went live later this year and we’ve seen tons of projects begin to apply.
 
 ![PGP V2](./image-9.webp)
 

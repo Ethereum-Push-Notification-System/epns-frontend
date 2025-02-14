@@ -91,4 +91,4 @@ Running a Push Storage Node will also require staking a certain amount of [**_`$
 4. **Stake for Writing API Calls on Push Node**
    Having a trustless and decentralized network requires a mechanism to ensure that the network is not spammed with unnecessary API calls. To ensure this, a staking mechanism requiring [**_`$PUSH`_**](https://coinmarketcap.com/currencies/epns/ '$PUSH at Coinmarketcap.com') will be introduced for writing API calls on the Push Network for sending notifications.
 
-This is just the beginning of **Push Tokenomics V2** and we are super excited to unveil even more exciting utilities as we progress- Join the Push Fam community on [Twitter](https://x.com/pushprotocol) and [Discord](https://discord.com/invite/pushprotocol) for more updates!
+This is just the beginning of **Push Tokenomics V2** and we are super excited to unveil even more exciting utilities as we progress- Join the Push Fam community on [Twitter](https://x.com/PushChain) and [Discord](https://discord.com/invite/pushprotocol) for more updates!

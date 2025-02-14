@@ -4,7 +4,7 @@ title: 'Push Protocol Monthly Updates: A Look Back at August'
 authors: [push]
 image: './cover-image.webp'
 description: 'Push Protocol Monthly Updates: A Look Back at August'
-text: "August was a notable month for Push, marked by significant milestones related to user engagement, feature development, and overall community growth."
+text: 'August was a notable month for Push, marked by significant milestones related to user engagement, feature development, and overall community growth.'
 tags: [Updates, Community and Ecosystem]
 ---
 
@@ -18,9 +18,9 @@ Here's a quick recap of all the exciting updates:
 
 We're thrilled to announce that Push has reached a significant milestone: over 100 million notifications sent all-time. This is something that we've dreamed of since we began this journey to empower, enable, and unify web3 with native communication.
 
-![100 Million Web3 Notifications](cover-image1.webp) 
+![100 Million Web3 Notifications](cover-image1.webp)
 
-As a key step towards achieving our mission of becoming the communication hub for all blockchains, we debuted one of our strongest protocol upgrades - [Pre PIP 3: Cross Chain Requests](https://x.com/pushprotocol/status/1821607565920497857).
+As a key step towards achieving our mission of becoming the communication hub for all blockchains, we debuted one of our strongest protocol upgrades - [Pre PIP 3: Cross Chain Requests](https://x.com/PushChain/status/1821607565920497857).
 
 ![Cross-Chain Requests](cover-image2.webp)
 
@@ -65,19 +65,19 @@ Additionally, the Chat SDK saw improvements to response structure and priority b
 
 Push Protocol continues to expand its ecosystem through new collaborations:
 
-- We're thrilled to be working with [QuickSwap](https://x.com/pushprotocol/status/1826957066520383638), a leading decentralized exchange (DEX) on Polygon PoS, Polygon zkEVM, and Dogechain to power push notifications when user liquidity goes out of range and when the user stops earning fees.
-- [CoinEasy](https://x.com/pushprotocol/status/1826262728979436009), a Korean web3 education social platform, joined forces with Push to integrate Push Chat for improved user communications and UX.
-- [Unstoppable Domains](https://unstoppabledomains.com/), a long-time partner, leveraged Push Protocol for group chat support for [Africa Rare Metaverse](https://x.com/pushprotocol/status/1819715311253307611), [Farmsent](https://x.com/pushprotocol/status/1828077913008476232), [Deadfellaz](https://x.com/pushprotocol/status/1826580811237171237), and [Tetherball](https://x.com/pushprotocol/status/1825500051621212532).
-- [Outposts](https://x.com/pushprotocol/status/1825543303116554260), a bi-weekly web3 digest platform whitelisted Push Alpha Access Pass NFT holders to its invite-only digest community and earn program points that unlock token rewards.
+- We're thrilled to be working with [QuickSwap](https://x.com/PushChain/status/1826957066520383638), a leading decentralized exchange (DEX) on Polygon PoS, Polygon zkEVM, and Dogechain to power push notifications when user liquidity goes out of range and when the user stops earning fees.
+- [CoinEasy](https://x.com/PushChain/status/1826262728979436009), a Korean web3 education social platform, joined forces with Push to integrate Push Chat for improved user communications and UX.
+- [Unstoppable Domains](https://unstoppabledomains.com/), a long-time partner, leveraged Push Protocol for group chat support for [Africa Rare Metaverse](https://x.com/PushChain/status/1819715311253307611), [Farmsent](https://x.com/PushChain/status/1828077913008476232), [Deadfellaz](https://x.com/PushChain/status/1826580811237171237), and [Tetherball](https://x.com/PushChain/status/1825500051621212532).
+- [Outposts](https://x.com/PushChain/status/1825543303116554260), a bi-weekly web3 digest platform whitelisted Push Alpha Access Pass NFT holders to its invite-only digest community and earn program points that unlock token rewards.
 
 ### **Ecosystem Highlights:**
 
-- We hosted an engineering-focused [X space with Wormhole](https://x.com/pushprotocol/status/1821875116390613041) on the upcoming CCR feature with [Wormhole](https://wormhole.com/), whose NTT framework is key to Push's chain-agnostic vision.
+- We hosted an engineering-focused [X space with Wormhole](https://x.com/PushChain/status/1821875116390613041) on the upcoming CCR feature with [Wormhole](https://wormhole.com/), whose NTT framework is key to Push's chain-agnostic vision.
 - Push Protocol founder Harsh Rajat shared his insights on Push Protocol's evolution, the web3 consumer landscape, and upcoming upgrades on the "[Colors of Web3 Entrepreneurship](https://www.youtube.com/watch?v=LQmHFQ7IO18)" podcast.
-- In collaboration with [Tally](https://www.tally.xyz/), a governance optimization platform, we held a Twitter space on "[Improving Decentralized Governance with Push and Tally.](https://x.com/pushprotocol/status/1821441276740346320)”
+- In collaboration with [Tally](https://www.tally.xyz/), a governance optimization platform, we held a Twitter space on "[Improving Decentralized Governance with Push and Tally.](https://x.com/PushChain/status/1821441276740346320)”
 - Ian, our DAO and Governance lead was invited to speak on the [Hipther Podcast Show](https://www.youtube.com/watch?v=zpqP_b-ch1A) to share his experience working in web3 for almost a decade while also discussing the working mechanisms of Push DAO and the upcoming launch of Push Nodes.
 - Ian was also invited to the [Amberdata Podcast](https://blog.amberdata.io/amberdata-podcast-feat-ian-leviness-head-of-grants-at-push-protocol?hss_channel=tw-876969251617112064) to share his unique story, our core mission, & how Push is solving for scaling decentralized communications.
-- Push and CoinEasy conducted a joint Twitter space with DAO Lead Ian and Seung Lee, the co-founder of CoinEasy discussing [Simplifying Web3 Journey with Push and CoinEasy](https://x.com/pushprotocol/status/1826620569053286715).
+- Push and CoinEasy conducted a joint Twitter space with DAO Lead Ian and Seung Lee, the co-founder of CoinEasy discussing [Simplifying Web3 Journey with Push and CoinEasy](https://x.com/PushChain/status/1826620569053286715).
 
 ### **Push Governance and Community Updates:**
 
@@ -87,13 +87,13 @@ Push Protocol continues to expand its ecosystem through new collaborations:
 - Carla, from the DAO Council, spoke at and judged the buildathon at [Ethereum Uruguay](https://x.com/EthereumUruguay).
 - SixtyKeys, another DAO Council member, earned a speaking spot at this year's ETH Safari in September.
 - The DAO launched weekly DAO thoughts, sharing practical tips on DAO building, with the end goal of expanding that effort into a podcast and more!
-- We knighted our 2nd [Push Chad Discord Role](https://x.com/pushprotocol/status/1827295975389499604) winner, in lieu of identifying, recognizing, and incentivizing consistent community contributors.
+- We knighted our 2nd [Push Chad Discord Role](https://x.com/PushChain/status/1827295975389499604) winner, in lieu of identifying, recognizing, and incentivizing consistent community contributors.
 
-With Push Nodes launching soon, Zaryab, our Smart Contracts Lead, wrote a blog post - “[Randomness in Push Nodes](https://x.com/pushprotocol/status/1828432624273981586)” to educate our ecosystem and a wider audience on how Push Nodes leverage the principle of randomness to ensure optimal network fairness and censorship resistance.
+With Push Nodes launching soon, Zaryab, our Smart Contracts Lead, wrote a blog post - “[Randomness in Push Nodes](https://x.com/PushChain/status/1828432624273981586)” to educate our ecosystem and a wider audience on how Push Nodes leverage the principle of randomness to ensure optimal network fairness and censorship resistance.
 
 Our DAO Lead also penned a post [on solutions to the cold start problem](https://push.org/blog/cold-start-solutions-scaling-consumer-crypto/) for web3 apps aiming to be platforms, marking our first foray into editorial content spanning the consumer crypto niche.
 
-Furthermore, we’re excited to introduce a new initiative - “[Write for Push](https://x.com/pushprotocol/status/1826313152176251142)” enabling anyone in the Push community to contribute to the protocol’s blog repository and help shape its voice. From the outset, this will focus on topics related to the existing Push ecosystem and its products.
+Furthermore, we’re excited to introduce a new initiative - “[Write for Push](https://x.com/PushChain/status/1826313152176251142)” enabling anyone in the Push community to contribute to the protocol’s blog repository and help shape its voice. From the outset, this will focus on topics related to the existing Push ecosystem and its products.
 
 With this multi-faceted shift in content and our tech, we’re setting ourselves up to be a true authority on the future of consumer applications at all levels.
 
@@ -101,4 +101,4 @@ Your continued support and enthusiasm fuel our commitment to push the boundaries
 
 ### **What’s coming up?**
 
-Stay tuned for more updates as we continue to push the boundaries of the Web3 ecosystem and keep your eyes on our [2024 roadmap](https://push.org/docs/roadmap/), for a further glimpse into what's next. Together, let's continue to push the industry forward toward unified applications and a better UX than ever before!
+Stay tuned for more updates as we continue to push the boundaries of the Web3 ecosystem and keep your eyes on our [2024 roadmap](https://comms.push.org/docs/roadmap/), for a further glimpse into what's next. Together, let's continue to push the industry forward toward unified applications and a better UX than ever before!

@@ -70,7 +70,7 @@ Once the verification transaction is approved on the Binance Chain, the alias ad
 
 It’s worth noting that delegate addresses are also useful for ensuring notifications can be sent out from wallets other than the one that created the channel. The channel creator is the only person able to add or remove delegates at any time. The communication channels’ chat feature also allows users to whitelist addresses, block addresses, and prevent spam messages. These features help ensure that communication channels remain secure and relevant to their subscribers.
 
-To learn more about Channel Aliases and Delegates, you can refer to [Push documentation here](https://push.org/docs/notifications/concepts/push-notifications-for-web3/#what-is-a-channel-alias).
+To learn more about Channel Aliases and Delegates, you can refer to [Push documentation here](https://comms.push.org/docs/notifications/concepts/push-notifications-for-web3/#what-is-a-channel-alias).
 
 ## Conclusion
 

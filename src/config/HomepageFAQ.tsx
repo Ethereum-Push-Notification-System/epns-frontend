@@ -1,5 +1,11 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+//
+import React from 'react';
+
 // External Components
 import styled from 'styled-components';
+
 // Internal Components
 import { A, ItemH, LI, Span, UL } from '@site/src/css/SharedStyling';
 
@@ -8,7 +14,6 @@ import ImageFAQ from '@site/static/assets/website/faq/faq-projects.webp';
 
 // Internal Configs
 import { device } from '@site/src/config/globals';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const General = [
   {
@@ -203,18 +208,18 @@ export const Notifs = [
         <Span>
           Learn more about{' '}
           <AMod
-            href={useBaseUrl(
-              '/docs/notifications/build/integrating-notifications/'
-            )}
+            href={
+              'https://comms.push.org/docs/notifications/build/integrating-notifications/'
+            }
             target={'_blank'}
           >
             integrating Push Notification in your dApp
           </AMod>{' '}
           /{' '}
           <AMod
-            href={useBaseUrl(
-              '/docs/notifications/tutorials/integrate-notifications-via-delivery-node/'
-            )}
+            href={
+              'https://comms.push.org/docs/notifications/tutorials/integrate-notifications-via-delivery-node/'
+            }
             target={'_blank'}
           >
             Push Notification in your crypto wallet.
@@ -223,7 +228,7 @@ export const Notifs = [
         <Span>
           Additionally, wallets should check out{' '}
           <AMod
-            href='https://push.org/docs/tokenomics/deepdive/$push/'
+            href='https://comms.push.org/docs/tokenomics/deepdive/$push/'
             target={'_blank'}
           >
             fee pool of Push which re-imagines and incentivises their
@@ -304,9 +309,9 @@ export const Notifs = [
           Yes, any protocol that wants to send notifications will need to
           activate themselves on Push protocol, read{' '}
           <AMod
-            href={useBaseUrl(
-              '/docs/notifications/tutorials/create-your-channel/'
-            )}
+            href={
+              'https://comms.push.org/docs/notifications/tutorials/create-your-channel/'
+            }
             target={'_blank'}
           >
             How to create channel
@@ -376,7 +381,7 @@ export const Chat = [
         <Span>
           Yes, Push Chat is end-to-end encrypted. The encryption is based on PGP
           Keys. Read more about{' '}
-          <AMod href={useBaseUrl('/docs/chat')} target={'_blank'}>
+          <AMod href={'https://comms.push.org/docs/chat'} target={'_blank'}>
             how it works here.
           </AMod>
         </Span>
@@ -436,7 +441,7 @@ export const IntegratingPush = [
         <Span>
           The{' '}
           <AMod
-            href={useBaseUrl('/docs/notifications/quickstart/')}
+            href={'https://comms.push.org/docs/notifications/quickstart/'}
             target={'_blank'}
           >
             Push JS SDK
@@ -460,24 +465,27 @@ export const IntegratingPush = [
         <Span>
           Other ways of integrating Push notifications are via{' '}
           <AMod
-            href={useBaseUrl(
-              '/docs/notifications/build/send-notification-via-smart-contract/'
-            )}
+            href={
+              'https://comms.push.org/docs/notifications/build/send-notification-via-smart-contract/'
+            }
             target={'_blank'}
           >
             smart contracts
           </AMod>
           ,{' '}
           <AMod
-            href={useBaseUrl(
-              '/docs/notifications/tutorials/send-notification-via-subgraph'
-            )}
+            href={
+              'https://comms.push.org/docs/notifications/tutorials/send-notification-via-subgraph'
+            }
             target={'_blank'}
           >
             subgraphs
           </AMod>
           , and{' '}
-          <AMod href={useBaseUrl('/docs/notifications')} target={'_blank'}>
+          <AMod
+            href={'https://comms.push.org/docs/notifications'}
+            target={'_blank'}
+          >
             more as outlined here!
           </AMod>
         </Span>
@@ -507,7 +515,7 @@ export const IntegratingPush = [
       <Answer>
         <Span>
           Push Chat integration -{' '}
-          <AMod href={useBaseUrl('/docs/chat')} target={'_blank'}>
+          <AMod href={'https://comms.push.org/docs/chat'} target={'_blank'}>
             Docs
           </AMod>
           ,
@@ -518,7 +526,10 @@ export const IntegratingPush = [
             Github
           </AMod>{' '}
           Push Notifications -{' '}
-          <AMod href={useBaseUrl('/docs/notifications')} target={'_blank'}>
+          <AMod
+            href={'https://comms.push.org/docs/notifications'}
+            target={'_blank'}
+          >
             Docs
           </AMod>
           ,
@@ -641,7 +652,10 @@ export const Token = [
         </Span>
         <Span>
           Read in detail 👉{' '}
-          <AMod href='https://push.org/docs/tokenomics/' target={'_blank'}>
+          <AMod
+            href='https://comms.push.org/docs/tokenomics/'
+            target={'_blank'}
+          >
             Pusheconomics
           </AMod>
         </Span>

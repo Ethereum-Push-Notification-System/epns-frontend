@@ -21,7 +21,7 @@ Push Protocol began with push notifications to web3 in January 2022 on Ethereum.
 
 Built on the success of Push Notifications and Push Chat, we’re now excited to officially release Push Video!
 
-The web3 social media and chat ecosystem is expanding rapidly today, but Push Video has always been our plan. Back in our [2020 whitepaper](https://twitter.com/pushprotocol/status/1590388512280711170?s=20), we referenced that decentralized video chat was on our timeline as a natural component to the web3 communication stack we built, starting with notifications. Also in Bogota, at Polygon Connect, we gave the community a [preview of Push Video](https://twitter.com/harshrajat/status/1579628569453813760?s=20), which was then under development. Between Bogota and today’s announcement, we’ve built off the success of Push Protocol notifications and Push Chat to expand the ecosystem of decentralized social networking.
+The web3 social media and chat ecosystem is expanding rapidly today, but Push Video has always been our plan. Back in our [2020 whitepaper](https://x.com/PushChain/status/1590388512280711170?s=20), we referenced that decentralized video chat was on our timeline as a natural component to the web3 communication stack we built, starting with notifications. Also in Bogota, at Polygon Connect, we gave the community a [preview of Push Video](https://twitter.com/harshrajat/status/1579628569453813760?s=20), which was then under development. Between Bogota and today’s announcement, we’ve built off the success of Push Protocol notifications and Push Chat to expand the ecosystem of decentralized social networking.
 
 ![Push Video 1](./image-1.png)
 

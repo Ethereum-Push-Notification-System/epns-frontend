@@ -12,7 +12,7 @@ tags: [Push Protocol, Web3, Arbitrum, Blockchain Technology]
 <!--truncate-->
 To all the builders and 1.6M active wallets on [Arbitrum](https://arbitrum.io/), get ready – because we've arrived!
 
-Bringing with us our full suite of web3-native communication tools: [Push Notifications](https://push.org/docs/notifications/), [Chat](https://push.org/docs/chat/), [Custom Gated Group Chat](https://push.org/docs/chat/build/create-group/) to enhance the user experience on Arbitrum.
+Bringing with us our full suite of web3-native communication tools: [Push Notifications](https://comms.push.org/docs/notifications/), [Chat](https://comms.push.org/docs/chat/), [Custom Gated Group Chat](https://comms.push.org/docs/chat/build/create-group/) to enhance the user experience on Arbitrum.
 
 We're absolutely thrilled to be leading a new era of decentralized communication within one of the fastest-growing blockchains in web3 and can’t wait to see the all-new usability, multi-communication interoperability, and dApp user-experience enhancements that are already on the way. Leveraging the power of Arbitrum's scalable, fast, and secure Layer 2 solutions, Push notifications enable real-time alerts for various blockchain activities such as transaction confirmations, governance proposals, DeFi updates, and NFT drops.
 
@@ -38,7 +38,7 @@ With the arrival of Push Protocol communication protocol, dApps and protocols on
 
 Excitingly, we’ve deployed the most up to date smart contracts of Push, [Push V2](https://push.org/blog/push-v2-is-live-new-rewards-utility-and-functionality/), on Arbitrum. Carrying over all the developments we’ve launched so far, Customized Profiles, settings for [Notification Channels](https://push.org/blog/introducing-notification-settings/), and notification integration with [MetaMask](https://push.org/blog/deep-dive-into-push-snaps-features-and-getting-started-all-the-technical-specifications-and-getting-started-tips-you-need/).
 
-For builders – all new ways to engage your users and provide a stickier, more personalized user-experience are here. Get started here: https://push.org/docs/
+For builders – all new ways to engage your users and provide a stickier, more personalized user-experience are here. Get started here: https://comms.push.org/docs/
 
 For users – can start receiving native Arbitrum notifications https://app.push.org/channels
 

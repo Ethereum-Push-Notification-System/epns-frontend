@@ -28,10 +28,10 @@ We have designed the points program from the ground up to incentivize users by r
 
 **How to Register (required):**
 
-1. Connect your X account and Follow [@pushprotocol](https://x.com/pushprotocol)
+1. Connect your X account and Follow [@PushChain](https://x.com/PushChain)
 2. Connect your Discord profile and Join [Push Discord](http://discord.gg/pushprotocol) Server.
 
-> **Note:** We perform multiple checks to ensure your twitter account is legitimate. Verification may take up to 24 hours. If the verification fails, please make sure you are following @pushprotocol and have at-least 50 followers.
+> **Note:** We perform multiple checks to ensure your twitter account is legitimate. Verification may take up to 24 hours. If the verification fails, please make sure you are following @PushChain and have at-least 50 followers.
 >
 > Once the first two steps are done, you have successfully registered for Push Points Program. You can start minting points by completing various activities. Do make sure to keep checking your Points dashboard for a new set of tasks each week. You don’t want to miss out on some of these bonus rewards!
 
@@ -43,7 +43,7 @@ Users can also check-in daily [here](https://app.push.org/points/activity?utm_so
 
 ## Multipliers
 
-Multipliers allow users to boost their Points by performing special activities. For e.g. if you have 100 points, after earning a 2x Multiplier, you will now have 200 Points. Multipliers also apply to any points earned after activating the Multiplier making it a permanent feature. Watch out @pushprotocol on X for bonus activities to earn Multipliers.
+Multipliers allow users to boost their Points by performing special activities. For e.g. if you have 100 points, after earning a 2x Multiplier, you will now have 200 Points. Multipliers also apply to any points earned after activating the Multiplier making it a permanent feature. Watch out @PushChain on X for bonus activities to earn Multipliers.
 
 Multipliers are associated with high-impact activities to make sure top contributors to the platform are rewarded accordingly.
 

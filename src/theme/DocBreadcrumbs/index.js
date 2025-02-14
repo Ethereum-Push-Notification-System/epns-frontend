@@ -79,12 +79,12 @@ export default function DocBreadcrumbs() {
             : product.charAt(0).toUpperCase() + product.slice(1),
         href: `/docs/${product}`,
       },
-      ...breadcrumbs,
+      ...(breadcrumbs || []),
     ];
   }
 
   const homePageRoute = useHomePageRoute();
-  if (!breadcrumbs) {
+  if (!breadcrumbs || breadcrumbs == null) {
     return null;
   }
   return (
@@ -105,7 +105,7 @@ export default function DocBreadcrumbs() {
         itemType='https://schema.org/BreadcrumbList'
       >
         {homePageRoute && <HomeBreadcrumbItem />}
-        {breadcrumbs.map((item, idx) => {
+        {breadcrumbs?.map((item, idx) => {
           const isLast = idx === breadcrumbs.length - 1;
           return (
             <BreadcrumbsItem
